@@ -8,18 +8,18 @@ title: Instructor Notes
 ## Lesson motivation and learning objectives
 
 The purpose of this lesson is *not* to teach how to do data analysis in spreadsheets,
-but to teach good data organization and how to do some data cleaning and 
+but to teach good data organisation and how to do some data cleaning and 
 quality control in a spreadsheet program.
 
 ## Lesson design
 
 #### [Introduction](../00-intro/)
 
-* Introduce that we're teaching data organization, and that we're using
+* Introduce that we're teaching data organisation, and that we're using
 spreadsheets, because most people do data entry in spreadsheets or 
 have data in spreadsheets.
-* Emphasize that we are teaching good practice in data organization and that
-this is the foundation of their research practice. Without organized and clean
+* Emphasize that we are teaching good practice in data organisation and that
+this is the foundation of their research practice. Without organised and clean
 data, it will be difficult for them to apply the things we're teaching in the
 rest of the workshop to their data.
 * Much of their lives as a researcher will be spent on this 'data wrangling' stage, but
@@ -74,10 +74,10 @@ data in this format for the other tools we'll be using.
 
 #### Concluding points
 
-* Now your data is organized so that a computer can read and understand it. This
+* Now your data is organised so that a computer can read and understand it. This
 let's you use the full power of the computer for your analyses as we'll see in the
 rest of the workshop. 
-* While your data is now neatly organized, it still might have errors or missing data
+* While your data is now neatly organised, it still might have errors or missing data
 or other problems. It's like you put all your data in the right drawers, but the
 drawers might still be messy. The next lesson is going to teach you OpenRefine which 
 is great for data cleaning and for some of the quality control that we touched on 

@@ -28,7 +28,7 @@ literal).
 
 This is why it’s extremely important to set up well-formatted
 tables from the outset - before you even start entering data from
-your very first preliminary experiment. Data organization is the
+your very first preliminary experiment. Data organisation is the
 foundation of your research project. It can make it easier or harder
 to work with your data throughout your analysis, so it's worth
 thinking about when you're doing your data entry or setting up your
