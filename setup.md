@@ -33,23 +33,30 @@ as it can open Excel spreadsheets, which is the format of the data we will work 
 - Once the installer is downloaded, double click on it and LibreOffice should install.
 
 ## Data  
-Data for this lesson is borrowed from the SAFI (Studying African Farmer-Led Irrigation) project - a currently 
-running project which is looking at farming and irrigation methods. This is survey data relating to households and 
-agriculture in Tanzania and Mozambique. The survey data was collected through interviews conducted between November 
-2016 and June 2017 using forms downloaded to Android smartphones. 
-The survey covered things such as household features (e.g. construction materials used, number of household members), 
-agricultural practices (e.g. water usage), assets (e.g. number and types of livestock) 
-and details about the household members.
+The data used in this lesson comes from a project observing a small mammal community in southern 
+Arizona, US. This is part of a project studying the effects of rodents and ants on the plant 
+community that has been running for almost 40 years. The rodents are sampled on a series of 24 plots, 
+with different experimental manipulations controlling which rodents are allowed to access which plots.
  
-We will be using a teaching version of the 
-collected data (that has been intentionally 'messed up' for this lesson) and not the full dataset. The teaching 
-data is part of the [Portal Project Teaching Database](https://figshare.com/articles/Portal_Project_Teaching_Database/1314459) 
-available on FigShare under the CC-BY license.
+This is a real dataset that has been used in over 100 publications. We have simplified it just a 
+little bit for the purposes of this lesson, but you can download the full dataset and work with it using exactly the same tools we will learn here. This simplified version of data is available to download 
+from the [Portal Project Teaching Dataset available on Figshare](http://figshare.com/articles/Portal_Project_Teaching_Database/1314459).
  
-Download the following files:
-- [SAFI_messy.xlsx](https://ndownloader.figshare.com/files/11502824)
-- [SAFI_clean.csv](https://ndownloader.figshare.com/files/11492171)
+> ## Portal Project Teaching Dataset
+> The Portal Project Teaching Database is a simplified version of the Portal Project Database designed for teaching. It provides a real world example of life-history, population, and ecological data, with sufficient complexity to teach many aspects of data analysis and management, but with many complexities removed to allow students to focus on the core ideas and skills being taught.
+> 
+> The database is currently available in csv, json, and sqlite formats.
+> 
+> This database is not designed for research as it intentionally removes some of the real-world complexities. The original database is published at [Ecological Archives](http://esapubs.org/archive/ecol/E090/118/) and this version of the database should be used for research purposes. The Python code used for converting the original database to this teach version is included as 'create_portal_teach_dataset.py'. Suggested changes or additions to this dataset can be requested or contributed in the project GitHub repository [https://github.com/weecology/portal-teachingdb](https://github.com/weecology/portal-teachingdb).
+>
+> **CITATION:** Ernest, Morgan; Brown, James; Valone, Thomas; White, Ethan P. (2017): Portal Project Teaching Database. figshare. https://doi.org/10.6084/m9.figshare.1314459.v6
+{: .testimonial}
 
-We will be working with the "messy" version of the data (found in Excel file `SAFI_messy.xlsx`), 
-which contains 3 tabs - "2016", "2017" and "dates".
-You also have a "clean" version (found in CSV file `SAFI_clean.csv`), which is how the data should look like when well organised.
+In this lesson, we will use the following files from the [Portal Project Teaching Dataset](http://figshare.com/articles/Portal_Project_Teaching_Database/1314459):
+
+- [surveys.csv](https://ndownloader.figshare.com/files/2292172) - the survey data  
+Fields: record_id, month, day, year, plot_id, species_id, sex, hindfoot_length, weight
+- [plots.csv](https://ndownloader.figshare.com/files/3299474) - information on plot number and type  
+Fields: plot_id, plot_type
+- [species.csv](https://ndownloader.figshare.com/files/3299483) - information on species codes and scientific name  
+Fields: species_id, genus, species, taxa
