@@ -1,5 +1,5 @@
 ---
-title: "Formatting problems"
+title: "Common spreadsheet errors"
 teaching: 20
 exercises: 0
 questions:
