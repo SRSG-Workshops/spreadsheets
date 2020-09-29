@@ -12,9 +12,9 @@ keypoints:
 - "Exporting data from spreadsheets to formats like CSV or TSV puts it in a format that can be used consistently by most programs."
 ---
 
-Storing the data you're going to work with for your analyses in Excel
+Storing the data you are going to work with for your analyses in Excel
 default file format (`*.xls` or `*.xlsx` - depending on the Excel
-version) isn't a good idea. Why?
+version) is not a good idea. Why?
 
 - Because it is a proprietary format, and it is possible that in
   the future, technology won’t exist (or will become sufficiently
@@ -27,7 +27,7 @@ version) isn't a good idea. Why?
   differently, leading to inconsistencies.
 
 - Finally, more journals and grant agencies are requiring you
-  to deposit your data in a data repository, and most of them don't
+  to deposit your data in a data repository, and most of them do not
   accept Excel format. It needs to be in one of the formats
   discussed below.
   
@@ -46,7 +46,7 @@ hence 'comma separated values' or CSV. The advantage of a CSV file over an Excel
 using just about any software, including plain text editors like TextEdit or NotePad. 
 Data in a CSV file can also be easily imported into other formats and
 environments, such as SQLite and R. We're not tied to a certain version of a certain expensive program when we work with CSV files, so
-it's a
+it is a
 good format to work with for maximum portability and endurance. Most spreadsheet programs can save to delimited text formats like CSV
 easily, although they may give you a warning during the file export.
 

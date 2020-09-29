@@ -3,7 +3,7 @@ layout: lesson
 ---
 
 Good data organisation is the foundation of any research project. Most 
-researchers have data in spreadsheets, so it's the place that many research
+researchers have data in spreadsheets, so it is the place that many research
 projects start. 
 
 We organise data in spreadsheets in the ways that we as humans want to work with the data, 
@@ -29,7 +29,7 @@ In this lesson, however, you will *not* learn:
 - How to do statistics and formulas in spreadsheets, or
 - How to plot graphs using spreadsheets. 
 
-There are many good tutorials available online on these topics. If you're looking to learn any of 
+There are many good tutorials available online on these topics. If you are looking to learn any of 
 the above, a good reference is [Head First Excel](https://www.amazon.com/Head-First-Excel-learners-spreadsheets/dp/0596807694/ref=sr_1_1?ie=UTF8&qid=1491594584&sr=8-1&keywords=head+first+excel), published by O'Reilly.
  
 > ## Getting Started

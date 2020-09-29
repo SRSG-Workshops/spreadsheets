@@ -25,7 +25,7 @@ family of products. If you will later need to export the data and need to
 conserve the timestamps, you are better off handling them using one of the solutions discussed below.  
 
 Additionally, Excel can [turn things that aren't dates into dates](https://nsaunders.wordpress.com/2012/10/22/gene-name-errors-and-excel-lessons-not-learned/), 
-for example names or identifiers like MAR1, DEC1, OCT4. So if you're avoiding the date format overall, it's easier to identify these issues. 
+for example names or identifiers like MAR1, DEC1, OCT4. So if you are avoiding the date format overall, it is easier to identify these issues. 
 
 > ## Exercise 
 >
@@ -156,7 +156,7 @@ Storing dates in YEAR, MONTH, DAY format helps remove this ambiguity. Let's look
 
 For instance this is a spreadsheet representing insect counts that were taken every few days over the summer, and things went something like this:
 
-![So, so ambiguous, it's even confusing Excel](../fig/6_excel_dates_2.jpg)
+![So, so ambiguous, it is even confusing Excel](../fig/6_excel_dates_2.jpg)
 
 If Excel was to be believed, this person had been collecting bugs **in the future**. Now, we have no doubt this person is highly capable,
 but I believe time travel was beyond even their grasp.

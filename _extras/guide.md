@@ -24,7 +24,7 @@ data, it will be difficult for them to apply the things we're teaching in the
 rest of the workshop to their data.
 * Much of their lives as a researcher will be spent on this 'data wrangling' stage, but
 some of it can be prevented with good strategies for data collection up front.
-* Tell that we're not teaching data analysis or plotting in spreadsheets, because it's
+* Tell that we're not teaching data analysis or plotting in spreadsheets, because it is
 very manual and also not reproducible. That's why we're teaching SQL, R, Python!
 * Now let's talk about spreadsheets, and when we say spreadsheets, we mean any program that
 does spreadsheets like Excel, LibreOffice, OpenOffice. Most learners are probably using Excel.
@@ -51,7 +51,7 @@ run through that exercise.
 
 #### [Common formatting problems](../02-common-mistakes/)
 
-* **Don't go through this chapter** except to refer to as responses to the exercise in
+* **Do not go through this chapter** except to refer to as responses to the exercise in
 the previous chapter.
 
 #### [Dates as data](../03-dates-as-data/)

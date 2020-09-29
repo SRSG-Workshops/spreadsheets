@@ -108,11 +108,13 @@ So, instead we should have:
 > ## Exercise
 > You are going to take the messy version of the survey data and describe how you would clean it up.
 >
-> 1. Download the messy survey data from the [Portal Project Teaching Database on FigShare](https://ndownloader.figshare.com/files/2252083).
+> 1. If you have not already done so, download the [messy survey data](https://ndownloader.figshare.com/files/2252083) from the 
+> [Portal Project Teaching Database on FigShare](http://figshare.com/articles/Portal_Project_Teaching_Database/1314459).
 > 2. Open up the data in a spreadsheet program. 
-> 3. You can see that there are two tabs. Two field assistants conducted the surveys, one
+> 3. You can see that there are three tabs in the spreadsheet. Two field assistants conducted the surveys, one
 in 2013 and one in 2014, and they both kept track of the data in their own way in tabs "2013" and 
-> "2014" of the dataset, respectively. Now, you are the person in charge of this project and 
+> "2014" of the dataset, respectively. There is a tab "dates" too, but you can ignore it for now. 
+> Now, you are the person in charge of this project and 
 > you want to be able to start analysing the data.   
 > 4. Identify what is wrong with this spreadsheet. Make steps to clean up the "2013" and "2014" tabs, and to put them all together in one spreadsheet. 
 >

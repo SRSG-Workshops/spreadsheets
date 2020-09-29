@@ -7,7 +7,7 @@ questions:
 objectives:
 - "Apply quality control techniques to identify errors in spreadsheets and limit incorrect data entry."
 keypoints:
-- "Always copy your original spreadsheet file and work with a copy so you don't affect the raw data."
+- "Always copy your original spreadsheet file and work with a copy so you do not affect the raw data."
 - "Use data validation to prevent accidentally entering invalid data."
 - "Use sorting to check for invalid data."
 - "Use conditional formatting (cautiously) to check for invalid data."
@@ -59,7 +59,7 @@ plot values that are integers between 1 and 24.
 
 ![Image of Data Validation window for validating plot values](../fig/plot_validation.png)
 
-Now let's try entering a new value in the plot column that isn't a valid
+Now let's try entering a new value in the plot column that is not a valid
 plot. The spreadsheet stops us from entering the wrong value and asks us if we
 would like to try again.
 
