@@ -60,7 +60,7 @@ An important note for backwards compatibility: you can open CSV files in Excel!
 
 ![Saving an Excel file to CSV](../fig/excel-to-csv.png)
 
-## A Note on Cross-platform Operability
+## A note on cross-platform interoperability
 
 By default, most coding and statistical environments expect UNIX-style line endings (ASCII `LF` character) as representing line breaks.  However, Windows uses an alternate line ending signifier (ASCII `CR LF` characters) by default for legacy compatibility with Teletype-based systems.
 

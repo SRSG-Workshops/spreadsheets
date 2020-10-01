@@ -20,7 +20,7 @@ implemented prior to entering data (quality assurance) and
 techniques that are used after entering data to check for errors
 (quality control).
 
-# Quality Assurance
+## Quality assurance
 
 Quality assurance stops bad data from ever being entered by checking to see if
 values are valid during data entry. For example, if research is being conducted
@@ -139,9 +139,7 @@ If your dataset is well-structured and does not contain formulas, sorting should
 > {: .solution}
 {: .challenge}
 
-
-
-## Conditional formatting ##
+## Conditional formatting 
 Conditional formatting basically can do something like color code your values by some
 criteria or lowest to highest. This makes it easy to scan your data for outliers.
 

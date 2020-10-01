@@ -61,7 +61,7 @@ This might be an example of a spreadsheet setup:
 
 ![spreadsheet setup](../fig/spreadsheet-setup-updated.png)
 
-Put these principles in to practice today during your Exercises.
+Put these principles in to practice today during your exercises.
 
 > ## Version controlling your data
 > This is out of scope for this lesson, but for information on how to maintain version control over your data in a more manageable and scalable way look, for example, at Software Carpentry's lesson on ['Git version control system'](http://swcarpentry.github.io/git-novice/).

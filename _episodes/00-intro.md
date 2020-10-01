@@ -99,8 +99,8 @@ to be the program most used by researchers and scientists.
 
 In this lesson we're going to talk about:
 
-1. [Formatting data tables in spreadsheets](../01-format-data/)
-2. [Formatting problems](../02-common-mistakes/)
+1. [Formatting data in spreadsheets](../01-format-data/)
+2. [Common spreadsheet errors](../02-common-mistakes/)
 3. [Dates as data](../03-dates-as-data/)
 4. [Quality control](../04-quality-control/)
 5. [Exporting data](../05-exporting-data/)
