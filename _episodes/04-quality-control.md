@@ -35,8 +35,8 @@ We will be working with a couple of examples of data validation
 rules but many others exist. For an overview of data validation rules
 available in Excel, check out the [Excel support page on data validation](https://support.office.com/en-us/article/Apply-data-validation-to-cells-29FECBCC-D1B9-42C1-9D76-EFF3CE5F7249). General steps to employ data validation are as follows.
 
-1. Open the tab 'semi-cleaned-combined' of our 
-[messy data spreadsheet](/data/survey_data_spreadsheet_messy.xls?raw=true) `survey_data_spreadsheet_messy.xls`. 
+1. Open the tab 'semi-cleaned-combined' of the 
+[messy data spreadsheet](/data/survey_data_spreadsheet_messy.xls?raw=true). 
 It contains tables from the messy data tabs '2013' and '2014' combined into a single table (you may note that data is 
 not fully cleaned yet although it is in a much better shape than tabs '2013' and '2014').
 
@@ -71,10 +71,10 @@ Let's try this out by setting the 'plot_id' in our spreadsheet to only allow
 plot values that are integers between 1 and 24.
 
 > ## Exercise    
-> Set the 'plot_id' column in tab ‘semi-cleaned-combined’ of `survey_data_spreadsheet_messy.xls` 
+> Set the 'plot_id' column in tab ‘semi-cleaned-combined’ of the [messy data spreadsheet](/data/survey_data_spreadsheet_messy.xls?raw=true) 
 > to only allow values that are integers between 1 and 24.
 > > ## Solution
-> > 1. Open the tab 'semi-cleaned-combined' of `survey_data_spreadsheet_messy.xls` and select the 'plot_id' column.
+> > 1. Open the tab 'semi-cleaned-combined' of [messy data spreadsheet](/data/survey_data_spreadsheet_messy.xls?raw=true) and select the 'plot_id' column.
 > > 2. On the `Data` tab the top level menu select `Data Validation`, or `Data Tools` and then `Data Validation` 
 > > or `Validation Tools` (depending on your version of Excel).
 > > 3. In the `Allow` box of the `Settings` tab select `Whole number`.
@@ -108,8 +108,8 @@ or whether or not you capitalised the words correctly. By restricting values in 
 values, you can select the right option from the list. Let’s apply this to our data.
 
 > ## Exercise    
-> Restrict the values of the 'species_id' column in tab ‘semi-cleaned-combined’ of `survey_data_spreadsheet_messy.xls` 
-> to the values from the following list: “DM, NL, DS, PP, PE, PF”.
+> Restrict the values of the 'species_id' column in tab ‘semi-cleaned-combined’ of the [messy data spreadsheet](/data/survey_data_spreadsheet_messy.xls?raw=true) 
+> to allow only values from the following list: “DM, NL, DS, PP, PE, PF”.
 >
 > > ## Solution
 > > 1. Open the tab 'semi-cleaned-combined' of `survey_data_spreadsheet_messy.xls` and select the 'species_id' column.
@@ -176,7 +176,7 @@ If your dataset is well-structured and does not contain formulas, sorting should
 
 > ## Exercise   
 >
-> Look at the 'semi-cleaned-combined' tab of our messy data spreadsheet from `.xlsx` file. It contains tables from the messy data tabs 
+> Look at the 'semi-cleaned-combined' tab of the [messy data spreadsheet](/data/survey_data_spreadsheet_messy.xls?raw=true). It contains tables from the messy data tabs 
 >'2013' and '2014' combined into a single table in a single tab (you will note that data is not yet fully cleaned). 
 > Download this semi-cleaned data file to your computer: [survey_sorting_exercise](https://github.com/datacarpentry/spreadsheet-ecology-lesson/blob/gh-pages/data/survey_sorting_exercise.xlsx?raw=true). 
 >
@@ -231,5 +231,5 @@ entering data. Let's apply some to our data.
 > It is nice to be able to do these scans for outliers in spreadsheets (such as using sorting or conditional formatting), 
 but we can also do these
 checks in a programming languages like R, Python and SQL, or using OpenRefine - which may be even more suitable if you have 
-larger datasets with, e.g., 10K+ or 100K+ rows. 
+larger datasets with, e.g., with 10K+ or 100K+ rows. 
 {: .testimonial}

@@ -112,7 +112,7 @@ mixing in two different data types for your data (string and dates).
 
 > ## Exercise
 >   
-> Look at the tab 'dates' in the messy data spreadsheet you used in previous exercises. 
+> Look at the tab 'dates' in the [messy data spreadsheet](/data/survey_data_spreadsheet_messy.xls?raw=true) you used in previous exercises. 
 > It contains the copy the 'plot 3' table from the '2014' tab (this is the table that contains the problematic dates). 
 > You will notice that there are years missing from the "Date collected" column. Just by looking at the entered dates, 
 > can you figure out the date format that was used?
@@ -133,7 +133,7 @@ variable.
 
 > ## Exercise
 >   
-> Look at the tab 'dates' in the messy data spreadsheet you used in previous exercises. 
+> Look at the tab 'dates' in the [messy data spreadsheet](/data/survey_data_spreadsheet_messy.xls?raw=true). 
 > It contains the copy the 'plot 3' table from the '2014' tab (this is the table that contains the problematic dates). 
 > Select one of the cells in "Date collected" column, for example cell 'A3'. What is the date Excel thinks is 
 > entered? What is the year of the date? 

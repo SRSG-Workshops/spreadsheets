@@ -40,8 +40,9 @@ data.
 > ## Best data formats may differ
 > The best layouts/formats (as well as software and
 > interfaces) for data entry and data analysis might be
-> different for each specific use case. It is important to take this into account, and ideally
-> automate the conversion from one to another.
+> different for each specific use case. It is important to take this into account, make decision 
+> on a case by case basis, and ideally
+> automate the conversion from one format to another.
 {: .callout}
 
 ## Keeping track of your analyses
