@@ -209,11 +209,11 @@ entering data. Let's apply some to our data.
 
 > ## Exercise
 >  Using the same semi-cleaned data survey_sorting_exercise as earlier in this episode, apply 
-> any `2-Color Scale` formatting rule to column `Weight_grams`.
+> any `2-Color Scale` formatting rule to column `weight_grams`.
 >
 > > ## Solution
 1. Open survey_sorting_exercise.csv file.
-2. Select `Weight_grams` column.
+2. Select `weight_grams` column.
 3. In the main Excel menu bar, click `Home` > `Conditional Formatting...` choose `New rule`. 
     ![quality_control4, new rule](../fig/conditional-formatting-new-rule.png)
 4. In the `New Formatting Rule` window, apply any `2-Color Scale` formatting rule.
