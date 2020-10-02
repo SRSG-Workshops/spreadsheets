@@ -118,9 +118,8 @@ contains combined data from tabs '2013' and '2014', which is what you should be 
 while you are working on reorganising the data. We will revisit this tab in 
 [episode on quality assurance and control](/04-quality-control/index.html) and you will see why it is 'semi-clean'. 
 
-> ## Fully clean dataset
-> If you want to have a look at a fully clean dataset that combines all data from the surveys - have a look at 
-> [combined.csv](https://ndownloader.figshare.com/files/10717186).
+> ## Full & clean dataset
+> If you want to have a look at the full, clean dataset - have a look [surveys.csv](https://ndownloader.figshare.com/files/2292172) (that combines data from all the surveys) or [combined.csv](https://ndownloader.figshare.com/files/10717186) (clean data from [surveys.csv](https://ndownloader.figshare.com/files/2292172), [plots.csv](https://ndownloader.figshare.com/files/3299474) and [species.csv](https://ndownloader.figshare.com/files/3299483) combined into one clean file).
 {: .testimonial}  
 
 > ## Exercise

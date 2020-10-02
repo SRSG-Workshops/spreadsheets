@@ -36,14 +36,14 @@ depend on formulas in other cells being evaluated and values calculated prior to
   This makes it difficult to follow, track or reproduce statistical or plotting
   analyses done in spreadsheet programs when you want to go back to
   your work or someone asks for details of your analysis or you inherit someone else's spreadsheet containing formulas.
-- There are better tools for doing data analyses - e.g. writing a Python or R script. While these are 
+- There are better tools for doing data analysis - e.g. writing a Python or R script. While these are 
 also not 
 error proof (there is always the human factor), they are much more readable and easier to analyse, test and 
 verify by yourself and others.   
 
 ## Spreadsheet programs
 
-Many spreadsheet programs are available. Since most participants utilise Excel as their primary spreadsheet program, this lesson will make use of Excel examples. A free spreadsheet program that can also be used is LibreOffice. Commands may differ a bit between programs, but the general idea
+Many spreadsheet programs are available. Most researchers utilise Excel as their primary spreadsheet program, and this lesson will make use of Excel examples. Free spreadsheet programmes that can also be used include LibreOffice, Gnumeric, OpenOffice.org or Google Spreadsheets. Commands may differ a bit between programs, but the general idea
 is the same.
 
 Spreadsheets encompass a lot of the things we need
@@ -55,7 +55,7 @@ to be able to do as researchers. We can use them for:
 - Statistics
 - Plotting
 
-We do a lot of different operations in spreadsheets. What kind of operations do you do in spreadsheets? Which ones do you think spreadsheets are good for? How many time have you accidentally done 
+However, how many times have you accidentally done 
 something in a spreadsheet that made you frustrated?
 
 ## Problems with spreadsheets
@@ -92,10 +92,6 @@ puts your data in a better format prior to importation into a
 statistical analysis program. We will show you how to use some features of 
 spreadsheet programs to check your data quality along the way and produce 
 preliminary summary statistics.
-
-In this lesson, we will assume that you are most likely using Excel as
-your primary spreadsheet program - there are others, but Excel seems
-to be the program most used by researchers and scientists.
 
 In this lesson we are going to talk about:
 

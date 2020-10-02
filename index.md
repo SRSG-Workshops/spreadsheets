@@ -1,6 +1,10 @@
 ---
 layout: lesson
 ---
+> ## Credit: Data Carpentry 
+> This lesson is based on [Data Carpentry's](https://datacarpentry.org.) Data Organisation In Spreadsheets lessons from the [ecology](https://datacarpentry.org/lessons/#ecology-workshop) and [social 
+> sciences](https://datacarpentry.org/lessons/#social-science-curriculum) curricula.
+{: .testimonial} 
 
 Good data organisation is the foundation of any research project. Most 
 researchers have data in spreadsheets, so it is the place that many research
