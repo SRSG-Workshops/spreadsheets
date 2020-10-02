@@ -35,20 +35,25 @@ We will be working with a couple of examples of data validation
 rules but many others exist. For an overview of data validation rules
 available in Excel, check out the [Excel support page on data validation](https://support.office.com/en-us/article/Apply-data-validation-to-cells-29FECBCC-D1B9-42C1-9D76-EFF3CE5F7249). General steps to employ data validation are as follows.
 
-1. Select the cells or column from your spreadsheet you want to validate.
+1. Open the tab 'semi-cleaned-combined' of our 
+[messy data spreadsheet](/data/survey_data_spreadsheet_messy.xls?raw=true) `survey_data_spreadsheet_messy.xls`. 
+It contains tables from the messy data tabs '2013' and '2014' combined into a single table (you may note that data is 
+not fully cleaned yet although it is in a much better shape than tabs '2013' and '2014').
 
-2. On the `Data` tab from the top level menu select `Data Validation`, or `Data Tools` and then `Data Validation` 
+2. Select the cells or column from your spreadsheet you want to validate. For example, select the column 'plot_id'.
+
+3. On the `Data` tab from the top level menu select `Data Validation`, or `Data Tools` and then `Data Validation` 
 or `Validation Tools` (depending on your version of Excel).
 
     ![Image of Data Validation button on Data tab](../fig/data-validation-button.png)
 
-3. In the `Allow` box of tab `Settings` select the kind of data that should be in the
+4. In the `Allow` box of tab `Settings` select the kind of data that should be in the
    column. Options include whole numbers, decimals, lists of items, dates, and
    other values.
 
     ![Image of Data Validation window](../fig/data-validation-window.png)
    
-4. After selecting an item enter any additional details on restrictions. We will do two examples below. 
+5. After selecting an item enter any additional details on restrictions. We will do two examples below. 
 
 Excel allows us to specify a variety of data validations to be applied to cell contents.
 If the validation fails an error is raised and the data we entered does not go into the particular cell.
@@ -62,18 +67,17 @@ For this reason, it is important to set up these validations before you start en
 
 ### Restricting data to a numeric range
 
-Let's try this out by setting the plot in our spreadsheet to only allow
+Let's try this out by setting the 'plot_id' in our spreadsheet to only allow
 plot values that are integers between 1 and 24.
 
 > ## Exercise    
 > Set the `plot_id` column in our spreadsheet to only allow values that are integers between 1 and 24.
 > > ## Solution
-> > 1. Open the `surveys.csv` file you have downloaded before or download it now from the Portal Teaching Database.
-> > 2. Select the `plot_id` column.
-> > 3. On the `Data` tab the top level menu select `Data Validation`, or `Data Tools` and then `Data Validation` 
+> > 1. Open the tab 'semi-cleaned-combined' of `survey_data_spreadsheet_messy.xls` and select the `plot_id` column.
+> > 2. On the `Data` tab the top level menu select `Data Validation`, or `Data Tools` and then `Data Validation` 
 > > or `Validation Tools` (depending on your version of Excel).
-> > 4. In the `Allow` box of the `Settings` tab select `Whole number`.
-> > 5. Set the minimum and maximum values to 1 and 24.  
+> > 3. In the `Allow` box of the `Settings` tab select `Whole number`.
+> > 4. Set the minimum and maximum values to 1 and 24.  
     ![Image of Data Validation window for validating plot values](../fig/data-validation-plot-id.png)
 > > Now let's try entering a new value in the plot column that is not a valid
 > > plot id. The spreadsheet stops us from entering the wrong value and asks us if we
@@ -85,7 +89,7 @@ plot values that are integers between 1 and 24.
 > > You can also set the invalid data to result in a warning rather than an error by modifying the `Style`
 option on the `Error Alert` tab.
 > > ![Image of Error Alert tab](../fig/data-validation-plot-id-error-alert.png) 
-> > 6. In newer versions of Excel, you may also have an option to indicate all previous invalid entries once you have 
+> > 5. In newer versions of Excel, you may also have an option to indicate all previous invalid entries once you have 
 > > entered your restricted values. 
 > >    ![Image of invalid entries circled](../fig/invalid-entries-numeric.png)
 > > You have now provided a restriction that will be validated each time you try and
@@ -103,27 +107,23 @@ or whether or not you capitalised the words correctly. By restricting values in 
 values, you can select the right option from the list. Let’s apply this to our data.
 
 > ## Exercise    
-> Look at the 'semi-cleaned-combined' tab of our messy data spreadsheet from `.xlsx` file. It contains tables from the messy data tabs 
-> '2013' and '2014' combined into a single table in a single tab (you will note that data is not yet fully cleaned). 
->
 > Restrict the values of the `species_id` column to the values from the following list: “DM, NL, DS, PP, PE, PF”.
 >
 > > ## Solution
-> > 1. Open the `surveys.csv` file you have downloaded before or download it now from the Portal Teaching Database.  
-> > 2. Select the `plot_id` column.  
-> > 3. On the `Data` tab the top level menu select `Data Validation`, or `Data Tools` and then `Data Validation`   
+> > 1. Open the tab 'semi-cleaned-combined' of `survey_data_spreadsheet_messy.xls` and select the `species_id` column.
+> > 2. On the `Data` tab the top level menu select `Data Validation`, or `Data Tools` and then `Data Validation`   
 > > or `Validation Tools` (depending on your version of Excel).  
-> > 4. In the `Allow` box of the `Settings` tab select `List`.
-> > 5. Type a list of all the values that you want to be accepted in this column, separated by a comma (with no spaces). 
+> > 3. In the `Allow` box of the `Settings` tab select `List`.
+> > 4. Type a list of all the values that you want to be accepted in this column, separated by a comma (with no spaces). 
 > > For example, type "DM,NL,DS,PP,PE,PF". Note this is only a small subset of allowed species ids - the whole
 > > set is much larger but for the purposes of this exercise we want to show you how to restrict a cell to a list of 
 > > values and what happens when old data does not conform to this restriction.  
 > >    ![Image of selecting a range of values to allow](../fig/data-validation-list.png)
-> > 6. Create a meaningful input message and modify alert error type, as in the previous exercise, then click OK.  
-> > 7. Scroll to the bottom of your data and select a cell in the `species_id` column in a new row. 
+> > 5. Create a meaningful input message and modify alert error type, as in the previous exercise, then click OK.  
+> > 6. Scroll to the bottom of your data and select a cell in the `species_id` column in a new row. 
 > > When a cell in this column is selected, a drop-down arrow will appear.
 > > When you click the arrow you will be able to select a value from your list of allowed values. 
-> > 9. In newer versions of Excel, you may also have an option to indicate all previous invalid entries once you have 
+> > 7. In newer versions of Excel, you may also have an option to indicate all previous invalid entries once you have 
 > > entered your restricted values. 
 > >    ![Image of invalid entries circled](../fig/invalid-entries-list.png)
 > > You have now provided a restriction that will be validated each time you try and
@@ -176,7 +176,7 @@ If your dataset is well-structured and does not contain formulas, sorting should
 >'2013' and '2014' combined into a single table in a single tab (you will note that data is not yet fully cleaned). 
 > Download this semi-cleaned data file to your computer: [survey_sorting_exercise](https://github.com/datacarpentry/spreadsheet-ecology-lesson/blob/gh-pages/data/survey_sorting_exercise.xlsx?raw=true). 
 >
-> Sort the `Weight_grams` column in your spreadsheet program from `Largest to Smallest`. 
+> Sort the `weight_grams` column in your spreadsheet program from `Largest to Smallest`. 
 > What do you notice?
 >
 > > ## Solution
@@ -226,5 +226,6 @@ entering data. Let's apply some to our data.
 > ## Scanning for outliers
 > It is nice to be able to do these scans for outliers in spreadsheets (such as using sorting or conditional formatting), 
 but we can also do these
-checks in a programming languages like R, Python and SQL, or using OpenRefine. 
+checks in a programming languages like R, Python and SQL, or using OpenRefine - which may be even more suitable if you have 
+larger datasets with, e.g., 10K+ or 100K+ rows. 
 {: .testimonial}

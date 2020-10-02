@@ -41,20 +41,23 @@ with different experimental manipulations controlling which rodents are allowed 
 This is a real dataset that has been used in over 100 publications. We have simplified it just a 
 little bit for the purposes of this lesson, but you can download the full dataset and work with it using exactly the same tools we will learn here. This simplified version of data is available to download 
 from the [Portal Project Teaching Dataset available on Figshare](http://figshare.com/articles/Portal_Project_Teaching_Database/1314459).
+The original database is published at [Ecological Archives](http://esapubs.org/archive/ecol/E090/118/) and this version of the database should be used for research purposes. 
  
 > ## Portal Project Teaching Dataset
-> The Portal Project Teaching Database is a simplified version of the Portal Project Database designed for teaching. It provides a real world example of life-history, population, and ecological data, with sufficient complexity to teach many aspects of data analysis and management, but with many complexities removed to allow students to focus on the core ideas and skills being taught.
+> [The Portal Project Teaching Database](http://figshare.com/articles/Portal_Project_Teaching_Database/1314459) is a simplified version of the 
+> [Portal Project Database](https://github.com/weecology/PortalData) designed for teaching. It provides a real world example of life-history, population, and ecological data, with sufficient complexity to teach many aspects of data analysis and management, but with many complexities removed to allow students to focus on the core ideas and skills being taught. The database is currently available in csv, json, and sqlite formats.
 > 
-> The database is currently available in csv, json, and sqlite formats.
-> 
-> This database is not designed for research as it intentionally removes some of the real-world complexities. The original database is published at [Ecological Archives](http://esapubs.org/archive/ecol/E090/118/) and this version of the database should be used for research purposes. The Python code used for converting the original database to this teach version is included as 'create_portal_teach_dataset.py'. Suggested changes or additions to this dataset can be requested or contributed in the project GitHub repository [https://github.com/weecology/portal-teachingdb](https://github.com/weecology/portal-teachingdb).
+> The Portal Project Teaching Database's GitHub repository can be found at: [https://github.com/weecology/portal-teachingdb](https://github.com/weecology/portal-teachingdb), 
+> where suggested changes or additions to this dataset can be requested or contributed. 
+> This database is not designed for research as it intentionally removes some of the real-world complexities. The Python code used for converting the original database to this teaching version can be found in [create_portal_teach_dataset.py](https://github.com/weecology/portal-teachingdb/blob/master/create_portal_teaching_dataset.py). 
 >
 > **CITATION:** Ernest, Morgan; Brown, James; Valone, Thomas; White, Ethan P. (2017): Portal Project Teaching Database. figshare. https://doi.org/10.6084/m9.figshare.1314459.v6
 {: .testimonial}
 
-In this lesson, we will use the following files from the [Portal Project Teaching Dataset](http://figshare.com/articles/Portal_Project_Teaching_Database/1314459):
-
-- [survey_data_spreadsheet_messy.xls ](https://ndownloader.figshare.com/files/2252083) - messy survey data that you will attempt to clean during the lesson
+In this lesson, we will use the following files from the [Portal Project Teaching Dataset](http://figshare.com/articles/Portal_Project_Teaching_Database/1314459). You should download all of these files as a preparation for the workshop.
+-  [survey_data_spreadsheet_messy.xls](/data/survey_data_spreadsheet_messy.xls?raw=true) - messy survey data 
+(in Excel's `.xls` format) that you will attempt to clean during the lesson and learn some best practices in 
+data organisation in the process.
 - Data from the project as separate files:
     - [surveys.csv](https://ndownloader.figshare.com/files/2292172) - the survey data  
     Fields: record_id, month, day, year, plot_id, species_id, sex, hindfoot_length, weight
@@ -63,7 +66,8 @@ In this lesson, we will use the following files from the [Portal Project Teachin
     - [species.csv](https://ndownloader.figshare.com/files/3299483) - information on species codes and scientific name  
     Fields: species_id, genus, species, taxa
 - [combined.csv](https://ndownloader.figshare.com/files/10717186) - clean data from surveys, plots and species data 
-files combined into one clean file  
-Fields: record_id, month, day, year, plot_id, species_id, sex, hindfoot_length, weight, genus, species, taxa, plot_type
+files combined into one clean file (an example of what a clean data file should look like, and what you should
+be working towards)  
+Fields: record_id, month, day, year, plot_id, species_id, sex, hindfoot_length, weight, genus, species, taxa, plot_type  
 
 

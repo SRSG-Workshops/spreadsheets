@@ -113,7 +113,7 @@ mixing in two different data types for your data (string and dates).
 
 > ## Exercise - regional date formats
 >   
-> Look at the tab "dates" in the messy data spreadsheet you used in previous exercises. 
+> Look at the tab 'dates' in the messy data spreadsheet you used in previous exercises. 
 > It contains the copy the 'plot 3' table from the '2014' tab (this is the table that contains the problematic dates). 
 > You will notice that there are years missing from the "Date collected" column. Just by looking at the entered dates, 
 > can you figure out the date format that was used?
@@ -134,7 +134,7 @@ variable.
 
 > ## Exercise - default for missing year
 >   
-> Look at the tab "dates" in the messy data spreadsheet you used in previous exercises. 
+> Look at the tab 'dates' in the messy data spreadsheet you used in previous exercises. 
 > It contains the copy the 'plot 3' table from the '2014' tab (this is the table that contains the problematic dates). 
 > Select one of the cells in "Date collected" column, for example cell 'A3'. What is the date Excel thinks is 
 > entered? What is the year of the date? 
@@ -216,7 +216,7 @@ ambiguity.
 >
 > Challenge: pulling month, day and year out of dates. 
 >   
-> 1. Look at the tab "dates" in our messy data spreadsheet. Extract month, day and year from the dates in the 
+> 1. Look at the tab 'dates' in our messy data spreadsheet. Extract month, day and year from the dates in the 
 > "Date collected" column into three new columns called 
 > 'month', 'day', 'year'. To do so, you can 
 > use the following built-in Excel functions:

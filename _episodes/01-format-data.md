@@ -37,10 +37,10 @@ but some of these choices can limit your ability to work with the data in other 
 have the you-of-6-months-from-now or your collaborator work with the
 data.
 
-> ## Note on data formats
+> ## Best data formats may differ
 > The best layouts/formats (as well as software and
 > interfaces) for data entry and data analysis might be
-> different. It is important to take this into account, and ideally
+> different for each specific use case. It is important to take this into account, and ideally
 > automate the conversion from one to another.
 {: .callout}
 
@@ -105,30 +105,36 @@ So, instead we should have:
 
 ![single-info example](../fig/single-info.png)
 
+If you have not already done so, download the [messy survey data](/data/survey_data_spreadsheet_messy.xls?raw=true) 
+(as outlined in [Setup section](/setup.html#data)). You will attempt to clean this data during the lesson and learn 
+some best practices in data organisation in the process.
+
+You will see four tabs in the messy data spreadsheet. Two field assistants conducted the surveys, one
+in 2013 and one in 2014, and they both kept track of the data in their own way in tabs '2013' and 
+'2014' of the dataset, respectively. There is a tab 'dates' too, but you can ignore it for now as we will come back to 
+it the [episode on dates](/03-dates-as-data/index.html). Finally, there is a tab 'semi-cleaned-combined', which 
+contains combined data from tabs '2013' and '2014', which is what you should be aiming for and can be used as a reference
+while you are working on reorganising the data. We will revisit this tab in 
+[episode on quality assurance and control](/04-quality-control/index.html) and you will see why it is 'semi-clean'. 
+
+> ## Fully clean dataset
+> If you want to have a look at a fully clean dataset that combines all data from the surveys - have a look at 
+> [combined.csv](https://ndownloader.figshare.com/files/10717186).
+{: .testimonial}  
+
 > ## Exercise
-> You are going to take the messy version of the survey data and describe how you would clean it up.
+> Take the messy version of the survey data and open it in a spreadsheet programme. Look at tabs '2013' and '2014' and 
+> identify what is wrong with data in these two tabs. Make steps to clean up the "2013" and "2014" tabs, and 
+> put them all together in one spreadsheet. 
 >
-> 1. If you have not already done so, download the [messy survey data](https://ndownloader.figshare.com/files/2252083) from the 
-> [Portal Project Teaching Database on FigShare](http://figshare.com/articles/Portal_Project_Teaching_Database/1314459).
-> 2. Open up the data in a spreadsheet program. 
-> 3. You can see that there are three tabs in the spreadsheet. Two field assistants conducted the surveys, one
-in 2013 and one in 2014, and they both kept track of the data in their own way in tabs "2013" and 
-> "2014" of the dataset, respectively. There is a tab "dates" too, but you can ignore it for now. 
-> Now, you are the person in charge of this project and 
-> you want to be able to start analysing the data.   
-> 4. Identify what is wrong with this spreadsheet. Make steps to clean up the "2013" and "2014" tabs, and to put them all together in one spreadsheet. 
->
-> > ## Keep your raw data raw 
+> > ## Keep your raw data - raw 
 > > Do not forget our first piece of advice:
 > > create a new file (or a new tab) for the cleaned data, never
 > > modify your original (raw) data.
-> {: .testimonial}
+> {: .callout}
 > 
 > > ## Solution
-> > - All the mistakes in this messy dataset are addressed in the [next lesson](../02-common-mistakes). 
-> > You can refer to it to check if you spotted them all.
-> > - Note that there is a problem with dates in table 'plot 3' in tab "2014". The field assistant who collected the data for year 2014 initially forgot to include their data for 'plot 3'. They came back in 2015 to include the missing data and 
-> > entered the dates for 'plot 3' in the dataset without the year. Excel automatically filled in the missing year as the
-> > current year (i.e. 2015) - introducing an error in the data without the field assistant realising. We will address the peculiarities of working with dates in episode ["Dates as data"](../03-dates-as-data).  
+> > All the mistakes in this messy dataset are addressed in the [next episode](../02-common-mistakes). 
+> > You can refer to it to check if you spotted them all and go back and fix your spreadsheet.
 > {: .solution}
 {: .challenge}

@@ -24,7 +24,7 @@ further down the line. After this lesson, you will be able to:
 - Effectively export data from spreadsheet programs
 - Overall good data practices
 
-Why aren't we teaching data analysis in spreadsheets? 
+Why are we not teaching data analysis in spreadsheets? 
 
 - Data analysis in spreadsheets usually requires a lot of manual
   work. If you want to change a parameter or run an analysis with a
@@ -77,11 +77,11 @@ be used with caution. Due to the graphical, drag and drop nature of
 spreadsheet programs, it can be very difficult, if not impossible, to 
 replicate your steps (much less retrace anyone else's). In particular, if your 
 stats or figures require you to do more complex calculations. Furthermore, 
-in doing calculations in a spreadsheet, it’s easy to accidentally apply a 
+in doing calculations in a spreadsheet, it is easy to accidentally apply a 
 slightly different formula to multiple adjacent cells. When using a 
 command-line based statistics program like R or Python, it’s practically 
 impossible to apply a calculation to one observation in your 
-dataset but not another unless you’re doing it on purpose. 
+dataset but not another unless you are doing it on purpose. 
 
 ## Using spreadsheets for data entry and cleaning
 
@@ -97,7 +97,7 @@ In this lesson, we will assume that you are most likely using Excel as
 your primary spreadsheet program - there are others, but Excel seems
 to be the program most used by researchers and scientists.
 
-In this lesson we're going to talk about:
+In this lesson we are going to talk about:
 
 1. [Formatting data in spreadsheets](../01-format-data/)
 2. [Common spreadsheet errors](../02-common-mistakes/)
