@@ -138,8 +138,10 @@ Typing a list of values where only a few possible values exist might be convenie
 all allowed species) it 
 makes sense to create it as a small table (in a separate tab of the workbook).
 We can give the table a name and then reference the table name as the source of acceptable inputs when the source box 
-appears in the Data Validation pop-out. For example, for the table of all species can be copied from the file `species.csv` and then referenced
-in your datasheet to provide the list of all valid species names and their abbreviations. Using a table in this way makes the data entry process more flexible.
+appears in the `Data Validation` pop-out. For example, the table of all species can be copied from the 
+[file `species.csv`](https://ndownloader.figshare.com/files/3299483) and then referenced
+in your spreadsheet to provide the list of all valid species names and their abbreviations (ids). 
+Using a table in this way makes the data entry process more flexible.
 If you add or remove contents from the table, then these are immediately reflected in any new cell entries based on this source.
 You can also have different cells refer to the same table of acceptable inputs.
 
