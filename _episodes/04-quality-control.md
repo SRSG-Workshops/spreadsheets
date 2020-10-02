@@ -71,9 +71,10 @@ Let's try this out by setting the 'plot_id' in our spreadsheet to only allow
 plot values that are integers between 1 and 24.
 
 > ## Exercise    
-> Set the `plot_id` column in our spreadsheet to only allow values that are integers between 1 and 24.
+> Set the 'plot_id' column in tab ‘semi-cleaned-combined’ of `survey_data_spreadsheet_messy.xls` 
+> to only allow values that are integers between 1 and 24.
 > > ## Solution
-> > 1. Open the tab 'semi-cleaned-combined' of `survey_data_spreadsheet_messy.xls` and select the `plot_id` column.
+> > 1. Open the tab 'semi-cleaned-combined' of `survey_data_spreadsheet_messy.xls` and select the 'plot_id' column.
 > > 2. On the `Data` tab the top level menu select `Data Validation`, or `Data Tools` and then `Data Validation` 
 > > or `Validation Tools` (depending on your version of Excel).
 > > 3. In the `Allow` box of the `Settings` tab select `Whole number`.
@@ -107,10 +108,11 @@ or whether or not you capitalised the words correctly. By restricting values in 
 values, you can select the right option from the list. Let’s apply this to our data.
 
 > ## Exercise    
-> Restrict the values of the `species_id` column to the values from the following list: “DM, NL, DS, PP, PE, PF”.
+> Restrict the values of the 'species_id' column in tab ‘semi-cleaned-combined’ of `survey_data_spreadsheet_messy.xls` 
+> to the values from the following list: “DM, NL, DS, PP, PE, PF”.
 >
 > > ## Solution
-> > 1. Open the tab 'semi-cleaned-combined' of `survey_data_spreadsheet_messy.xls` and select the `species_id` column.
+> > 1. Open the tab 'semi-cleaned-combined' of `survey_data_spreadsheet_messy.xls` and select the 'species_id' column.
 > > 2. On the `Data` tab the top level menu select `Data Validation`, or `Data Tools` and then `Data Validation`   
 > > or `Validation Tools` (depending on your version of Excel).  
 > > 3. In the `Allow` box of the `Settings` tab select `List`.

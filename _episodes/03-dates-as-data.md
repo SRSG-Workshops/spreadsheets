@@ -95,7 +95,6 @@ added but to add hour and minutes we need to make sure that we are adding
 the quantities to the correct entities.
 
 ## Regional date formatting
-
 When you enter a date into a spreadsheet it looks like a date although the spreadsheet program may
 display different text from what you input. It does this to be 'helpful' but it often is not. 
 For example if you enter '7/12/88' into your
@@ -111,7 +110,7 @@ date (i.e. it may not be detected as a date at all by a UK version of Excel and 
 especially bad when you have a mix of correct dates and dates Excel cannot parse in the same column, effectively 
 mixing in two different data types for your data (string and dates).
 
-> ## Exercise - regional date formats
+> ## Exercise
 >   
 > Look at the tab 'dates' in the messy data spreadsheet you used in previous exercises. 
 > It contains the copy the 'plot 3' table from the '2014' tab (this is the table that contains the problematic dates). 
@@ -132,7 +131,7 @@ and will insert that value. This may be incorrect if you are working with histor
 be very cautious when working with data that does not have a year specified within its date
 variable.
 
-> ## Exercise - default for missing year
+> ## Exercise
 >   
 > Look at the tab 'dates' in the messy data spreadsheet you used in previous exercises. 
 > It contains the copy the 'plot 3' table from the '2014' tab (this is the table that contains the problematic dates). 
@@ -157,7 +156,7 @@ variable.
 {: .challenge}
 
 
-> ## Exercise - exporting data with dates  
+> ## Exercise  
 > What happens to the dates in the `dates` tab of the messy spreadsheet if we export this sheet to `csv` 
 >(Comma--Separated Value format) and then open the file in a plain text editor (like TextEdit or Notepad)? 
 > What happens to the dates if we then open the `csv` file back in Excel?
@@ -188,7 +187,6 @@ from before and after this date, Excel will translate only the post-1900 dates i
 resulting in mixed data. If you are working with historic data, be extremely careful with your dates!
 
 ## Preferred date formats
-
 Regional data variations and missing years are at least two good reasons not to treat date as a single data point, 
 but as
 three distinct pieces of data (month, day, and year). Separating dates into their component parts
@@ -197,7 +195,7 @@ example data collected in January of multiple years with data collected in Febru
 
 Let's have a look at some better alternatives for storing dates.
 
-### <a name="day"></a> Storing dates as YEAR, MONTH, DAY
+### Storing dates as YEAR, MONTH, DAY
 
 Storing dates in YEAR, MONTH, DAY format helps remove this ambiguity. Let's look at this issue a bit closer.
 
@@ -212,7 +210,7 @@ data in different ways (doing that somewhat behind the scenes), there is a bette
 spreadsheets, separate date data into separate fields (day, month, year), which will eliminate any chance of
 ambiguity. 
 
-> ## Exercise - separating date into components
+> ## Exercise
 >
 > Challenge: pulling month, day and year out of dates. 
 >   
@@ -253,7 +251,7 @@ ambiguity.
 As for dates, times are handled in a similar way; seconds can be directly added but to add hour and minutes we need 
 to make sure that we are adding the quantities to the correct entities.
 
-> ## (Optional) Exercise - separating time into components 
+> ## (Optional) Exercise 
 > 
 > Challenge: pulling hour, minute and second out of the current time.
 >
