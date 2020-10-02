@@ -54,10 +54,16 @@ from the [Portal Project Teaching Dataset available on Figshare](http://figshare
 
 In this lesson, we will use the following files from the [Portal Project Teaching Dataset](http://figshare.com/articles/Portal_Project_Teaching_Database/1314459):
 
-- [survey_data_spreadsheet_messy.xls ](https://ndownloader.figshare.com/files/2252083) - messy survey data that we will attempt to clean
-- [surveys.csv](https://ndownloader.figshare.com/files/2292172) - the survey data  
-Fields: record_id, month, day, year, plot_id, species_id, sex, hindfoot_length, weight
-- [plots.csv](https://ndownloader.figshare.com/files/3299474) - information on plot number and type  
-Fields: plot_id, plot_type
-- [species.csv](https://ndownloader.figshare.com/files/3299483) - information on species codes and scientific name  
-Fields: species_id, genus, species, taxa
+- [survey_data_spreadsheet_messy.xls ](https://ndownloader.figshare.com/files/2252083) - messy survey data that you will attempt to clean during the lesson
+- Data from the project as separate files:
+    - [surveys.csv](https://ndownloader.figshare.com/files/2292172) - the survey data  
+    Fields: record_id, month, day, year, plot_id, species_id, sex, hindfoot_length, weight
+    - [plots.csv](https://ndownloader.figshare.com/files/3299474) - information on plot number and type  
+    Fields: plot_id, plot_type
+    - [species.csv](https://ndownloader.figshare.com/files/3299483) - information on species codes and scientific name  
+    Fields: species_id, genus, species, taxa
+- [combined.csv](https://ndownloader.figshare.com/files/10717186) - clean data from surveys, plots and species data 
+files combined into one clean file  
+Fields: record_id, month, day, year, plot_id, species_id, sex, hindfoot_length, weight, genus, species, taxa, plot_type
+
+
