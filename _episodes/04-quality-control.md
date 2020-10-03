@@ -185,19 +185,19 @@ If your dataset is well-structured and does not contain formulas, sorting should
 >
 > > ## Solution
 > > 
-> > 1. Click the `Sort` drop-down button on the Data tab from the top level menu in Excel and select 
-> > `Largest to Smallest` from the drop-down menu.  
+> > 1. Click the `Sort` button on the Data tab from the top level menu in Excel.
+> >  
     ![Image of sort button](../fig/sort-button.png)
 > > Note that in older versions of Excel you may get just the `Sort` button without the drop-down menu, followed 
 > > by a pop up window to specify the column you want to sort and the sort order (shown in figure below).
-> >     ![Image of sort pop up](../fig/sorting_example.png)
+    ![Image of sort pop up](../fig/sort-settings.png)
 > > 2. In the pop-up that appears make sure you select `Expand the selection` to make sure data in other columns is 
 > > moved together with the data in the column you are sorting.
     ![Image of expanding sort pop up](../fig/sort-expand.png)
 > > 3. Note how the odd values sort to the top and bottom of the data. 
 > > The cells containing no data values sort to the bottom of the tabular data, while the cells where the letter 
 > "g" was included can be found towards the top. This is a powerful way to check your data for outliers and odd values.
-> > ![Image of outliers sorted at the top](../fig/sorting_solution_1.png)
+> > ![Image of outliers sorted at the top](../fig/sort-result.png)
 > {: .solution}
 {: .challenge}
 

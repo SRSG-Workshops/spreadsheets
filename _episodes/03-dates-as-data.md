@@ -80,7 +80,7 @@ because it understands the date as a number `41822`, and `41822 + 90 = 41912`
 which Excel interprets as the 30th day of September, 2014. In most cases, it 
 retains the format of the cell that is being operated upon. Month and year rollovers are internally tracked and applied.
 
-> ## Note: adding and subtracting dates and times 
+> ## Note on adding and subtracting dates and times 
 > Adding months and years to a date is slightly trickier than adding days because we need to make
 > sure that we are adding the amount to the correct entity (i.e. month or year). To do so,
 >
