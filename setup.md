@@ -51,23 +51,22 @@ The original database is published at [Ecological Archives](http://esapubs.org/a
 > where suggested changes or additions to this dataset can be requested or contributed. 
 > This database is not designed for research as it intentionally removes some of the real-world complexities. The Python code used for converting the original database to this teaching version can be found in [create_portal_teach_dataset.py](https://github.com/weecology/portal-teachingdb/blob/master/create_portal_teaching_dataset.py). 
 >
-> **CITATION:** Ernest, Morgan; Brown, James; Valone, Thomas; White, Ethan P. (2017): Portal Project Teaching Database. figshare. https://doi.org/10.6084/m9.figshare.1314459.v6
+> **CITATION:** Ernest, Morgan; Brown, James; Valone, Thomas; White, Ethan P. (2017): Portal Project Teaching Database. Figshare. [https://doi.org/10.6084/m9.figshare.1314459.v6](https://doi.org/10.6084/m9.figshare.1314459.v6)
 {: .testimonial}
 
 In this lesson, we will use the following files from the [Portal Project Teaching Dataset](http://figshare.com/articles/Portal_Project_Teaching_Database/1314459). You should download all of these files as a preparation for the workshop.
 -  [survey_data_spreadsheet_messy.xls](/data/survey_data_spreadsheet_messy.xls?raw=true) - messy survey data 
-(in Excel's `.xls` format) that you will attempt to clean during the lesson and learn some best practices in 
-data organisation in the process.
-- Data from the project as separate files:
+(in Excel's `.xls` format) that you will clean during the lesson and use to learn some best practices in 
+data organisation.
+- Clean data from the project as separate files:
     - [surveys.csv](https://ndownloader.figshare.com/files/2292172) - the survey data  
     Fields: record_id, month, day, year, plot_id, species_id, sex, hindfoot_length, weight
     - [plots.csv](https://ndownloader.figshare.com/files/3299474) - information on plot number and type  
     Fields: plot_id, plot_type
-    - [species.csv](https://ndownloader.figshare.com/files/3299483) - information on species codes and scientific name  
+    - [species.csv](https://ndownloader.figshare.com/files/3299483) - information on species codes and scientific names  
     Fields: species_id, genus, species, taxa
 - [combined.csv](https://ndownloader.figshare.com/files/10717186) - clean data from surveys, plots and species data 
-files combined into one clean file (an example of what a clean data file should look like, and what you should
-be working towards)  
+files combined into one clean file (a good example of what a clean data file should look like)  
 Fields: record_id, month, day, year, plot_id, species_id, sex, hindfoot_length, weight, genus, species, taxa, plot_type  
 
 

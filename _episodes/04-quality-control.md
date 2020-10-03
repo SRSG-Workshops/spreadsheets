@@ -1,7 +1,7 @@
 ---
 title: "Quality assurance and control"
-teaching: 20
-exercises: 0
+teaching: 10
+exercises: 15
 questions:
 - "How can we carry out basic quality control and quality assurance in spreadsheets?"
 objectives:

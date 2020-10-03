@@ -2,7 +2,7 @@
 layout: lesson
 ---
 > ## Credit: Data Carpentry 
-> This lesson is based on [Data Carpentry's](https://datacarpentry.org.) Data Organisation In Spreadsheets lessons from the [ecology](https://datacarpentry.org/lessons/#ecology-workshop) and [social 
+> This lesson is based on [Data Carpentry's](https://datacarpentry.org.) "Data Organisation In Spreadsheets" lessons from the [ecology](https://datacarpentry.org/lessons/#ecology-workshop) and [social 
 > sciences](https://datacarpentry.org/lessons/#social-science-curriculum) curricula.
 {: .testimonial} 
 
@@ -20,11 +20,11 @@ this is where we want to start too!
 In this lesson, you will learn:
 
 - What the basic principles for using spreadsheets for good data organisation are and how to format 
-data in spreadsheets for effective data use
-- What some common mistakes with formatting data in spreadsheets are and how to avoid them
-- Peculiarities of storing and handling dates in spreadsheets and how to avoid mistakes with dates
-- Validating data on input for basic quality assurance in spreadsheets and to limit incorrect data on entry
-- How to export data from spreadsheets in a way that is useful for downstream applications or publications
+data in spreadsheets for effective data use,
+- What some common mistakes with formatting data in spreadsheets are and how to avoid them,
+- Peculiarities of storing and handling dates in spreadsheets and how to avoid mistakes with dates,
+- Validating data on input for basic quality assurance and control in spreadsheets and to limit incorrect data on entry, and
+- How to export data from spreadsheets in a way that is useful for downstream applications or publications.
 
 All these will help you to get your current data into a good shape and plan new data 
 collections so less "data cleaning" and "data wrangling" is needed in the future.
@@ -38,7 +38,7 @@ the above, a good reference is [Head First Excel](https://www.amazon.com/Head-Fi
  
 > ## Getting Started
 > This lesson assumes no prior knowledge of the computational skills or tools apart from the basic 
-> usage of spreadsheets and spreadsheet software.
+> usage of spreadsheet software.
 >
 > To get started, follow the directions in the "[Setup](setup/)" section to 
 > follow installation instructions and download the lesson data to your computer.
