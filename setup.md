@@ -9,7 +9,8 @@ LibreOffice, Gnumeric, OpenOffice.org, Google Spreadsheets. Commands may differ 
 but the general ideas for thinking about spreadsheets are the same.
 
 For this lesson, if you do not have a spreadsheet program already, you can use a free and open source tool LibreOffice 
-as it can open Excel spreadsheets, which is the format of the data we will work with during the lesson. 
+as it can open Excel spreadsheets, which is the format of the data we will work with during the lesson 
+(also all examples used refer to Excel). 
  
 ### Windows
 

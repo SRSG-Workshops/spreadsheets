@@ -116,7 +116,11 @@ $codeblock-padding: 5px !default;
 
 }
 
-.callout{ @include bkSetup($color-callout, "\e146"); }
+//.callout{ @include bkSetup($color-callout, "\e146"); }
+.callout { padding: 0 0 5px 5px; border: 1px solid; border-color: #f4fd9c; border-radius: 4px; margin: 15px 5px 10px 0; }
+.callout h2 { padding-top: 5px; padding-bottom: 5px; font-size: 20px; background: linear-gradient(to bottom, #f4fd9c, #f5fda6) !important; border-color: #f4fd9c !important; margin-top: 0px; margin-left: -5px; }
+.callout h2:before { font-family: 'Glyphicons Halflings'; content: "\e146" !important; float: left; padding-left: 5px; padding-right: 5px; display: inline-block; -webkit-font-smoothing: antialiased; }
+
 .challenge{ @include bkSetup($color-challenge, "\270f"); }
 .checklist{ @include bkSetup($color-checklist, "\e067"); }
 .discussion{ @include bkSetup($color-discussion, "\e123"); }
@@ -139,7 +143,7 @@ font-size: 18px;
 }
 
 .challenge    { background-color: #eec27520; }
-.callout      { background-color: #f4fd9c20; }
+.callout      { background-color: #f4fd9c20 !important; }
 .challenge    { background-color: #eec27520; }
 .checklist    { background-color: #dfd2a020; }
 .discussion   { background-color: #eec27520; }

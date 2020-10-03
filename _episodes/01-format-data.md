@@ -128,10 +128,9 @@ while you are working on reorganising the data. We will revisit this tab in
 > put them all together in one spreadsheet. 
 >
 > > ## Keep your raw data - raw 
-> > Do not forget our first piece of advice:
-> > create a new file (or a new tab) for the cleaned data, never
+> > Do not forget to create a new file or a new tab for the cleaned data; never
 > > modify your original (raw) data.
-> {: .callout}
+> {: .callout}  
 > 
 > > ## Solution
 > > All the mistakes in this messy dataset are addressed in the [next episode](../02-common-mistakes). 
