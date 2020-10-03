@@ -69,7 +69,6 @@ Say you had a research plan where you needed to conduct interviews with a
 set of informants or sample your data every ninety days for a year.
 
 In our example above, in a new cell you can  type:
-
     
     =B2+37
     
@@ -81,18 +80,20 @@ because it understands the date as a number `41822`, and `41822 + 90 = 41912`
 which Excel interprets as the 30th day of September, 2014. In most cases, it 
 retains the format of the cell that is being operated upon. Month and year rollovers are internally tracked and applied.
 
-> ## Note
-> Adding years and months and days is slightly trickier because we need to make
-> sure that we are adding the amount to the correct entity.
+> ## Note: adding and subtracting dates and times 
+> Adding months and years to a date is slightly trickier than adding days because we need to make
+> sure that we are adding the amount to the correct entity (i.e. month or year). To do so,
 >
-> - First we extract the single entities (day, month or year)
-> - We can then add values to do that
-> - Finally the complete date string is reconstructed using the `DATE()` function.
+> - first we need to extract single entities (day, month or year) from the date (how to do that is explained in one of the exercises below),
+> - then, we can add values to each entity (e.g. month or year),
+> - finally, we need to reconstruct the date from the update day, month, year entities using the `DATE()` function.  
+>
+> Times are handled in a similar way; seconds can be directly
+> added but to add hours and minutes we need to make sure that we are adding
+> the quantities to the correct entities. Extracting seconds, minutes and hours from a time is explained
+> in one of the exercises below.
 {: .callout}
 
-As for dates, times are handled in a similar way; seconds can be directly
-added but to add hour and minutes we need to make sure that we are adding
-the quantities to the correct entities.
 
 ## Regional date formatting
 When you enter a date into a spreadsheet it looks like a date although the spreadsheet program may
