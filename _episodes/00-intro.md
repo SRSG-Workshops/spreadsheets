@@ -24,23 +24,6 @@ further down the line. After this lesson, you will be able to:
 - Effectively export data from spreadsheet programs
 - Know overall good data practices
 
-Why are we not teaching data analysis in spreadsheets? 
-
-- Data analysis in spreadsheets usually requires a lot of manual
-  work. If you want to change a parameter or run an analysis with a
-  new dataset, you usually have to redo everything by hand or copy all the formulas to a new dataset. 
-  This is 
-  labourious and error-prone. We do know that you can create macros in spreadsheets, but see the next point.
-- There is no natural "starting point" for an analysis in a spreadsheet as it can happen in any cell. Some formulas 
-depend on formulas in other cells being evaluated and values calculated prior to execution.
-  This makes it difficult to follow, track or reproduce statistical or plotting
-  analyses done in spreadsheet programs when you want to go back to
-  your work or someone asks for details of your analysis or you inherit someone else's spreadsheet containing formulas.
-- There are better tools for doing data analysis - e.g. writing a Python or an R script. While these are 
-also not 
-error-proof (there is always the human factor), they are much more readable and easier to analyse, test and 
-verify by yourself and others.   
-
 ## Spreadsheet programs
 
 Many spreadsheet programs are available. Most researchers utilise Excel as their primary spreadsheet program and this lesson will make use of Excel examples. Free spreadsheet programmes that can also be used include LibreOffice, Gnumeric, OpenOffice.org or Google Spreadsheets. Commands may differ a bit between programs, but the general idea
@@ -55,8 +38,10 @@ to be able to do as researchers. We can use them for:
 - Statistics
 - Plotting
 
-However, think how many times have you accidentally done 
-something in a spreadsheet that made you frustrated?
+However, the intricacies of spreadsheets often make it hard to reproduce analyses done in spreadsheets, or to
+spot and correct errors. Sometimes this is due to human errors (you will learn how to avoid some of them); 
+at other times it is due to the spreadsheet programme itself (e.g. [20% of genetics papers contain errors due to Excel converting gene names to calendar dates](https://www.theverge.com/2020/8/6/21355674/human-genes-rename-microsoft-excel-misreading-dates)). 
+Have you event accidentally done something in a spreadsheet that made you frustrated?  
 
 ## Problems with spreadsheets
 
@@ -90,7 +75,7 @@ program to produce “quick and dirty” calculations or figures, and data
 cleaning will help you use some of these features. Data cleaning also
 puts your data in a better format prior to importation into a different 
 statistical analysis program. We will show you how to use some features of 
-spreadsheet programs to check your data quality along the way and produce 
+spreadsheet programs to check your data quality and produce 
 preliminary summary statistics.
 
 In this lesson we are going to talk about:
@@ -98,5 +83,5 @@ In this lesson we are going to talk about:
 1. [Formatting data in spreadsheets](../01-format-data/)
 2. [Common spreadsheet errors](../02-common-mistakes/)
 3. [Dates as data](../03-dates-as-data/)
-4. [Quality control](../04-quality-control/)
+4. [Quality assurance and control](../04-quality-control/)
 5. [Exporting data](../05-exporting-data/)

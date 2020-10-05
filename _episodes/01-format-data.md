@@ -21,7 +21,7 @@ unless we explain to the computer what every single thing means (and
 that can be hard!), it will not be able to see how our data fits
 together.
 
-Using the power of computers, we can manage and analyze data in much more 
+Using the power of computers, we can manage and analyse data in much more 
 effective and faster ways, but to use that power, we have to set up
 our data for the computer to be able to understand it (and computers are very 
 literal).
@@ -34,7 +34,7 @@ to work with your data throughout your analysis, so it is worth
 thinking about when you are doing your data entry or setting up your
 experiment. You can set things up in different ways in spreadsheets,
 but some of these choices can limit your ability to work with the data in other programs or
-have the you-of-6-months-from-now or your collaborator work with the
+limit how the "future self" or your collaborators can work with the
 data.
 
 > ## Best data formats may differ
@@ -52,9 +52,9 @@ very easy to end up with a spreadsheet that looks very different from the one
 you started with. In order to be able to reproduce your analyses or figure out
 what you did when Reviewer #3 asks for a different analysis, you should:
 
-- create a new copy of the original data file to keep your cleaned or analysed data. Do not modify
+- Create a new copy of the original data file to keep your cleaned or analysed data. Do not modify
 the original dataset, or you will never know where you started!
-- keep track of the steps you took in your clean up or analysis. You should record 
+- Keep track of the steps you took in your clean up or analysis. You should record 
 these steps as you would any step in an experiment. We recommend that you 
 do this in a plain text file stored in the same folder as the data file. 
 
@@ -62,7 +62,7 @@ This might be an example of a spreadsheet setup:
 
 ![spreadsheet setup](../fig/spreadsheet-setup-updated.png)
 
-Put these principles in to practice today during your exercises.
+Put these principles into practice today during your exercises.
 
 > ## Version controlling your data
 > This is out of scope for this lesson, but for information on how to maintain version control over your data in a more manageable and scalable way look, for example, at Software Carpentry's lesson on ['Git version control system'](http://swcarpentry.github.io/git-novice/).
@@ -81,11 +81,11 @@ The cardinal rule of using spreadsheet programs for data is to keep it "tidy":
 4. Leave the raw data raw - do not change it!
 5. Export the cleaned data to a text-based format like CSV (comma-separated values) format. This
    ensures that anyone can use the data, and is required by
-   most data repositories. We will covered this in one of the later episodes.
+   most data repositories. We will covere this in one of the later episodes.
 
 For instance, have a look at the following data from a survey of small mammals in a desert
 ecosystem. Different people have gone to the field and entered data into a spreadsheet. 
-They keep track of things like species, plot,
+They kept track of things like species, plot,
 weight, sex and date collected.
 
 If they were to keep track of the data like this:
@@ -94,17 +94,18 @@ If they were to keep track of the data like this:
 
 the problem is that species and sex are in the same field. So, if they wanted to 
 look at all of one species or look at different weight distributions by sex, 
-it would be hard to do this using this data setup. If instead we put sex and species 
-in different columns, you can see that it would be much easier. 
+it would be hard to do this using this data setup. If, instead, we put sex and species 
+in different columns, you can see that it would make it much easier to do such analyses. 
 
-## Columns for variables and rows for observations
-
-The rule of thumb, when setting up data in a table is: columns =
-variables, rows = observations, cells = data (values).
-
-So, instead we should have:
+So, instead, the data should be organised as:
 
 ![single-info example](../fig/single-info.png)
+
+> ## Columns for variables and rows for observations
+> The rule of thumb, when setting up data in a table is: columns = variables, rows = observations, cells = data (values).
+{: .callout}
+
+## Fixing mistakes in data organisation
 
 If you have not already done so, download the [messy survey data](/data/survey_data_spreadsheet_messy.xls?raw=true) 
 (as outlined in [Setup section](/setup.html#data)). You will attempt to clean this data during the lesson and learn 

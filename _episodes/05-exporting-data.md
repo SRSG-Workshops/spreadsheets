@@ -24,17 +24,18 @@ version) is not a good idea. Here are some reasons why:
   saved in a proprietary Excel format.
 - Different versions of Excel may handle data
   differently, leading to inconsistencies.
-- Finally, more journals and grant agencies are requiring you
+- Journals and grant agencies are increasingly requiring you
   to deposit your data in a data repository, and most of them do not
   accept Excel format. It needs to be in one of the formats
   discussed below.
-- The above points also apply to other formats such as open data formats used by LibreOffice / Open Office. These formats are not static and do not get parsed the same way by different software packages.
+
+The above points also apply to other formats such as open data formats used by LibreOffice / Open Office. These formats are not static and do not get parsed the same way by different software packages.
 
 As an example of inconsistencies in data storage, do you remember how we talked about how Excel stores dates earlier? It turns out that 
 there are multiple defaults for different versions of the software, and you can switch between them all. So, say you are
 compiling Excel-stored data from multiple sources. There are dates in each file - Excel interprets them as their own internally consistent
 serial numbers. When you combine the data, Excel will take the serial number from the place you are importing it from, and interpret it
-using the rule set for the version of Excel you’re using. Essentially, you could be adding errors to your data, and it would not
+using the rule set for the version of Excel you are using. Essentially, you could be adding errors to your data, and it would not
 necessarily be flagged by any data cleaning methods if your ranges overlap.
 
 Storing data in a universal, open, and static format will help deal with this problem. Try tab-delimited (tab separated values

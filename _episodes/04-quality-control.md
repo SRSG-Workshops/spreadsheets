@@ -117,8 +117,8 @@ values, you can select the right option from the list. Let’s apply this to our
 > > or `Validation Tools` (depending on your version of Excel).  
 > > 3. In the `Allow` box of the `Settings` tab select `List`.
 > > 4. Type a list of all the values that you want to be accepted in this column, separated by a comma (with no spaces). 
-> > For example, type "DM,NL,DS,PP,PE,PF". Note this is only a small subset of allowed species ids - the whole
-> > set is much larger but for the purposes of this exercise we want to show you how to restrict a cell to a list of 
+> > For example, type "DM,NL,DS,PP,PE,PF". Note this is only a small subset of allowed species ids - [the whole
+> > set](https://ndownloader.figshare.com/files/3299483) is much larger but for the purposes of this exercise we want to show you how to restrict a cell to a list of 
 > > values and what happens when old data does not conform to this restriction.  
 > >    ![Image of Data Validation window for validating list values](../fig/data-validation-list.png)
 > > 5. Create a meaningful input message and modify alert error type, as in the previous exercise, then click OK.  
@@ -155,9 +155,9 @@ take this step!
 {: .callout}
 
 > ## Tip: keep track of your modifications
-> As you start manipulating your data files, create a README text file to keep track of your files and
+> As you start manipulating your data files, create a `README.txt` text file to keep track of your files and
 document your manipulations so that they may be easily understood and replicated, either by your future self or by an independent
-researcher. Your README file should document all of the files in your data set (including documentation), describe their content and
+researcher. Your `README.txt` file should document all of the files in your data set (including documentation), describe their content and
 format, and lay out the organising principles of folders and subfolders. For each of the separate files listed, it is a good idea to
 document the manipulations or analyses that were carried out on those data. 
 [Cornell University's Research Data Management Service Group](https://data.research.cornell.edu/content/readme) provides detailed
@@ -178,26 +178,25 @@ If your dataset is well-structured and does not contain formulas, sorting should
 >
 > Look at the 'semi-cleaned-combined' tab of the [messy data spreadsheet](/data/survey_data_spreadsheet_messy.xls?raw=true). It contains tables from the messy data tabs 
 >'2013' and '2014' combined into a single table in a single tab (you will note that data is not yet fully cleaned). 
-> Download this semi-cleaned data file to your computer: [survey_sorting_exercise](https://github.com/datacarpentry/spreadsheet-ecology-lesson/blob/gh-pages/data/survey_sorting_exercise.xlsx?raw=true). 
 >
 > Sort the `weight_grams` column in your spreadsheet program from `Largest to Smallest`. 
 > What do you notice?
 >
 > > ## Solution
 > > 
-> > 1. Click the `Sort` button on the Data tab from the top level menu in Excel.
-> >  
+1. Select `weight_grams` column.
+2. Click the `Sort` button on the Data tab from the top level menu in Excel.
     ![Image of sort button](../fig/sort-button.png)
-> > Note that in older versions of Excel you may get just the `Sort` button without the drop-down menu, followed 
-> > by a pop up window to specify the column you want to sort and the sort order (shown in figure below).
+    Note that in older versions of Excel you may get just the `Sort` button without the drop-down menu, followed 
+    by a pop up window to specify the column you want to sort and the sort order (shown in figure below).
     ![Image of sort pop up](../fig/sort-settings.png)
-> > 2. In the pop-up that appears make sure you select `Expand the selection` to make sure data in other columns is 
-> > moved together with the data in the column you are sorting.
+3. In the pop-up that appears make sure you select `Expand the selection` to make sure data in other columns is 
+    moved together with the data in the column you are sorting.
     ![Image of expanding sort pop up](../fig/sort-expand.png)
-> > 3. Note how the odd values sort to the top and bottom of the data. 
-> > The cells containing no data values sort to the bottom of the tabular data, while the cells where the letter 
-> "g" was included can be found towards the top. This is a powerful way to check your data for outliers and odd values.
-> > ![Image of outliers sorted at the top](../fig/sort-result.png)
+4. Note how the odd values sort to the top and bottom of the data. 
+    The cells containing no data values sort to the bottom of the tabular data, while the cells where the letter 
+    "g" was included can be found towards the top. This is a powerful way to check your data for outliers and odd values.
+    ![Image of outliers sorted at the top](../fig/sort-result.png)
 > {: .solution}
 {: .challenge}
 
@@ -208,18 +207,18 @@ Conditional formatting should be used with caution, but it can be a great way to
 entering data. Let's apply some to our data.
 
 > ## Exercise
->  Using the same semi-cleaned data survey_sorting_exercise as earlier in this episode, apply 
+>  Look at the 'semi-cleaned-combined' tab of the 
+> [messy data spreadsheet](/data/survey_data_spreadsheet_messy.xls?raw=true) and apply 
 > any `2-Color Scale` formatting rule to column `weight_grams`.
 >
 > > ## Solution
-1. Open survey_sorting_exercise.csv file.
-2. Select `weight_grams` column.
-3. In the main Excel menu bar, click `Home` > `Conditional Formatting...` choose `New rule`. 
+1. Select `weight_grams` column.
+2. In the main Excel menu bar, click `Home` > `Conditional Formatting...` choose `New rule`. 
     ![Image of Conditional Formatting - adding new rule](../fig/conditional-formatting-new-rule.png)
-4. In the `New Formatting Rule` window, apply any `2-Color Scale` formatting rule.
+3. In the `New Formatting Rule` window, apply any `2-Color Scale` formatting rule.
     ![Image of Conditional Formatting - 2-colour scale](../fig/conditional-formatting-2-colour-scale.png)
-5. Now we can scan through and different colors will stand out. Do you notice any strange values? 
-6. Cells that contain non-numerical values are not coloured making them easier to spot. 
+4. Now we can scan through and different colors will stand out. Do you notice any strange values? 
+5. Cells that contain non-numerical values are not coloured making them easier to spot. 
    This includes both the cells where the letter "g" was 
    included and the empty cells. They show up at either at the top or at the bottom of the data but may not be as easy to 
    spot if you have a very large dataset and have to scroll up and down a lot.
@@ -231,5 +230,5 @@ entering data. Let's apply some to our data.
 > It is nice to be able to do these scans for outliers in spreadsheets (such as using sorting or conditional formatting), 
 but we can also do these
 checks in a programming languages like R, Python and SQL, or using OpenRefine - which may be even more suitable if you have 
-larger datasets with, e.g., with 10K+ or 100K+ rows. 
+larger datasets with, e.g., with 10K+ or 100K+ rows which are difficult to scroll down to the bottom of to spot outliers. 
 {: .testimonial}
