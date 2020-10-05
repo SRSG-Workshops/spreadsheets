@@ -25,8 +25,11 @@ kind: "lesson"
 # Please do not change it: <USERNAME>/<PROJECT> is correct.
 repository: <USERNAME>/<PROJECT>
 
-# Email address, no mailto:
+# The Carpentries email address, no mailto:
 email: "team@carpentries.org"
+
+# Contact URL:
+contact_url: "https://rsgsoton.net/contact/"
 
 # Sites.
 amy_site: "https://amy.software-carpentry.org/workshops"
