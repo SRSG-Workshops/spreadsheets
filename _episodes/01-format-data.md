@@ -107,7 +107,7 @@ So, instead, the data should be organised as:
 
 ## Fixing mistakes in data organisation
 
-If you have not already done so, download the [messy survey data]({{ relative_root_path }}{% link /data/messy_survey_data.xls %}) 
+If you have not already done so, download the [messy survey data](../data/messy_survey_data.xls) 
 (as outlined in [Setup section](/setup.html#data)). You will attempt to clean this data during the lesson and learn 
 some best practices in data organisation in the process.
 
