@@ -56,7 +56,7 @@ The original database is published at [Ecological Archives](http://esapubs.org/a
 {: .testimonial}
 
 In this lesson, we will use the following files from the [Portal Project Teaching Dataset](http://figshare.com/articles/Portal_Project_Teaching_Database/1314459). You should download all of these files as a preparation for the workshop.
--  [messy_survey_data.xls](/spreadsheets-data-organisation-and-management/spreadsheets-data-organisation-and-management/data/messy_survey_data.xls) - messy survey data 
+-  [messy_survey_data.xls](/data/messy_survey_data.xls) - messy survey data 
 (in Excel's `.xls` format) that you will clean during the lesson and use to learn some best practices in 
 data organisation.
 - Clean data from the project as separate files:
