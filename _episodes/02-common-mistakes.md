@@ -41,7 +41,7 @@ of common spreadsheet errors; we will cover each of them in turn.
 - [Date formatting](../03-dates-as-data/)
 
 > ## Exercise
-> 1. Use the same [messy data spreadsheet](/data/survey_data_spreadsheet_messy.xls?raw=true) where you attempted to clean the data in the previous exercise.
+> 1. Use the same [messy data spreadsheet](/data/messy_survey_data.xls?raw=true) where you attempted to clean the data in the previous exercise.
 > 2. Have a look at each of the spreadsheet errors described below and fix your spreadsheet (in a separate tab or a separate file), if you have not already.
 > 3. When you finish, compare yours with [this version of the clean dataset](https://ndownloader.figshare.com/files/2292172). 
 >They may not be identical, but they should have the same overall structure.
@@ -77,13 +77,18 @@ But what about workbook tabs? That seems like an easy way to organise data, righ
 
 This is not good practice for two reasons:
 
-1. you are more likely to accidentally add inconsistencies to your data if each time you take a measurement, you start recording data in a new tab, and
+1. you are more likely to accidentally add inconsistencies to your data if each time you take a measurement, you start 
+recording data in a new tab, and
 
-2. even if you manage to prevent all inconsistencies from creeping in, you will add an extra step for yourself before you analyse the
-data because you will have to combine these data into a single datatable. You will have to explicitly tell the computer how to combine
+2. even if you manage to prevent all inconsistencies from creeping in, you will add an extra step for yourself before 
+you analyse the
+data because you will have to combine these data into a single datatable. You will have to explicitly tell the computer 
+how to combine
 tabs - and if the tabs are inconsistently formatted, you might even have to do it manually.
 
-The next time you are entering data, and you go to create another tab or table, ask yourself if you could avoid adding this tab by adding another column to your original spreadsheet. We used multiple tabs in our example of a messy data file, but now you have seen how you can reorganise your data to consolidate across tabs.
+The next time you are entering data, and you go to create another tab or table, ask yourself if you could avoid adding 
+this tab by adding another column to your original spreadsheet. We used multiple tabs in our example of a messy data 
+file, but now you have seen how you can reorganise your data to consolidate across tabs.
 
 > ## Note on bigger data and column headers 
 >
