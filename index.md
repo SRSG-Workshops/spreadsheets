@@ -46,5 +46,5 @@ Why are we not teaching data analysis in spreadsheets?
 > usage of spreadsheet software.
 >
 > To get started, follow the directions in the "[Setup](setup/)" section to 
-> follow installation instructions and download the lesson data to your computer.
+> download the lesson data to your computer.
 {: .prereq}
