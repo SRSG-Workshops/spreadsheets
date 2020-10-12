@@ -41,7 +41,7 @@ of common spreadsheet errors; we will cover each of them in turn.
 - [Date formatting](../03-dates-as-data/)
 
 > ## Exercise
-> 1. Use the same [messy data spreadsheet](../data/messy_survey_data.xls) where you attempted to clean the data in the previous exercise.
+> 1. Use the same [messy data spreadsheet]({{ relative_root_path }}{% link /data/messy_survey_data.xls %}) where you attempted to clean the data in the previous exercise.
 > 2. Have a look at each of the spreadsheet errors described below and fix your spreadsheet (in a separate tab or a separate file), if you have not already.
 > 3. When you finish, compare yours with [this version of the clean dataset](https://ndownloader.figshare.com/files/2292172). 
 >They may not be identical, but they should have the same overall structure.
