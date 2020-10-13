@@ -17,7 +17,7 @@ keypoints:
 - "Include only one piece of information in a cell."
 - "Avoid spaces, numbers and special characters in column headers."
 - "Avoid special characters in your data."
-- "Record metadata in a separate plain text file."
+- "Record metadata in a separate plain text file (such as README.txt) in your project root folder or folder with data."
 ---
 
 There are a few potential errors to be on the lookout for in your own data as well as data from collaborators or 
@@ -201,11 +201,11 @@ Table below gives some examples of names to use and good alternatives as well as
 	<td> <b>Good Name</b></td> <br />
 	<td> <b>Good Alternative</b> </td><br />
 	<td> <b>Avoid</b></td><br />
-    <td> <b>Reason</b></td><br />
+    <td> <b>Reason to avoid</b></td><br />
 </tr>
 <tr>
 	<td>Max_temp_C</td>
-	<td>MaxTemp</td>
+	<td>MaxTempC</td>
 	<td>Maximum Temp (°C)</td>
     <td>Uses a special character (°)</td>
 </tr>

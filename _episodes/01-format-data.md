@@ -102,7 +102,7 @@ So, instead, the data should be organised as:
 ![single-info example](../fig/single-info.png)
 
 > ## Columns for variables and rows for observations
-> The rule of thumb, when setting up data in a table is: columns = variables, rows = observations, cells = data (values).
+> The rule of thumb, when setting up data in a table is: columns = variables, rows = observations, cells = data values.
 {: .callout}
 
 ## Fixing mistakes in data organisation

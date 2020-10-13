@@ -51,10 +51,11 @@ easily, although they may give you a warning during the file export.
 To save a file you have opened in Excel in CSV format:
 
 1. From the top menu select `File` then `Save as`.
-2. In the 'Format' field, from the list, select 'Comma Separated Values' (`*.csv`).
+2. You will be presented with different options for exporting to CSV file format, depending on your Excel version. 
+3. In the 'Format' field, from the list select `CSV UTF-8 (Comma-delimited)(*.csv)`.
     ![Saving an Excel file to CSV](../fig/excel-to-csv.png)
-3. Double check the file name and the location where you want to save it and hit 'Save'.
-4. If you are saving an Excel file with multiple tabs, Excel will save the currently active sheet and warn 
+4. Double check the file name and the location where you want to save it and hit 'Save'.
+5. If you are saving an Excel file with multiple tabs, Excel will save the currently active sheet and warn 
 you that you cannot save multiple sheets to a CSV file at the same time.  
 
     ![Saving active sheet warning](../fig/excel-to-csv-active-sheet.png)
