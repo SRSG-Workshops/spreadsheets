@@ -24,8 +24,7 @@ you expected to only include a day and a month.
 Additionally, Excel can [turn things that are not dates into dates](https://nsaunders.wordpress.com/2012/10/22/gene-name-errors-and-excel-lessons-not-learned/),
 for example names or identifiers like MAR1, DEC1, OCT4. Recently, scientists had to
 [rename human genes to stop
-Microsoft Excel from misreading them as dates](https://www.theverge.com/2020/8/6/21355674/human-genes-rename-microsoft-excel-misreading-dates), as it was estimated that 20% genetics research papers contained errors! So, avoiding the built-in date format overall
-may help you avoid such issues.
+Microsoft Excel from misreading them as dates](https://www.theverge.com/2020/8/6/21355674/human-genes-rename-microsoft-excel-misreading-dates), as it was estimated that 20% genetics research papers contained errors!
 
 The image below demonstrates some of the many date formatting options available in Excel.
 
@@ -34,9 +33,7 @@ The image below demonstrates some of the many date formatting options available 
 
 With such a bewildering array of date formats, combined with the fact that many real-world data sets are built up over time by
 different people, using different programs, all of whom may be making different assumptions, it becomes difficult
-to believe that the dates in any sizeable dataset can be accurate!
-
-Fortunately, there is a solution. The best route to unambiguously storing dates is to use separate columns for the day,
+to believe that the dates in any sizeable dataset can be accurate! Fortunately, there is a solution. The best route to unambiguously storing dates is to use separate columns for the day,
 month and year. Before we get to this solution, let's first investigate some of the major issues with how dates are
 stored in spreadsheets.
 
@@ -67,12 +64,12 @@ before 31 December 1899. Open a spreadsheet and add the following to the A1 cell
 
 Now move to a new cell and enter:
 
-    =A1 + 1
+    =A1+1
 
 Excel will provide the answer 1 January 1900 (in some format) because the result of this arithmetic returns a date after
 31 December 1899. Now try removing a day. Move to another cell and enter:
 
-    =A1 - 1
+    =A1-1
 
 Excel returns an error, because it is incapable of understanding that dates existed prior to 31 December 1899. This
 is, of course, a huge problem for historians (and many other researchers)!
@@ -106,8 +103,8 @@ Different countries write dates differently. If you are in the UK, you will inte
 as the 7th of December 1988. A researcher in the US will interpret the same entry as the
 12th of July. This regional variation is handled automatically by your spreadsheet program through a setting in the
  preferences. Errors are easily added to your spreadsheet if your preferences are set incorrectly or, more likely,
- you share a spreadsheet with a person from a country that uses a different date format. It is especially devastating if
- only some of the date formats are changed leaving you with a spreadsheet full of ambiguous dates and no way to repair
+ if you share a spreadsheet with a person from a country that uses a different date format. It is especially devastating if
+ only some of the date formats are changed, which leaves you with a spreadsheet full of ambiguous dates and no way to repair
  them.
 
 > ## Exercise
@@ -144,15 +141,12 @@ variable.
 > >     ![drag_dates](../fig/dates_missing_year.png)
 > > From the cell that is selected in the figure above, we can see that Excel has stored the date "08/01/2015"
 > > (i.e. 8 January 2015 using the DD/MM/YYYY format).
-> > This data was meant to pertain to 2014, but Excel has added the year 2015.
-> > the year is actually 2015.
+> > This data was meant to relate to 2014 but Excel has added the year 2015 instead.
 > >
-> > What happened here is
-> > that the field assistant who collected the data for year 2014 initially forgot to put their data for 'plot 3'
-> > in this dataset. They came back in 2015 to add the missing data into the dataset and entered the dates for 'plot 3'
-> > without the year. Excel automatically interpreted the year as 2015 - the year the data was entered into the
-> > spreadsheet and not the year the data was collected. Thereby, errors were introduced in the
-> > dataset without the field assistant realising.
+> > The cause of this change is that the field assistant who collected the data initially forgot to add their
+> > data for 'plot 3' in the dataset. They came back in 2015 to add the missing data into the dataset and entered the
+> > dates for 'plot 3' as they had been recorded - without the year. Excel automatically interpreted the year as 2015
+> >  the year in which the data was entered into the spreadsheet. This exemplifies how easy it is to introduce errors in dates.
 > {: .solution}
 {: .challenge}
 
@@ -163,16 +157,21 @@ variable.
 > What happens to the dates if we then open the `.csv` file back in Excel?
 > > ## Solution
 > > 1. Click to the `dates` tab of the [messy data spreadsheet](../data/messy_survey_data.xls).
-> > 2. Select `File -> Save As` in Excel and in the drop down menu for file format select `CSV UTF-8 (Comma delimited) (.csv)`.
-> > Write a file name to save to, e.g. `dates-export.csv`. Click `Save`.
+> > 2. Select `File -> Save As` in Excel and in the drop down menu for file format select `CSV UTF-8 (Comma delimited) (.csv)`
+> > (or `Text CSV (.csv)` in LibreOffice).
+> > Enter a file name, e.g. `dates-export.csv` and click `Save`.
 > > 3. You will see a pop-up that says "This workbook cannot be saved in the selected file
-> > format because it contains multiple sheets." Choose `Save Active Sheet` or `OK` depending on your Excel version.
-> > 4. Make sure you close your current messy data spreadsheet for now too (you can reopen it later). This is because
-> > Excel may treat the exported CSV file as the tab of the current (messy) workbook which is what we do not want.
-> > 5. Navigate to the `dates-export.csv` file (or whatever you named it) in your file system. Right click and select `Open With`.
-> > Choose a plain text editor application and view the file. Notice that the dates display as month/day without any year information.
-> > 6. Now right click on the file again and open with Excel. Notice that the dates display with the current year, not 2015.
-> > As you can see, exporting data from Excel and then importing it back into Excel fundamentally changed the data once again!
+> > format because it contains multiple sheets." Choose `Save Active Sheet` or `OK` depending on your Excel version
+> > (In LibreOffice you will see a `Confirm File Format` dialogue: select  `Use Text CSV format`. You will then be presented
+> > with a `Export Text File` dialogue: select `OK`. You will then be presented with a `Warning` dialogue: select `OK`.)
+> > 4. Close your current messy data spreadsheet (you can reopen it later).
+> > 5. Open the `dates-export.csv` file (or whatever you named it). Right click and select `Open With`.
+> > Choose a plain text editor (like TextEdit or Notepad) and view the file. Notice that the dates display as month/day
+> > without any year information.
+> > 6. Now right click on the file again and open with Excel (or LibreOffice). In Excel, notice that the dates display
+> > with the current year, not 2015 as previously assumed by Excel. In LibreOffice, no year is added, but the date is no
+> > longer treated as a date.
+> > As you can see, exporting data from a spreadsheet program and then importing it back again can fundamentally change the data!
 > {: .solution}
 {: .challenge}
 
@@ -182,31 +181,28 @@ representation of the date instead of the date's value. This can potentially lea
 to manipulate the data as they may not understand Excel's date encodings.
 {: .callout}
 
+
 ## Historical data
-Excel is unable to parse dates from before 1899-12-31, and will thus leave these untouched.  If you are
-mixing historic data
-from before and after this date, Excel will translate only the post-1900 dates into its internal format, thus
-resulting in mixed data. If you are working with historic data, be extremely careful with your dates!
+As far as Excel is concerned, time began on 31 December 1899 and any date before this time is not real. If you are
+mixing historic data from before and after this date, Excel will translate only the post-1900 dates into its internal
+format, resulting in mixed data. If you are working with historic data, be extremely careful with your dates!
+
 
 ## Preferred date formats
-Entering dates in one cell is helpful but due to the fact that the spreadsheet programs may interpret and
-save the data in different ways (doing that somewhat behind the scenes). Regional data variations and missing
-years are also good reasons not to treat date as a single data point. Separating dates into their component parts
-will avoid this confusion, while also giving the added benefit of allowing you to compare, for
-example data collected in January of multiple years with data collected in February of multiple years.
 
-Let's have a look at some good options for storing dates.
+Entering a date in a single cell is quick and easy, but it is open to so many potential problems that a new solution
+is needed if we are to remove ambiguity from spreadsheet dates. That solution is to separate dates into their component
+parts. Let's have a look at some good options for storing dates.
 
 ### Storing dates as YEAR, MONTH, DAY
 As previously mentioned, storing dates in YEAR, MONTH, DAY format is one good alternative for storing dates
-and eliminates any chance of ambiguity.
+and reduces the risk of ambiguity.
 
-For instance, this is a spreadsheet representing insect counts that were taken every few days over the summer,
-and things went something like this:
+For instance, the following is a spreadsheet that represents insect counts that were taken every few days over the summer:
 
 ![So, so ambiguous, it is even confusing Excel](../fig/6_excel_dates_2.jpg)
 
-Now, according to Excel, this person had been collecting bugs in the future!
+According to Excel, this person had been collecting bugs over a number of year, including some dates in the future!
 
 > ## Exercise
 >
@@ -233,11 +229,11 @@ Now, according to Excel, this person had been collecting bugs in the future!
 > > you will see the formulas and calculations for the month appearing in the cells below.
 > >   ![drag_dates](../fig/dates_day_formula.png)
 > > 3. To format the
-> > column 'day' as a whole number, right click on the column 'E' (for 'day') and select `Formal cells...` option.
+> > column 'day' as a whole number, right click on the column 'E' (for 'day') and select `Format cells...` option.
 > >   ![format_dates](../fig/format_dates.png)
 > > Select 'Number' and set decimal places to 0.
 > >   ![dates_as_number](../fig/dates_as_number.png)
-> > Repeat the same process for month and year. You should end up with a table like the one below.
+> > Repeat the process for month and year. You should end up with a table like the one below.
 > >   ![dates, exersize 1](../fig/dates_plot3.png)
 > > Again, as in the previous exercise but this time using the `YEAR()` function,
 > > we can see that Excel saved the year for data as 2015 (the year the data is entered) instead of 2014 (the
@@ -261,8 +257,6 @@ As for dates, times are handled in a similar way and there are functions to extr
 > 2. Calculate the current time using `NOW()-TODAY()`.
 > 3. Extract the hour, minute and second from the current time using
 > functions `HOUR()`, `MINUTE()` and `SECOND()`.
-> 4. Press `F9` to force the spreadsheet to recalculate the `NOW()` function,
-> and check that it has been updated.
 >
 > > ## Solution
 > > 1. To get the year, type `=YEAR(NOW())` into any cell in your spreadsheet. To get the month, type `=MONTH(NOW())`. To get the day, type `=DAY(NOW())`.
@@ -275,23 +269,18 @@ As for dates, times are handled in a similar way and there are functions to extr
 
 ### <a name="doy"></a> Storing dates as YEAR, DAY-OF-YEAR
 
-Storing dates as year and day-of-year (DOY) is another good alternative for storing dates. Depending on your
-research question, this format may be what is useful to you, and there is practically no possibility for ambiguity creeping in.
-
-Statistical models often incorporate year as a factor, or a categorical variable, rather than a numeric variable,
+Storing dates as year and day-of-year (DOY) is an alternative method of storing dates with little ambiguity. Statistical
+models often incorporate year as a factor, or a categorical variable, rather than a numeric variable,
 to account for year-to-year variation, and DOY can be used to measure the passage of time within a year.
 
-So, how can you convert all your dates into DOY format? For Excel, here is a useful guide:
+To convert all your dates into DOY format, here is a useful guide:
 
 ![Kill that ambiguity before it bites you!](../fig/7_excel_dates_3.jpg)
 
 ### <a name="str"></a> Storing dates as a single string
 
-Another alternative could be to convert the date string
-into a single string using the `YYYYMMDDhhmmss` format.
-For example the date `March 24, 2015 17:25:35` would
-become `20150324172535`, where:
-
+Another alternative is to convert the date string into a single string using the `YYYYMMDDhhmmss` format.
+For example the date `March 24, 2015 17:25:35` would become `20150324172535`, where:
 
 YYYY:   the full year, i.e. 2015
 MM:     the month, i.e. 03
@@ -300,6 +289,5 @@ hh:     hour of day, i.e. 17
 mm:     minutes, i.e. 25
 ss:     seconds, i.e. 35
 
-Such strings will be correctly sorted in ascending or descending order, and by
-knowing the format they can then be correctly parsed by the receiving data analysis
-software. Make sure your column containing such data is formatted as 'text'.
+Such strings will be correctly sorted in ascending or descending order and can be correctly parsed by the receiving data
+analysis software. Make sure your column containing such data is formatted as 'text'.
