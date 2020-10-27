@@ -187,11 +187,11 @@ reason they are not, create a new column to specify the units.
 ## <a name="info"></a> Entering more than one piece of information in a cell
 
 As described on the previous page, the rule is "one cell, one observation". For example, if you are counting species and
-you find one male, and one female of the same species, you enter this as '1M, 1F.' By this stage in the lesson, you will
+you find one male and one female of the same species, you could enter this as '1M, 1F.' By this stage in the lesson, you will
 probably find yourself instinctually repelled by this practice! If you record two pieces of data in the same cell, you
 will confuse data analysis software and this risks mistakes in analysis.
 
-The solution is to include one column for the number of individuals and a separate column for sex.
+The solution is to include one column for the number of individuals and a separate column for the sex.
 
 ## <a name="field_name"></a> Using problematic field names
 
@@ -277,28 +277,24 @@ analysis software.
 
 Best practice is to avoid adding anything other than text and spaces into a cell.
 
-## <a name="metadata"></a> Inclusion of metadata in data table
+## <a name="metadata"></a> Inclusion of metadata in the spreadsheet
 
-"Metadata" is data recorded about your data (such as the date the experiment was conducted, who conducted it, etc). It
+"Metadata" is the data you record about your data (such as the date the experiment was conducted, who conducted it, etc). It
 is essential to understanding the circumstances under which your data was collected. You may be on intimate terms with
 your dataset while you are collecting and analysing it, but this will change over time. After six months, you are
- unlikely to remember the exact algorithm you used to transform a variable, or "sglmemgp" means "single member of
- group". Collecting good metadata means that you don't need a photographic memory to understand your data later in your
- analysis.
+ unlikely to remember the exact algorithm you used to transform a variable, or that "sglmemgp" means "single member of
+ group". You don't need a photographic memory if you collect good metadata.
 
-Your data is important and there will be many people who may want to examine it. They will need good metadata if they
+Your data is important, which means there will be many people who will want to examine it. They will need good metadata if they
 are to understand your findings, review your submitted publication, replicate your results, design a similar study, or
-even to archive your data. While digital data by definition are machine-readable, understanding their meaning is a job for human beings. The
-importance of documenting your data during the collection and analysis phase of your research cannot be overestimated, especially if your
-research is going to be part of the scholarly record.
+even just want to archive your data. While digital data by definition are machine-readable, understanding their meaning
+is a job for human beings - and they need the help that metadata provides. The importance of documenting your data
+during the collection and analysis phase of your research cannot be overstated - it is fundamental.
 
-However, you should not be adding a legend at the top or bottom of your data table explaining column meaning, units,
-exceptions, etc. Metadata should not be contained in the data file itself. Unlike a table in a paper or a supplemental file, metadata (in the
-form of legends) should not be included in a data file since this information is not data, and including it can disrupt how computer
-programs interpret your data file. Rather, metadata should be stored as a separate file in the same directory as your data file,
-preferably in plain text format with a name that clearly associates it with your data file. Because metadata files are free text format,
-they also allow you to encode comments, units, information about how null values are encoded, etc. that are important to document but can
-disrupt the formatting of your data file.
+Metadata should not be contained in the data file itself, because it can disrupt how programs interpret your data file.
+Rather, metadata should be stored as a separate file in the same directory as your data file, preferably in plain text
+format (i.e. `.txt`) with a name that clearly associates it with your data file. Because metadata files are free text format,
+they allow you to encode comments, units, information about how null values are encoded and related information.
 
 Additionally, file or database level metadata describes how files that make up the dataset relate to each other; what format are they are
 in; and whether they supersede or are superseded by previous files. A folder-level `README.txt` file is the classic way of accounting for
