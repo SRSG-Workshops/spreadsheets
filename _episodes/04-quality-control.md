@@ -191,7 +191,8 @@ If your dataset is well-structured and does not contain formulas, sorting should
 > > ## Solution
 > >
 1. Select `weight_grams` column.
-2. Click the `Sort` button on the Data tab from the top level menu in Excel.
+2. Click the `Sort` button on the Data tab from the top level menu in Excel (in LibreOffice select the `Data` menu and
+ then select `Sort`.
     ![Image of sort button](../fig/sort-button.png)
     Note that in older versions of Excel you may get just the `Sort` button without the drop-down menu, followed
     by a pop up window to specify the column you want to sort and the sort order (shown in figure below).
@@ -220,7 +221,7 @@ entering data. Let's apply some to our data.
 > > ## Solution
 1. Select `weight_grams` column.
 2. In the main Excel menu bar, click `Home` > `Conditional Formatting...` choose `New rule` (in LibreOffice from the
- `Format` menu, select `Conditional` and then `Color scale`.
+ `Format` menu, select `Conditional` and then `Color scale`).
     ![Image of Conditional Formatting - adding new rule](../fig/conditional-formatting-new-rule.png)
 3. In the `New Formatting Rule` window, apply any `2-Color Scale` formatting rule. (In LibreOffice select `Color scale
  (2 entries)` from the top-middle drop-down list and click `OK`.
