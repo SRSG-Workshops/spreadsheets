@@ -39,7 +39,7 @@ compiling Excel-stored data from multiple sources. There are dates in each file 
 using the rule set for the version of Excel you are using. These rules may not align. Essentially, you could be adding
 errors to your data, and it would not necessarily be flagged by any data cleaning methods.
 
-Storing data in a universal, open, and static format will help deal with this problem, e.g. tab-delimited (tab separated values
+Storing data in a universal, open, and static format will help deal with this problem, e.g. formats such as tab-delimited (tab separated values
 or TSV) or comma-delimited (comma separated values or CSV). CSV files are plain text files where the columns are separated by commas,
 hence 'comma separated values' or CSV. The advantage of a CSV file over an Excel or other proprietary formats is that we
  can open and read a CSV file using just about any software, including plain text editors like TextEdit or NotePad. Hence
