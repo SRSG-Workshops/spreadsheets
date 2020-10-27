@@ -38,7 +38,8 @@ data organisation.
     Fields: species_id, genus, species, taxa
 - [combined.csv](https://ndownloader.figshare.com/files/10717186) - clean data from surveys, plots and species data 
 files combined into one clean file (a good example of what a clean data file should look like)  
-Fields: record_id, month, day, year, plot_id, species_id, sex, hindfoot_length, weight, genus, species, taxa, plot_type  
+Fields: `record_id`, `month`, `day`, `year`, `plot_id`, `species_id`, `sex`, `hindfoot_length`, `weight`, `genus`, 
+`species`, `taxa`, `plot_type`  
 
 ## Software
 
