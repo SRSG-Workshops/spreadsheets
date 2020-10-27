@@ -282,12 +282,12 @@ To convert all your dates into DOY format, here is a useful guide:
 Another alternative is to convert the date string into a single string using the `YYYYMMDDhhmmss` format.
 For example the date `March 24, 2015 17:25:35` would become `20150324172535`, where:
 
-YYYY:   the full year, i.e. 2015
-MM:     the month, i.e. 03
-DD:     the day of month, i.e. 24
-hh:     hour of day, i.e. 17
-mm:     minutes, i.e. 25
-ss:     seconds, i.e. 35
+* YYYY:   the full year, i.e. 2015
+* MM:     the month, i.e. 03
+* DD:     the day of month, i.e. 24
+* hh:     hour of day, i.e. 17
+* mm:     minutes, i.e. 25
+* ss:     seconds, i.e. 35
 
 Such strings will be correctly sorted in ascending or descending order and can be correctly parsed by the receiving data
 analysis software. Make sure your column containing such data is formatted as 'text'.
