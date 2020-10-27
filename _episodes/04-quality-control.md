@@ -207,7 +207,7 @@ If your dataset is well-structured and does not contain formulas, sorting should
 {: .challenge}
 
 ### Conditional formatting
-Conditional formatting basically can do something like color code your values by some
+Conditional formatting allows you to format data based on some criteria, e.g. you can colour code your values by some
 criteria from lowest to highest. This can also make it easier to scan your data for outliers.
 Conditional formatting should be used with caution, but it can be a great way to flag inconsistent values or errors when
 entering data. Let's apply some to our data.
@@ -219,15 +219,17 @@ entering data. Let's apply some to our data.
 >
 > > ## Solution
 1. Select `weight_grams` column.
-2. In the main Excel menu bar, click `Home` > `Conditional Formatting...` choose `New rule`.
+2. In the main Excel menu bar, click `Home` > `Conditional Formatting...` choose `New rule` (in LibreOffice from the
+ `Format` menu, select `Conditional` and then `Color scale`.
     ![Image of Conditional Formatting - adding new rule](../fig/conditional-formatting-new-rule.png)
-3. In the `New Formatting Rule` window, apply any `2-Color Scale` formatting rule.
+3. In the `New Formatting Rule` window, apply any `2-Color Scale` formatting rule. (In LibreOffice select `Color scale
+ (2 entries)` from the top-middle drop-down list and click `OK`.
     ![Image of Conditional Formatting - 2-colour scale](../fig/conditional-formatting-2-colour-scale.png)
-4. Now we can scan through and different colors will stand out. Do you notice any strange values?
+4. Now we can scan through the column and different colours will stand out. Do you notice any strange values?
 5. Cells that contain non-numerical values are not coloured making them easier to spot.
    This includes both the cells where the letter "g" was
    included and the empty cells. They show up at either at the top or at the bottom of the data but may not be as easy to
-   spot if you have a very large dataset and have to scroll up and down a lot.
+   spot if you have a very large dataset and have to scroll a lot.
        ![Image of Conditional Formatting - result](../fig/conditional-formatting-result.png)
 > {: .solution}
 {: .challenge}
