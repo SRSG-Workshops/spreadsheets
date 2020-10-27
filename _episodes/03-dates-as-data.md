@@ -101,25 +101,19 @@ is, of course, a huge problem for historians (and many other researchers)!
 {: .callout}
 
 ## Regional date formatting
-When you enter a date into a spreadsheet it looks like a date although the spreadsheet program may
-display different text from what you input. It does this to be 'helpful' but it often is not.
-For example if you enter '7/12/88' into your
-Excel spreadsheet it may display as '07/12/1988' (depending on your version of Excel). These
-are different ways of formatting the same date.
 
-Different countries also write dates differently. If you are in the UK, for example, you will interpret
-the date above as the 7th of December, however a researcher from the US will interpret the same entry as the
-12th of July. This regional variation is handled automatically by your
-spreadsheet program so that when you are typing in dates they appear as you would expect. If you
-try to type in a US format date into a UK version of Excel, it may or may not be treated as a
-date (i.e. it may not be detected as a date at all by a UK version of Excel and may be left as a string). This is
-especially bad when you have a mix of correct dates and dates Excel cannot parse in the same column, effectively
-mixing in two different data types for your data (strings and dates).
+Different countries write dates differently. If you are in the UK, you will interpret 7/12/88
+as the 7th of December 1988. A researcher in the US will interpret the same entry as the
+12th of July. This regional variation is handled automatically by your spreadsheet program through a setting in the
+ preferences. Errors are easily added to your spreadsheet if your preferences are set incorrectly or, more likely,
+ you share a spreadsheet with a person from a country that uses a different date format. It is especially devastating if
+ only some of the date formats are changed leaving you with a spreadsheet full of ambiguous dates and no way to repair
+ them.
 
 > ## Exercise
 >
 > Look at the tab 'dates' in the [messy data spreadsheet](../data/messy_survey_data.xls) you used in previous exercises.
-> It contains the copy the 'plot 3' table from the '2014' tab (this is the table that contains the problematic dates).
+> It contains a copy of the 'plot 3' table from the '2014' tab (this is the table that contains the problematic dates).
 > You will notice that there are years missing from the "Date collected" column. Just by looking at the entered dates,
 > can you figure out the date format that was used?
 >
@@ -140,18 +134,17 @@ variable.
 > ## Exercise
 >
 > Look at the tab 'dates' in the [messy data spreadsheet](../data/messy_survey_data.xls).
-> It contains the copy the 'plot 3' table from the '2014' tab (this is the table that contains the problematic dates).
+> It contains a copy of the 'plot 3' table from the '2014' tab (this is the table that contains the problematic dates).
 > Select one of the cells in "Date collected" column, for example cell 'A3'. What is the date Excel thinks is
 > entered? What is the year of the date?
 >
 > > ## Solution
 > > Select any cell in "Date collected" column. In the field for the cell formula at the top,
-> > Excel will display the value that is stored
-> > internally for this cell.
+> > Excel will display the value that is stored > > internally for this cell.
 > >     ![drag_dates](../fig/dates_missing_year.png)
 > > From the cell that is selected in the figure above, we can see that Excel has stored the date "08/01/2015"
 > > (i.e. 8 January 2015 using the DD/MM/YYYY format).
-> > You can see that even though we expected the year to be 2014 (this was data for year 2014),
+> > This data was meant to pertain to 2014, but Excel has added the year 2015.
 > > the year is actually 2015.
 > >
 > > What happened here is
