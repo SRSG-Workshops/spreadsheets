@@ -24,12 +24,11 @@ data organisation.
     Fields: plot_id, plot_type
 1. [species.csv](https://ndownloader.figshare.com/files/3299483) - cleaned information on species codes and scientific names
     Fields: species_id, genus, species, taxa
-<<<<<<< HEAD
 1. [combined.csv](https://ndownloader.figshare.com/files/10717186) - clean data from surveys, plots and species data
 files combined into one clean file (a good example of what a clean data file should look like)
 Fields: record_id, month, day, year, plot_id, species_id, sex, hindfoot_length, weight, genus, species, taxa, plot_type
 
-You can store the files anywhere - just remember where you downloaded them to!
+You can store the files anywhere - just remember where you downloaded them!
 
 ## Software
 
