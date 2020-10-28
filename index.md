@@ -32,6 +32,6 @@ collections so less "data cleaning" and "data wrangling" is needed in the future
 > This lesson assumes no prior knowledge of the computational skills or tools apart from the basic
 > usage of spreadsheet software.
 >
-> To get started, follow the directions in the "[Setup](spreadsheets-data-organisation-and-management/setup.html)" section to
+> To get started, follow the directions in the "[Setup](https://southampton-rsg.github.io/spreadsheets-data-organisation-and-management/setup.html)" section to
 > download the lesson data to your computer.
 {: .prereq}
