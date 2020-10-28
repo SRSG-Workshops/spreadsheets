@@ -40,7 +40,7 @@ available in Excel, check out the [Excel support page on data validation](https:
 It contains tables from the messy data tabs '2013' and '2014' combined into a single table (you may note that data is
 not fully yet cleaned, although it is in a much better shape than it was in the tabs '2013' and '2014').
 
-2. Select the the column 'plot_id'.
+2. Select the column 'plot_id'.
 
 3. On the `Data` tab from the top level menu select `Data Validation`, or `Data Tools` and then `Data Validation`
 or `Validation Tools` (depending on your version of Excel) or `Validity` in LibreOffice.
