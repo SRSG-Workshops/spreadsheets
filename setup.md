@@ -30,6 +30,10 @@ Fields: record_id, month, day, year, plot_id, species_id, sex, hindfoot_length, 
 
 You can store the files anywhere - just remember where you downloaded them!
 
+## Now what?
+
+Once you've downloaded the files, you can [start lesson](https://southampton-rsg.github.io/spreadsheets-data-organisation-and-management/00-intro/index.html).
+
 ## Software
 
 To interact with spreadsheets, you can use various software - for example Microsoft Excel,
