@@ -32,7 +32,7 @@ You can store the files anywhere - just remember where you downloaded them!
 
 ## Now what?
 
-Once you've downloaded the files, you can [start lesson](https://southampton-rsg.github.io/spreadsheets-data-organisation-and-management/00-intro/index.html).
+Once you've downloaded the files, you can [start the lesson](https://southampton-rsg.github.io/spreadsheets-data-organisation-and-management/00-intro/index.html).
 
 ## Software
 
