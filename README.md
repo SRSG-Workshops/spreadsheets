@@ -3,8 +3,10 @@
 [![Slack Status](https://img.shields.io/badge/Slack_Channel-dc--ecology--data--org-E01563.svg)](https://swcarpentry.slack.com/messages/C9WJAN3CH) 
 
 
-Data Carpentry Core Curriculum
-=============
+Data Organisation and Management
+================================
 
-This repository contains core material for the 2-day data carpentry workshop. Please see our [contribution guidelines](CONTRIBUTING.md) before contributing updates, bug fixes, or other corrections.
+This repository contains training material for lesson on best practices for data organisation and management using spreadsheets. This material is based on the lesson "Data Organization in Spreadsheets for Ecologists" from the [Data Carpentry code curriculum](https://datacarpentry.org/lessons/). 
+
+Please see our [contribution guidelines](CONTRIBUTING.md) before contributing updates, bug fixes, or other corrections.
  
