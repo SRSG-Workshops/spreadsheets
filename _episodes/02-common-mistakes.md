@@ -20,12 +20,12 @@ keypoints:
 - "Record metadata in a separate plain text file (such as README.txt) in your project root folder or folder with data."
 ---
 
-There are a few potential errors to be on the lookout for in your own data as well as data from collaborators or 
-elsewhere. If you are aware of the errors and the possible negative effect on downstream data analysis and result 
-interpretation, it might motivate yourself and your project members to try and avoid them. Making small changes 
-to the way you organise your data in spreadsheets can have a great impact on efficiency and reliability when it 
-comes to data cleaning and analysis. Here is the list 
-of common spreadsheet errors; we will cover each of them in turn.
+There are a few potential errors to be on the lookout for in spreadsheet data. If you are aware of the errors, and the
+complications they can cause on downstream data analysis and result interpretation, it helps motivate you and your
+project members to try and avoid them. It's far more efficient to prevent problems by making small changes in the way
+you collect data, than spending weeks or months cleaning messy data. Ultimately, good organisation of your data in
+improves your research efficiency and reliability. Here are some common spreadsheet errors, which we will cover in
+detail below:
 
 - [Using multiple tables](#tables)
 - [Using multiple tabs](#tabs)
@@ -41,161 +41,182 @@ of common spreadsheet errors; we will cover each of them in turn.
 - [Date formatting](../03-dates-as-data/)
 
 > ## Exercise
-> 1. Use the same [messy data spreadsheet](../data/messy_survey_data.xls) where you attempted to clean the data in the previous exercise.
-> 2. Have a look at each of the spreadsheet errors described below and fix your spreadsheet (in a separate tab or a separate file), if you have not already.
-> 3. When you finish, compare yours with [this version of the clean dataset](https://ndownloader.figshare.com/files/2292172). 
->They may not be identical, but they should have the same overall structure.
+> 1. Use the same [messy data spreadsheet](../data/messy_survey_data.xls) you used in the
+> previous exercise.
+> 2. Have a look at each of the spreadsheet errors described below and fix your spreadsheet (in a separate tab or a
+> separate file), if you have not already done so.
+> 3. When you finish, compare your clean spreadsheet with [surveys.csv](https://ndownloader.figshare.com/files/2292172)
+> which is the example cleaned data file you downloaded during set up. Your cleaned spreadsheet might not be identical
+> to the surveys.csv, but it should have the same overall structure.
 {: .challenge}
 
 ## Using multiple tables
 
-A common mistake is creating multiple data tables within
-one spreadsheet. This will confuse a data analysis programme, so do not do this!
-When you create multiple tables within one
-spreadsheet, you are making false associations between things for the computer,
-which sees each row as one observation (even though, for a human observer, these 
-are clearly separate observations). You are also potentially using the same
-field name in multiple places, which will make it harder to clean your data up
-into a usable form. The example below depicts the problem:
+A common mistake is creating multiple data tables within a single spreadsheet, as shown below. This will confuse a data analysis
+program (and many humans too).
 
 ![multiple tabs](../fig/2_datasheet_example.jpg)
 
-In the example above, the computer will see (for example) row 4 and assume that all columns A-AF 
-refer to the same sample. This row actually represents four distinct samples 
-(sample 1 for each of four different collection dates - May 29th, June 12th, June 19th, and June 26th), 
-as well as some calculated summary statistics (an average (avr) and standard error of measurement (SEM)) for two of those samples. Such rows are similarly problematic and virtually unusable by any 
-data analysis programme.
+There are a number of problems with multiple tables on one page. The main problem is that - although clearly separate to
+a human observer - a computer will rigidly interpret anything in the same row as belonging to the same observation.
 
-There is no reason why observations from different sites or different years should not go into a single table in the 
-same spreadsheet. You just need to introduce new columns to keep track of site and year. Keeping data
-pertaining to the same experiment in a single table will help you keep consistent data structure and avoid errors when 
-looking up data from different tables.  
+In the example above, the computer will read row 4 and assume that all
+columns A-AF refer to the same sample. This row actually represents four distinct samples (sample 1 for each of four
+different collection dates - May 29th, June 12th, June 19th, and June 26th), as well as some calculated summary
+statistics (an average (avr) and standard error of measurement (SEM)) for two of those samples.
+
+There is no reason why observations from different sites or different years should not go into a single table. You just
+need to keep track of them by using new columns (in this examples, one for site and one for year). Keeping data
+from the same experiment in a single table will help you stick to a consistent data structure, and avoid errors when
+looking up data from different tables.
+
+Using multiple tables on one page also makes it difficult for humans to keep track of the data - especially if one of
+the tables is *hidden* off the edge of the spreadsheet. Multiple tables also increases the risk of using the same column
+name in multiple places, which will make it significantly harder to clean your data.
 
 ## <a name="tabs"></a> Using multiple tabs
 
-But what about workbook tabs? That seems like an easy way to organise data, right? Well, yes and no. When you create extra tabs, you fail to allow the computer to see connections in the data that are there (you have to introduce spreadsheet application-specific functions or scripting to ensure this connection). Say, for instance, you make a separate tab for each day you take a measurement.
+But what about workbook tabs? Are they the easy solution to organising data? In a word, no!
 
-This is not good practice for two reasons:
+* When you create extra tabs, you prevent the computer from seeing connections that exist in the data. Before you can
+analyse the data, you need to explicitly tell the computer how to combine the data across tabs. If the tabs are
+inconsistently formatted, you might even have to do this manually, which is inefficient. We used multiple tabs in our
+example messy data file, and you have now seen how difficult it is to consolidate the data across tabs.
 
-1. you are more likely to accidentally add inconsistencies to your data if each time you take a measurement, you start 
-recording data in a new tab, and
+* Separating your data over multiple tabs means that you are more likely to accidentally add inconsistencies to your data,
+because it is all too easy to forget to change to the appropriate tab before recording new data. Similarly, when it
+comes to analysis, it's easy to draw data from the wrong tab.
 
-2. even if you manage to prevent all inconsistencies from creeping in, you will add an extra step for yourself before 
-you analyse the
-data because you will have to combine these data into a single datatable. You will have to explicitly tell the computer 
-how to combine
-tabs - and if the tabs are inconsistently formatted, you might even have to do it manually.
+Rather than entering data into multiple tabs, try adding another column to your spreadsheet.
 
-The next time you are entering data, and you go to create another tab or table, ask yourself if you could avoid adding 
-this tab by adding another column to your original spreadsheet. We used multiple tabs in our example of a messy data 
-file, but now you have seen how you can reorganise your data to consolidate across tabs.
-
-> ## Note on bigger data and column headers 
+> ## Note on bigger data and column headers
 >
 > Your datasheet might get very long over the course of the experiment. This makes it harder to enter data if you cannot see your headers
-> at the top of the spreadsheet. But do not be tempted to repeat your header row in the middle of your data - 
-> these headers will get mixed into the data leading to problems down the road. Instead, you can freeze the column headers so that they remain visible even when you have a spreadsheet with many rows. 
+> at the top of the spreadsheet. But do not be tempted to repeat your header row in the middle of your data -
+> these headers will get mixed into the data leading to problems down the road. Instead, you can freeze the column headers so that they remain visible even when you have a spreadsheet with many rows.
 > if you are not sure how to do this, see the [documentation on how to freeze column headers in Excel](https://support.office.com/en-ca/article/Freeze-column-headings-for-easy-scrolling-57ccce0c-cf85-4725-9579-c5d13106ca6a).
 {: .callout}
 
 ## <a name="zeros"></a> Not filling in zeros
 
-It might be that when you are measuring something, it is
-mostly zero. For example, the number of times a rabbit
-is observed in the survey. Why bother
-writing in the number zero in that column, when it is mostly zeros?
+Sometimes the thing you are measuring throws out the odd zero - sometimes the observations are almost all zeros. Is it
+really necessary to keep typing in zeros? Wouldn't it be more efficient to leave the column blank unless there's a
+non-zero?
 
-There is a big difference between a zero and a blank cell in a spreadsheet. To the computer, a zero is actually data. You measured
-or counted it. A blank cell means that it was not measured and the computer will interpret it as an unknown value (otherwise known as a
-*null* value). 
+To a computer, there is a big difference between a zero and a blank cell. A zero is data. A blank cell means that there
+was no measurement, and the computer will interpret it as an unknown value (otherwise known as a *null* value).
 
-The spreadsheets or statistical programs will likely misinterpret blank cells that you intend to be zeros. By not entering the value of
-your observation, you are telling your computer to represent that data as unknown or missing (null). This can cause problems with 
-subsequent calculations or analyses. For example, the average of a set of numbers which includes a single null value is always null
-(because the computer cannot guess the value of the missing observations). Because of this, it is very important to record zeros as zeros and truly missing data as nulls.
+Spreadsheets are likely to misinterpret blank cells that you intend to be zeros, and statistical analysis programs
+are very likely to interpret blank cells. By not entering the value of your observation, you are telling your computer
+to represent that data as unknown or missing (null). This can cause problems with later analysis. To take a simple
+example: the average of a set of numbers which includes a single null value is always null (because the computer cannot
+guess the value of the missing observations).
 
+It is very important to record zeros as zeros and truly missing data as nulls.
 
 ## <a name="null"></a> Using problematic null values
-Using problematic null values is as big a mistake as mixing zeros and null values. Fir example, 
-using -999 or other numerical values (or zero) to represent missing data. 
 
-There are a few reasons why null values get represented differently within a dataset.
-Sometimes confusing null values are automatically recorded from the measuring device. If that is the case, there is not 
-much you can do, but it can be addressed in data cleaning with a tool like 
-[OpenRefine](https://southampton-rsg.github.io/openrefine-data-organisation-and-management/) before analysis. Other times different null 
-values are used to convey different reasons why the data is not there. This is important information to capture, 
-but is in effect using one column to capture two pieces of information. Similar to fixing the errors when
-[using formatting to convey information](#formatting), it would be good here to create a new column, e.g. 
-'data_missing', and use that column to capture the different reasons. 
-
-Whatever the reason, it is a problem if unknown or missing data is recorded as -999, 999, or 0.
-Statistical programs do not know that these are intended to represent missing (null) values and, because they are 
-valid numbers, they will be used in calculations causing incorrect results. How these values are interpreted will depend on 
-the software you use to
-analyse your data. It is essential to use a clearly defined and consistent null indicator.
-Blanks (most applications) and 'NA' (for R) are good choices. White et al., 2013, explain good choices for 
-indicating null values for different software applications in their article:
-[Nine simple ways to make it easier to (re)use your data](http://doi.org/10.4033/iee.2013.6b.6.f).
+Null values are also problematic! Different people take different approaches to recording the lack of data (see below),
+but not all approaches are useful.
 
 ![White et al.](../fig/3_white_table_1.jpg)
 
+Sometimes different null values are used to describe the different reasons why the observation could not be made.
+"NULL", "missing data" and "malfunction", all convey important information, but you are in effect using a single column
+to capture three different types of information. This is messy, as described on the previous page, and the solution is
+to include new columns - one for each type of information you need to capture.
 
-## <a name="formatting"></a> Using formatting to convey information 
+Sometimes unacceptable null values are automatically recorded by the device you use to measure the observation (older
+devices are especially guilty of not following best practice). If the erroneous null values stem from the measuring
+device, you're left with little choice but to clean the data and replace them with a better null value. A tool like
+[OpenRefine](https://southampton-rsg.github.io/openrefine-data-organisation-and-management/), which will be introduced
+in a later lesson, is perfect for this kind of cleaning.
 
-For example, highlighting cells, rows or columns that should be excluded from an analysis (see figure below), or 
-leaving blank rows to indicate separations in data will cause problems with later data analyses.
+Whatever the reason, it is a problem if unknown or missing data is recorded as -999, 999, or 0.
+Statistical programs do not know that these are intended to represent missing (null) values and, because they are
+valid numbers, they will be included in calculations which will lead to incorrect results. How these values are
+interpreted will depend on the software you use to analyse your data.
+
+It is essential to use a clearly defined and consistent null indicator. Although open to ambiguity, blanks are still
+ used by a number of applications, but options like and 'NA' (for R) and 'NaN' (for Python) are good choices. For more
+ information, see White et al.
+ [Nine simple ways to make it easier to (re)use your data](http://doi.org/10.4033/iee.2013.6b.6.f).
+
+
+## <a name="formatting"></a> Using formatting to convey information
+
+A common examples of using formatting to convey information is to highlight cells in a sepcific colour that you want
+dealt with differently to others. For example, highlighting cells  that should be excluded from the analysis (see
+below). Another example is to leave a blank row to indicate a separation in the data. Both of these highlighting
+ approaches will cause problems with later analysis because they are undetectable to computers.
 
 ![formatting](../fig/formatting.png)
 
-The solution in this case is to create a new field to encode which data should be excluded.
+The solution - as is so often the case with spreadsheets - is to create a new column to encode the data that should be
+excluded.
 
 ![good formatting](../fig/good_formatting.png)
 
-
 ## <a name="formatting_pretty"></a> Using formatting to make the spreadsheet look pretty
 
-Fo example, merging cells (especially in headers) or using borders to separate different data.
+It's very difficult not to tweak your tables to make them look prettier, e.g. merging cells (especially in
+headers) or using borders to separate different data. If you are not careful, formatting a worksheet to be more
+aesthetically pleasing can compromise your computer’s ability to see associations in the data. For example, merged cells
+will confuse statistics software, which will read the merged cell as a single data value and cause misalignment with
+data in the following rows.
 
-If you are not careful, formatting a worksheet to be more aesthetically pleasing can compromise your computer’s ability to
-see associations in the data. Merged cells will make your data unreadable by statistics software, which will read the 
-merged cell as a single data value anc cause misalignment with data in the following rows. Consider restructuring your data in
-such a way that you will not need to merge cells to organise your data.
+Your primary goal with structuring data is to accurately capture the data and make the connections in the data transparent
+ to yourself and any program you use for analysis. You will want pretty tables for publications and suchlike, but those
+ should be completely separate from the tables you use to record the data.
 
 ## <a name="units"></a> Placing comments or units in cells
 
-Sometimes you need to make a note or a comment on an observation. For example, your data was collected, in part, 
-by a summer student who you later found out was misidentifying some of your species, some
-of the time. You want a way to note these data are suspect.
+Sometimes you need to make a note or a comment on an observation. For example, you may want to identify observations
+that were collected by a summer student who you later found out was misidentifying some of your species. These data you
+will want to identify as suspect.
 
-Most analysis software cannot see Excel or LibreOffice comments, and would be confused by comments placed within your data
-cells. As described above for formatting, create another field if you need to add notes to cells. Similarly, do not include units in
-cells: ideally, all the measurements you place in one column should be in the same unit, but if for some reason they are not, create
-another field and specify the units the adjacent cell is in.
+The problem is the same as that with formatting data to convey information: most analysis software cannot see Excel or
+LibreOffice comments, so they would be ignored. The solution is the same as described for formatting, create another
+ column if you need to add notes to cells.
+
+Do not include units in cells! They cause a headache in later analysis when you have to separate out the unit from its
+associated value. Ideally, all the measurements you place in one column should be in the same unit, but if for some
+reason they are not, create a new column to specify the units.
 
 
 ## <a name="info"></a> Entering more than one piece of information in a cell
 
-For example, you are counting species and you find one male, and one female of the same species. You enter this as 
-'1M, 1F.'
+As described on the previous page, the rule is "one cell, one observation". For example, if you are counting species and
+you find one male and one female of the same species, you could enter this as '1M, 1F.' By this stage in the lesson, you will
+probably find yourself instinctually repelled by this practice! If you record two pieces of data in the same cell, you
+will confuse data analysis software and this risks mistakes in analysis.
 
-Do not include more than one piece of information in a cell. This will limit the ways in which you can analyse your data. 
-If you need both these measurements, design your data sheet to include this information. 
-For example, include one column for number of
-individuals and a separate column for sex.
+The solution is to include one column for the number of individuals and a separate column for the sex.
 
 ## <a name="field_name"></a> Using problematic field names
-Choose descriptive field names, but be careful not to include spaces, numbers, or special characters of any kind. Spaces can be
-misinterpreted by parsers that use whitespace as delimiters and some programs do not like field names that are text strings that start
-with numbers.  
 
-Underscores (`_`) are a good alternative separator to spaces. Or consider writing names in camel case 
-(like this: ExampleFileName) to improve
-readability. Remember that abbreviations that make sense at the moment may not be so obvious in 6 months, 
-but do not overdo it with names
-that are excessively long. Including the units in the field names avoids confusion and enables others to readily 
-interpret your fields.
+The key here is to choose descriptive column names to allow for easy data identification.
 
-Table below gives some examples of names to use and good alternatives as well as names to avoid.
+There is a delicate balance in choosing the correct length of column name. Longer names allow you to adequately describe
+the data, but they can become unwieldy. It is better to err on the side of a longer, descriptive column name,
+than a shorter, ambiguous one. You can use abbreviations to reduce the length of column names, but these can quickly
+become obscure (especially if you don't return to the data for 6 months or longer). If you use unconventional
+abbreviations, make sure to keep a record of their full description in the text file you keep with the spreadsheet data.
+
+You must be careful with the characters you use. Do not use spaces, numbers, or special characters of any kind. All of
+these can cause problems when conducting later analysis. Spaces can be misinterpreted as delimiters (i.e. they can be
+used by some programs to show where a column begins and ends), some programs do not like field names that are text
+strings that start with numbers, and some characters (e.g. "/") can be misinterpreted by data analysis programs.
+
+Instead of spaces, the best advice is to use underscores (`_`) to separate words. Some people use CamelCase (where
+uppercase letters are used to delimit words, e.g. ExampleFileName) but they are more difficult to read and, if you ever
+want to return the whitespaces later in your analysis, it is easier to do this with underscore-separated words than
+CamelCase.
+
+Where all the observations share the same unit, it can be useful to include the unit in the field name to avoid later
+confusion. Alternatively, as described above, include the unit in a separate column.
+
+The table below gives some examples of best practice in naming:
 <table>
 <tr>
 	<td> <b>Good Name</b></td> <br />
@@ -214,26 +235,26 @@ Table below gives some examples of names to use and good alternatives as well as
 	<td>Precipitation</td>
 	<td>precmm </td>
     <td>Not very readable</td>
-</tr>	
+</tr>
 <tr>
 	<td>Mean_year_growth</td>
 	<td>MeanYearGrowth </td>
-	<td>Mean growth/year</td>	
+	<td>Mean growth/year</td>
     <td>Uses a special character (/)</td>
-</tr>	
+</tr>
 <tr>
 	<td>sex</td>
-	<td>sex</td>	
+	<td>sex</td>
 	<td>M/F</td>
     <td>Uses special character (/) and not very readable</td>
 </tr>
-<tr>	
+<tr>
 	<td>weight</td>
-	<td>weight</td>	
-	<td>w.</td>	
+	<td>weight</td>
+	<td>w.</td>
     <td>Uses a special character (.) and not very readable</td>
 </tr>
-<tr>	
+<tr>
 	<td>cell_type </td>
 	<td>CellType </td>
 	<td>Cell Type </td>
@@ -249,43 +270,35 @@ Table below gives some examples of names to use and good alternatives as well as
 
 ## <a name="special"></a> Using special characters in data
 
-A common mistake is treating your spreadsheet program as a word processor when writing notes. For example, copying 
-data directly from Microsoft Word or other applications. For example, when writing longer text in a cell, 
-people often include line breaks, em-dashes,
-etc. in their spreadsheet.  Also, when copying data in from applications such as Microsoft Word, 
-formatting and fancy non-standard characters (such
-as left- and right-aligned quotation marks) are included. When exporting this data into a coding/statistical environment or into a
-relational database, errors may occur - for example, lines being cut in half and encoding errors being thrown.
+Do not use your spreadsheet as a word processor! If you copy text directly from a Microsoft Word (or similar
+applications), you are likely to include lots of formatting information (e.g. tabs, line breaks, etc.)
+and fancy non-standard characters (left- and right-aligned quotation marks, em-dashes, etc.) that will confuse data
+analysis software.
 
-General best practice is to avoid adding characters such as newlines, tabs, and vertical tabs. In other words, 
-treat a text cell as if
-it was a simple Web form that can only contain text and spaces.
+Best practice is to avoid adding anything other than text and spaces into a cell.
 
-## <a name="metadata"></a> Inclusion of metadata in data table
+## <a name="metadata"></a> Inclusion of metadata in the spreadsheet
 
-Recording data about your data (“metadata”) is essential. You may be on intimate terms with your dataset while you are 
-collecting and analysing it, but the chances that you will still remember that the variable "sglmemgp" means single 
-member of group, for
-example, or the exact algorithm you used to transform a variable or create a derived one, after a few months, a year, 
-or more are slim.  
+"Metadata" is the data you record about your data (such as the date the experiment was conducted, who conducted it, etc). It
+is essential to understanding the circumstances under which your data was collected. You may be on intimate terms with
+your dataset while you are collecting and analysing it, but this will change over time. After six months, you are
+ unlikely to remember the exact algorithm you used to transform a variable, or that "sglmemgp" means "single member of
+ group". You don't need a photographic memory if you collect good metadata.
 
-As well, there are many reasons other people may want to examine or use your data - to understand your findings, to verify your findings,
-to review your submitted publication, to replicate your results, to design a similar study, or even to archive your data for access and 
-re-use by others. While digital data by definition are machine-readable, understanding their meaning is a job for human beings. The 
-importance of documenting your data during the collection and analysis phase of your research cannot be overestimated, especially if your
-research is going to be part of the scholarly record.
+Your data is important, which means there will be many people who will want to examine it. They will need good metadata if they
+are to understand your findings, review your submitted publication, replicate your results, design a similar study, or
+even just want to archive your data. While digital data by definition are machine-readable, understanding their meaning
+is a job for human beings - and they need the help that metadata provides. The importance of documenting your data
+during the collection and analysis phase of your research cannot be overstated - it is fundamental.
 
-However, you should not be adding a legend at the top or bottom of your data table explaining column meaning, units, 
-exceptions, etc. Metadata should not be contained in the data file itself. Unlike a table in a paper or a supplemental file, metadata (in the 
-form of legends) should not be included in a data file since this information is not data, and including it can disrupt how computer 
-programs interpret your data file. Rather, metadata should be stored as a separate file in the same directory as your data file, 
-preferably in plain text format with a name that clearly associates it with your data file. Because metadata files are free text format,
-they also allow you to encode comments, units, information about how null values are encoded, etc. that are important to document but can
-disrupt the formatting of your data file.  
+Metadata should not be contained in the data file itself, because it can disrupt how programs interpret your data file.
+Rather, metadata should be stored as a separate file in the same directory as your data file, preferably in plain text
+format (i.e. `.txt`) with a name that clearly associates it with your data file. Because metadata files are free text format,
+they allow you to encode comments, units, information about how null values are encoded and related information.
 
-Additionally, file or database level metadata describes how files that make up the dataset relate to each other; what format are they are 
-in; and whether they supersede or are superseded by previous files. A folder-level `README.txt` file is the classic way of accounting for 
-all the files and folders in a project.  
+Additionally, file or database level metadata describes how files that make up the dataset relate to each other; what format are they are
+in; and whether they supersede or are superseded by previous files. A folder-level `README.txt` file is the classic way of accounting for
+all the files and folders in a project.
 
 > ## Credit: MANTRA
 > The above text on metadata was adapted from the online course Research Data [MANTRA](http://datalib.edina.ac.uk/mantra) by EDINA and Data Library, University of Edinburgh. MANTRA is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
