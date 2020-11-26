@@ -28,6 +28,12 @@ data in spreadsheets for effective data use,
 All these will help you to get your current data into a good shape and plan new data
 collections so less "data cleaning" and "data wrangling" is needed in the future.
 
+> ## Screenshots
+> Throughout this lesson we will show content and screenshots from Excel. As an actively 
+> developed software, Excel is adding new features or changing visual elements. Screenshots in this lesson may 
+> then become slightly out-of-sync and may not look identical as on your computer.
+{: .callout}
+
 > ## Getting Started
 > This lesson assumes no prior knowledge of the computational skills or tools apart from the basic
 > usage of spreadsheet software.
