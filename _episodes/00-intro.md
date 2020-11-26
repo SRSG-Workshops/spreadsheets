@@ -65,7 +65,7 @@ spreadsheet.
 * There are better tools for data analysis, e.g. writing a Python or an R script. While these are not
 error-proof (nothing is!), they are much more readable and easier to analyse, test and verify by yourself and others.
 
-## Using spreadsheets for data cleaning
+## Using spreadsheets for data entry and cleaning
 
 We will show you how to use some features of spreadsheet programs to check your data quality and how to clean your
 data before importing it into a statistical analysis program.
