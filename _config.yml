@@ -27,7 +27,7 @@ repository: <USERNAME>/<PROJECT>
 
 # Soton RSG details:
 email: "rsg-info@soton.ac.uk"
-website_url: "https://rsgsoton.net/contact/"
+website_url: "https://rsgsoton.net/"
 
 # Sites.
 amy_site: "https://amy.software-carpentry.org/workshops"
