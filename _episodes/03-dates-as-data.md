@@ -67,7 +67,7 @@ Now move to a new cell and enter:
     =A1+2
 
 Excel will provide the answer 3 January 1900 (in some format) because the result of this arithmetic returns a date 2 days after
-1 January 1900. Now try removing 2 day2. Move to another cell and enter:
+1 January 1900. Now try removing 2 days. Move to another cell and enter:
 
     =A1-2
 
