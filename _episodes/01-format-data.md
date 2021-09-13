@@ -31,32 +31,6 @@ choices you make now will limit your ability to work with the data in the future
 > ideally you would automate the conversion with a script in, say, Python or R.
 {: .callout}
 
-## Keeping track of your analyses
-
-When you are working with spreadsheets, the spreadsheet you end up with will often look very different to the one
-you started with. With each change, you are losing information about the history of the data. How many times have you
-needed to roll back an analysis, only to become completely lost when retracing your steps? There are ways of mitigating
-this problem:
-
-- Before starting your analysis, create a new copy of the original data file to keep alongside your analysed data. This
-way, you will always be able to check changes against your original dataset and, if the worst comes to the worst, it
-will be easy to start the analysis again!
-- Record the steps you take as you conduct your analysis. You should record
-these steps as you would any step in an experiment. We recommend that you
-do this in a plain text file stored in the same folder as the data file.
-
-The the following example, the spreadsheet has 'raw' tabs in which to store the original, untouched data and 'clean'
-tabs in which the processed data is stored. It is accompanied with a text file that describes the steps that have been
-taken.
-
-![spreadsheet setup](../fig/spreadsheet-setup-updated.png)
-
-> ## Version controlling your data
-> Although out of scope for this lesson, you can learn about version control in a [separate course](https://southampton-rsg.github.io/swc-git-novice/), 
-> which can be used to
-> record the transformation of your data over time, and provides tools to roll back to any previous version of the data.
-{: .callout}
-
 ## Structuring data in spreadsheets
 
 The cardinal rule of using spreadsheet programs for data is to keep it "tidy":
@@ -83,12 +57,38 @@ There are problems like the species and sex variables being in the same field. T
 to easily look at all of one species, or look at different weight distributions by sex. If, instead, we put sex and
 species in different columns, it would be much easier to perform such analyses.
 
-The data should be organised:
+The data could be better organised as:
 
 ![single-info example](../fig/single-info.png)
 
 > ## Columns for variables and rows for observations
 > The rule of thumb, when setting up data in a table is: columns = variables, rows = observations, cells = data values.
+{: .callout}
+
+## Keeping track of your analyses
+
+When you are working with data in spreadsheets, the spreadsheet you end up with will often look very different to the one
+you started with. With each change, you are losing information about the history of the data. How many times have you
+needed to roll back an analysis, only to become completely lost when retracing your steps? There are ways of mitigating
+this problem:
+
+- Before starting your analysis, create a new copy of the original data file to keep alongside your analysed data. This
+way, you will always be able to check changes against your original dataset and, if the worst comes to the worst, it
+will be easy to start the analysis again!
+- Record the steps you take as you conduct your analysis. You should record
+these steps as you would any step in an experiment. We recommend that you
+do this in a plain text file stored in the same folder as the data file.
+
+The the following example, the spreadsheet has 'raw' tabs in which to store the original, untouched data and 'clean'
+tabs in which the processed data is stored. It is accompanied with a text file that describes the steps that have been
+taken.
+
+![spreadsheet setup](../fig/spreadsheet-setup-updated.png)
+
+> ## Version controlling your data
+> Although out of scope for this lesson, you can learn about version control in a [separate course](https://southampton-rsg.github.io/swc-git-novice/), 
+> which can be used to
+> record the transformation of your data over time, and provides tools to roll back to any previous version of the data.
 {: .callout}
 
 ## Fixing mistakes in data organisation
