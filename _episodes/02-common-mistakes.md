@@ -17,7 +17,6 @@ keypoints:
 - "Include only one piece of information in a cell."
 - "Avoid spaces, numbers and special characters in column headers."
 - "Avoid special characters in your data."
-- "Record metadata in a separate plain text file (such as README.txt) in your project root folder or folder with data."
 ---
 
 There are a few potential errors to be on the lookout for in spreadsheet data. If you are aware of the errors, and the
