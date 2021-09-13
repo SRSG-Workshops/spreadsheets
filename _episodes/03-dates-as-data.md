@@ -46,7 +46,7 @@ is stored as number 2, and so on. In the example above, 2 July 2014 is stored as
 the number 41822.
 
 Storing dates as a number has some advantages: it's easy to add days to a given date using simple arithmetic.
-If you had a plan to conduct interviews with every ninety days, you could type:
+If you had a plan to conduct interviews every ninety days, you could type:
 
     =B2+90
 
