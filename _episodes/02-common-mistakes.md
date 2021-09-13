@@ -36,7 +36,7 @@ detail below:
 - [Entering more than one piece of information in a cell](#info)
 - [Using problematic field names](#field_name)
 - [Using special characters in data](#special)
-- [Inclusion of metadata in data table](#metadata)
+- [Inclusion of metadata within data](#metadata)
 - [Date formatting](../03-dates-as-data/)
 
 > ## Exercise
@@ -275,3 +275,12 @@ and fancy non-standard characters (left- and right-aligned quotation marks, em-d
 analysis software.
 
 Best practice is to avoid adding anything other than text and spaces into a cell.
+
+## <a name="metadata"></a> Inclusion of metadata within data
+
+We have already learned that metadata is the data you record about your data - how the data was collected and organised. 
+This is just to reiterate that metadata should not be contained within the data itself. So, you should 
+explain comments, units, information about how null values are encoded and all other information relevant to your data in 
+a separate file in the same folder as your data or a separate tab within your data spreadsheet.
+
+
