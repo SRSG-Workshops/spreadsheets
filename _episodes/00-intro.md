@@ -11,15 +11,6 @@ keypoints:
 - "Good data organisation is the foundation of any research project."
 ---
 
-After this lesson, you will be able to:
-
-* Implement best practices in organising tabular data (that is, data organised in rows and columns)
-* Identify and address common formatting mistakes
-* Understand approaches for handling dates in spreadsheets
-* Utilise basic quality control to validate data on input and limit incorrect data entry
-* Effectively export data from spreadsheet programs
-* Know overall good data practices
-
 ## Spreadsheet programs
 
 Good data organisation is the foundation of any research project that relies on data analysis - it is of paramount
@@ -63,4 +54,12 @@ error-proof (nothing is!), they are much more readable and easier to analyse, te
 We will show you how to use some features of spreadsheet programs to check your data quality and how to clean your
 data before importing it into a statistical analysis program.
 
-Click the arrow in the bottom right of the page to proceed to the next lesson.
+During this lesson, you will:
+
+* Implement best practices in organising tabular data (that is, data organised in rows and columns)
+* Identify and address common formatting mistakes
+* Understand approaches for handling dates in spreadsheets
+* Utilise basic quality control to validate data on input and limit incorrect data entry
+* Learn some features of spreadsheet programs to check your data quality and how to clean your
+data before importing it into a statistical analysis program
+* Learn overall good data organisation practices
