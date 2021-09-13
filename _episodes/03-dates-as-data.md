@@ -202,7 +202,7 @@ For instance, the following is a spreadsheet that represents insect counts that 
 
 ![So, so ambiguous, it is even confusing Excel](../fig/6_excel_dates_2.jpg)
 
-According to Excel, this person had been collecting bugs over a number of year, including some dates in the future!
+According to Excel, this person had been collecting bugs over a number of years, including some dates in the future!
 
 > ## Exercise
 >
