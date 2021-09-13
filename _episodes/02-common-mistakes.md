@@ -276,30 +276,3 @@ and fancy non-standard characters (left- and right-aligned quotation marks, em-d
 analysis software.
 
 Best practice is to avoid adding anything other than text and spaces into a cell.
-
-## <a name="metadata"></a> Inclusion of metadata in the spreadsheet
-
-"Metadata" is the data you record about your data (such as the date the experiment was conducted, who conducted it, etc). It
-is essential to understanding the circumstances under which your data was collected. You may be on intimate terms with
-your dataset while you are collecting and analysing it, but this will change over time. After six months, you are
- unlikely to remember the exact algorithm you used to transform a variable, or that "sglmemgp" means "single member of
- group". You don't need a photographic memory if you collect good metadata.
-
-Your data is important, which means there will be many people who will want to examine it. They will need good metadata if they
-are to understand your findings, review your submitted publication, replicate your results, design a similar study, or
-even just want to archive your data. While digital data by definition are machine-readable, understanding their meaning
-is a job for human beings - and they need the help that metadata provides. The importance of documenting your data
-during the collection and analysis phase of your research cannot be overstated - it is fundamental.
-
-Metadata should not be contained in the data file itself, because it can disrupt how programs interpret your data file.
-Rather, metadata should be stored as a separate file in the same directory as your data file, preferably in plain text
-format (i.e. `.txt`) with a name that clearly associates it with your data file. Because metadata files are free text format,
-they allow you to encode comments, units, information about how null values are encoded and related information.
-
-Additionally, file or database level metadata describes how files that make up the dataset relate to each other; what format are they are
-in; and whether they supersede or are superseded by previous files. A folder-level `README.txt` file is the classic way of accounting for
-all the files and folders in a project.
-
-> ## Credit: MANTRA
-> The above text on metadata was adapted from the online course Research Data [MANTRA](http://datalib.edina.ac.uk/mantra) by EDINA and Data Library, University of Edinburgh. MANTRA is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
-{: .testimonial}
