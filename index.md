@@ -28,6 +28,13 @@ data in spreadsheets for effective data use,
 All these will help you to get your current data into a good shape and plan new data
 collections so less "data cleaning" and "data wrangling" is needed in the future.
 
+In this lesson, however, you will not learn:
+
+- How to use statistics and formulas in spreadsheets, or
+- How to plot graphs using spreadsheets
+
+There are many good tutorials available online on the topic of data analysis in spreadsheets. If you are looking to learn any of the above, a good reference is [Head First Excel](https://www.amazon.com/Head-First-Excel-learners-spreadsheets/dp/0596807694/ref=sr_1_1?ie=UTF8&qid=1491594584&sr=8-1&keywords=head+first+excel), published by O’Reilly.
+
 > ## Screenshots
 > Throughout this lesson we will show content and screenshots from Excel. As an actively 
 > developed software, Excel is adding new features or changing visual elements. Screenshots in this lesson may 
