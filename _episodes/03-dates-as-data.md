@@ -72,7 +72,7 @@ Excel will provide the answer 3 January 1900 (in some format) because the result
     =A1-2
 
 Excel returns an error, because it is incapable of understanding that dates existed prior to 1 January 1900. This
-is, of course, a huge problem for historians (and many other researchers)!
+poses a huge problem for storing historical data!
 
 > ## Note on adding and subtracting dates and times
 > Adding months and years to a date is slightly trickier than adding days because we need to make
