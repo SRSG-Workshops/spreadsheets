@@ -60,7 +60,7 @@ tracked and applied.
 However, there is also a significant problem with this system, which is that Excel refuses to believe that dates existed
 before 31 December 1899. Open a spreadsheet and add the following to the A1 cell:
 
-     1 December 1900
+     1 January 1900
 
 Now move to a new cell and enter:
 
