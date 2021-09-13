@@ -52,7 +52,8 @@ taken.
 ![spreadsheet setup](../fig/spreadsheet-setup-updated.png)
 
 > ## Version controlling your data
-> Although out of scope for this lesson, you will learn about version control later in the course. It allows you to
+> Although out of scope for this lesson, you can learn about version control in a [separate course](https://southampton-rsg.github.io/swc-git-novice/), 
+> which can be used to
 > record the transformation of your data over time, and provides tools to roll back to any previous version of the data.
 {: .callout}
 
