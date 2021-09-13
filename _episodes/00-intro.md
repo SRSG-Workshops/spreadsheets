@@ -51,9 +51,6 @@ error-proof (nothing is!), they are much more readable and easier to analyse, te
 
 ## Using spreadsheets for data organisation, entry and cleaning
 
-We will show you how to use some features of spreadsheet programs to check your data quality and how to clean your
-data before importing it into a statistical analysis program.
-
 During this lesson, you will:
 
 * Implement best practices in organising tabular data (that is, data organised in rows and columns)
