@@ -90,5 +90,5 @@ You can open CSV files in Excel (or LibreOffice)!
 > enclosed with double quotes. This should occur automatically when you export from a spreadsheet program.
 > However, it is always a good idea to double check your CSV after it is saved by opening it in a spreadsheet program
 > and reviewing the columns to ensure that no new ones have been added. For more of a discussion on data formats and
-> potential issues with commas within datasets see [the discussion page](/discuss).
+> potential issues with commas within datasets see [the discussion page](/discuss/index.html).
 {: .callout}
