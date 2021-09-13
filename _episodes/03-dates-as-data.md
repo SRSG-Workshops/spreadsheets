@@ -64,12 +64,12 @@ before 31 December 1899. Open a spreadsheet and add the following to the A1 cell
 
 Now move to a new cell and enter:
 
-    =A1+1
+    =A1+2
 
-Excel will provide the answer 2 January 1900 (in some format) because the result of this arithmetic returns a date after
-1 January 1900. Now try removing a day. Move to another cell and enter:
+Excel will provide the answer 3 January 1900 (in some format) because the result of this arithmetic returns a date 2 days after
+1 January 1900. Now try removing 2 day2. Move to another cell and enter:
 
-    =A1-1
+    =A1-2
 
 Excel returns an error, because it is incapable of understanding that dates existed prior to 1 January 1900. This
 is, of course, a huge problem for historians (and many other researchers)!
