@@ -60,18 +60,18 @@ tracked and applied.
 However, there is also a significant problem with this system, which is that Excel refuses to believe that dates existed
 before 31 December 1899. Open a spreadsheet and add the following to the A1 cell:
 
-     31 December 1899
+     1 December 1900
 
 Now move to a new cell and enter:
 
     =A1+1
 
-Excel will provide the answer 1 January 1900 (in some format) because the result of this arithmetic returns a date after
-31 December 1899. Now try removing a day. Move to another cell and enter:
+Excel will provide the answer 2 January 1900 (in some format) because the result of this arithmetic returns a date after
+1 January 1900. Now try removing a day. Move to another cell and enter:
 
     =A1-1
 
-Excel returns an error, because it is incapable of understanding that dates existed prior to 31 December 1899. This
+Excel returns an error, because it is incapable of understanding that dates existed prior to 1 January 1900. This
 is, of course, a huge problem for historians (and many other researchers)!
 
 > ## Note on adding and subtracting dates and times
