@@ -20,13 +20,6 @@ After this lesson, you will be able to:
 * Effectively export data from spreadsheet programs
 * Know overall good data practices
 
-In this lesson, however, you will *not* learn:
-- How to use statistics and formulas in spreadsheets, or
-- How to plot graphs using spreadsheets
-
-There are many good tutorials available online on the topic of data analysis in spreadsheets. If you are looking
-to learn any of the above, a good reference is [Head First Excel](https://www.amazon.com/Head-First-Excel-learners-spreadsheets/dp/0596807694/ref=sr_1_1?ie=UTF8&qid=1491594584&sr=8-1&keywords=head+first+excel), published by O'Reilly.
-
 ## Spreadsheet programs
 
 Good data organisation is the foundation of any research project that relies on data analysis - it is of paramount
