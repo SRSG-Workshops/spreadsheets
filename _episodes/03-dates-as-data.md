@@ -101,7 +101,7 @@ poses a huge problem for storing historical data!
 
 Different countries write dates differently. If you are in the UK, you will interpret 7/12/88
 as the 7th of December 1988. A researcher in the US will interpret the same entry as the
-12th of July. This regional variation is handled automatically by your spreadsheet program through a setting in the
+12th of July 1988. This regional variation is handled automatically by your spreadsheet program through a setting in the
  preferences. Errors are easily added to your spreadsheet if your preferences are set incorrectly or, more likely,
  if you share a spreadsheet with a person from a country that uses a different date format. It is especially devastating if
  only some of the date formats are changed, which leaves you with a spreadsheet full of ambiguous dates and no way to repair
@@ -267,16 +267,6 @@ As for dates, times are handled in a similar way and there are functions to extr
 > {: .solution}
 {: .challenge}
 
-### <a name="doy"></a> Storing dates as YEAR, DAY-OF-YEAR
-
-Storing dates as year and day-of-year (DOY) is an alternative method of storing dates with little ambiguity. Statistical
-models often incorporate year as a factor, or a categorical variable, rather than a numeric variable,
-to account for year-to-year variation, and DOY can be used to measure the passage of time within a year.
-
-To convert all your dates into DOY format, here is a useful guide:
-
-![Kill that ambiguity before it bites you!](../fig/7_excel_dates_3.jpg)
-
 ### <a name="str"></a> Storing dates as a single string
 
 Another alternative is to convert the date string into a single string using the `YYYYMMDDhhmmss` format.
@@ -291,3 +281,14 @@ For example the date `March 24, 2015 17:25:35` would become `20150324172535`, wh
 
 Such strings will be correctly sorted in ascending or descending order and can be correctly parsed by the receiving data
 analysis software. Make sure your column containing such data is formatted as 'text'.
+
+### <a name="doy"></a> Storing dates as YEAR, DAY-OF-YEAR
+
+Storing dates as year and day-of-year (DOY) is an alternative method of storing dates with little ambiguity. Statistical
+models often incorporate year as a factor, or a categorical variable, rather than a numeric variable,
+to account for year-to-year variation, and DOY can be used to measure the passage of time within a year.
+
+To convert all your dates into DOY format, here is a useful guide:
+
+![Kill that ambiguity before it bites you!](../fig/7_excel_dates_3.jpg)
+
