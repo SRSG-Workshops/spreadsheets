@@ -290,5 +290,5 @@ to account for year-to-year variation, and DOY can be used to measure the passag
 
 To convert all your dates into DOY format, here is a useful guide:
 
-![Kill that ambiguity before it bites you!](../fig/7_excel_dates_3.jpg)
+![Converting dates to DOY format](../fig/7_excel_dates_3.jpg)
 
