@@ -308,10 +308,12 @@ the tabs '2013' and '2014', respectively.
 > > For example, you could chose to record your data using the following columns:
 > > - date_collected	
 > > - plot_id	species_id	
-> > - sex	hindfoot_length_cm	
+> > - sex	
+> > - hindfoot_length_cm	
 > > - weight_grams	
 > > - scale_calibrated	
 > > - notes
+> > 
 > > Your cleaned spreadsheet might not be identical
 > > to either of the above, but it should have a similar overall structure. We will address the reasoning behind separating date
 > > components in 3 separate columns in [surveys.csv](https://ndownloader.figshare.com/files/2292172) in the [next episode on formatting dates in spreadsheets](../03-dates-as-data/).
