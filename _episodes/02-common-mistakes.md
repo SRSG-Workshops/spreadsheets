@@ -302,10 +302,19 @@ the tabs '2013' and '2014', respectively.
 > {: .callout}
 >
 > > ## Solution
-> > When you finish, compare your clean spreadsheet with [surveys.csv](https://ndownloader.figshare.com/files/2292172)
-> > which is the example cleaned data file you downloaded during [setup](../setup.html). Your cleaned spreadsheet might not be identical
-> > to the surveys.csv, but it should have the same overall structure. We will address the reasoning behind separating date
-> > components in 3 separate columns in the [next episode on formatting dates in spreadsheets](../03-dates-as-data/)
+> > When you finish, compare your clean spreadsheet with the structure suggested below or with 
+> > [surveys.csv](https://ndownloader.figshare.com/files/2292172)
+> > which is the example cleaned data file you downloaded during [setup](../setup.html). 
+> > For example, you could chose to record your data using the following columns:
+> > - date_collected	
+> > - plot_id	species_id	
+> > - sex	hindfoot_length_cm	
+> > - weight_grams	
+> > - scale_calibrated	
+> > - notes
+> > Your cleaned spreadsheet might not be identical
+> > to either of the above, but it should have a similar overall structure. We will address the reasoning behind separating date
+> > components in 3 separate columns in [surveys.csv](https://ndownloader.figshare.com/files/2292172) in the [next episode on formatting dates in spreadsheets](../03-dates-as-data/).
 > {: .solution}
 {: .challenge}
 
