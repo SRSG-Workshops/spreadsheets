@@ -304,7 +304,8 @@ the tabs '2013' and '2014', respectively.
 > > ## Solution
 > > When you finish, compare your clean spreadsheet with [surveys.csv](https://ndownloader.figshare.com/files/2292172)
 > > which is the example cleaned data file you downloaded during set up. Your cleaned spreadsheet might not be identical
-> > to the surveys.csv, but it should have the same overall structure.
+> > to the surveys.csv, but it should have the same overall structure. We will address the reasoning behind separating date
+> > components in 3 separate columns in the [next episode on formatting dates in spreadsheets](../03-dates-as-data/)
 > {: .solution}
 {: .challenge}
 
