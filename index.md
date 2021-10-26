@@ -45,6 +45,6 @@ There are many good tutorials available online on the topic of data analysis in 
 > This lesson assumes no prior knowledge of the computational skills or tools apart from the basic
 > usage of spreadsheet software.
 >
-> To get started, follow the directions in the "[Setup](/setup.html)" section to
+> To get started, follow the directions in the "[Setup](./setup.html)" section to
 > download the lesson data to your computer.
 {: .prereq}
