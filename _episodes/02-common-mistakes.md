@@ -312,7 +312,7 @@ the tabs '2013' and '2014', respectively.
 > > - hindfoot_length_cm	
 > > - weight_grams	
 > > - scale_calibrated	
-> > - notes
+> > - comments
 > > 
 > > Your cleaned spreadsheet might not be identical
 > > to either of the above, but it should have a similar overall structure. We will address the reasoning behind separating date
