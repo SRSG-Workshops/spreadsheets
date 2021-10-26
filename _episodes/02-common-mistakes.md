@@ -276,7 +276,7 @@ a separate file in the same folder as your data or a separate tab within your da
 ## Fixing mistakes in data organisation
 
 Let's put this theory into practice! If you have not already done so, download the [messy survey data](../data/messy_survey_data.xls)
-(as outlined in [Setup section](/setup.html#data)). We will now clean this data and learn
+(as outlined in [Setup section](../setup.html#data)). We will now clean this data and learn
 some best practices in the process.
 
 Take the messy version of the survey data and open it in a spreadsheet program. There are four tabs:
@@ -303,7 +303,7 @@ the tabs '2013' and '2014', respectively.
 >
 > > ## Solution
 > > When you finish, compare your clean spreadsheet with [surveys.csv](https://ndownloader.figshare.com/files/2292172)
-> > which is the example cleaned data file you downloaded during [setup](/setup.html). Your cleaned spreadsheet might not be identical
+> > which is the example cleaned data file you downloaded during [setup](../setup.html). Your cleaned spreadsheet might not be identical
 > > to the surveys.csv, but it should have the same overall structure. We will address the reasoning behind separating date
 > > components in 3 separate columns in the [next episode on formatting dates in spreadsheets](../03-dates-as-data/)
 > {: .solution}
