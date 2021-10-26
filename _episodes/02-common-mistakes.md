@@ -39,16 +39,6 @@ detail below:
 - [Inclusion of metadata within data](#metadata)
 - [Date formatting](../03-dates-as-data/)
 
-> ## Exercise
-> 1. Use the same [messy data spreadsheet](../data/messy_survey_data.xls) you used in the
-> previous exercise.
-> 2. Have a look at each of the spreadsheet errors described below and fix your spreadsheet (in a separate tab or a
-> separate file), if you have not already done so.
-> 3. When you finish, compare your clean spreadsheet with [surveys.csv](https://ndownloader.figshare.com/files/2292172)
-> which is the example cleaned data file you downloaded during set up. Your cleaned spreadsheet might not be identical
-> to the surveys.csv, but it should have the same overall structure.
-{: .challenge}
-
 ## Using multiple tables
 
 A common mistake is creating multiple data tables within a single spreadsheet, as shown below. This will confuse a data analysis
@@ -282,5 +272,46 @@ We have already learned that metadata is the data you record about your data - h
 This is just to reiterate that metadata should not be contained within the data itself. So, you should 
 explain comments, units, information about how null values are encoded and all other information relevant to your data in 
 a separate file in the same folder as your data or a separate tab within your data spreadsheet.
+
+## Fixing mistakes in data organisation
+
+Let's put this theory into practice! If you have not already done so, download the [messy survey data](../data/messy_survey_data.xls)
+(as outlined in [Setup section](/setup.html#data)). We will now clean this data and learn
+some best practices in the process.
+
+Take the messy version of the survey data and open it in a spreadsheet program. There are four tabs:
+ * Two field assistants conducted the surveys, one in 2013 and one in 2014, and they both kept track of the data in their own way in
+the tabs '2013' and '2014', respectively.
+ * Ignore the 'dates' tab for now, we will come back to it later in the lesson.
+ * The 'semi-cleaned-combined' tab contains combined data from tabs '2013' and '2014'. Reproducing this tab is what
+  the exercise is all about. However, we will revisit this tab in
+  [episode on quality assurance and control](/04-quality-control/index.html) and you will see why it is 'semi-clean'.
+
+> ## Exercise
+>  The goal of this exercise is to create a cleaned data set in a new tab by combining the data from tabs '2013' and
+> '2014'. You will need to identify what is wrong with the way the data is arranged in these two tabs, and then make
+> steps to clean the data before combining it.
+>
+> Whilst completing this exercise, you might like to contemplate how much
+> time could be have been saved if the researchers had agreed on a data format before the collection took place, and how
+> long it would take to clean real-world research data that could contain many millions of records.
+>
+> > ## Keep your raw data - raw
+> > Do not forget to create a new file or a new tab for the cleaned data; never
+> > modify your original (raw) data.
+> {: .callout}
+>
+> > ## Solution
+> > When you finish, compare your clean spreadsheet with [surveys.csv](https://ndownloader.figshare.com/files/2292172)
+> > which is the example cleaned data file you downloaded during set up. Your cleaned spreadsheet might not be identical
+> > to the surveys.csv, but it should have the same overall structure.
+> {: .solution}
+{: .challenge}
+
+> ## Full & clean dataset
+> If you want to have a look at the full, clean dataset - have a look atsome of the other files you downloaded.
+> [surveys.csv](https://ndownloader.figshare.com/files/2292172) combines data from all the surveys
+> and [combined.csv](https://ndownloader.figshare.com/files/10717186) includes the cleaned data from [surveys.csv](https://ndownloader.figshare.com/files/2292172), [plots.csv](https://ndownloader.figshare.com/files/3299474) and [species.csv](https://ndownloader.figshare.com/files/3299483) combined into one clean file.
+{: .testimonial}
 
 
