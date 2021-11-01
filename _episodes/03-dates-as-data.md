@@ -151,6 +151,7 @@ variable.
 > {: .solution}
 {: .challenge}
 
+## Exporting Data With Dates
 
 > ## Exercise
 > What happens to the dates in the `dates` tab of the messy spreadsheet if we export this sheet to `.csv`
