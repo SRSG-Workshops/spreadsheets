@@ -94,7 +94,8 @@ poses a huge problem for storing historical data!
 > different serial number than the
 > [1900 date system](https://support.microsoft.com/en-us/help/214330/differences-between-the-1900-and-the-1904-date-system-in-excel).
 > Because of this,
-> [there were accuracy issues with dates when exporting data from Excel](http://datapub.cdlib.org/2014/04/10/abandon-all-hope-ye-who-enter-dates-in-excel/) between Macs and PCs (dates were off by 4 years). Luckily, Excel for Macs now defaults to the 1900 date system and supports dates as early as January 1, 1900.
+> [there were accuracy issues with dates when exporting data from Excel](https://uc3.cdlib.org/2014/04/09/abandon-all-hope-ye-who-enter-dates-in-excel/) 
+> between Macs and PCs (dates were off by 4 years and 1 day). Luckily, Excel for Macs now defaults to the 1900 date system and supports dates as early as January 1, 1900.
 {: .callout}
 
 ## Regional date formatting
