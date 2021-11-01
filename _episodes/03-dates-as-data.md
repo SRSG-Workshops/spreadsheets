@@ -98,7 +98,7 @@ poses a huge problem for storing historical data!
 > between Macs and PCs (dates were off by 4 years and 1 day). Luckily, Excel for Macs now defaults to the 1900 date system and supports dates as early as January 1, 1900.
 {: .callout}
 
-## Regional date formatting
+## Regional date formatting issues
 
 Different countries write dates differently. If you are in the UK, you will interpret 7/12/88
 as the 7th of December 1988. A researcher in the US will interpret the same entry as the
@@ -122,7 +122,13 @@ as the 7th of December 1988. A researcher in the US will interpret the same entr
 > {: .solution}
 {: .challenge}
 
-## Default year
+## Issues with missing bits of dates
+
+If you miss out some of the infrmation from dates - spreadsheet programmes such as Excel will do their best to guess and form a 
+valid date from your partial information. This will happen automatically and often without you even noticing, 
+but can cause you some headache down the line.  
+
+### Dates with no year
 
 If no year is specified, the spreadsheet program will assume you mean the current year
 and will insert that value. This may be incorrect if you are working with historical data so
@@ -151,7 +157,26 @@ variable.
 > {: .solution}
 {: .challenge}
 
-## Exporting Data With Dates
+### Dates with 2-digit year
+When you type a date using a 2-digit year number (e.g. "88"), spreadsheet programmes use specific rules to determine which century to use for the date. 
+For example, [Excel determines the century](https://docs.microsoft.com/en-us/office/troubleshoot/excel/two-digit-year-numbers) by using a cutoff year of "29", which means that 2-digit years 00-29 will be treated to be in the 21st century (i.e. after 2000), and 2-digit year 30-99 will be treated to be in the 20st century (i.e. after 1900).
+
+> ## Exercise
+> Type the follwing dates in an Excel spreadsheet:
+> - 1/1/00 
+> - 1/1/01
+> - 1/1/29 
+> - 1/1/30 
+> - 1/1/31
+> - 1/1/99 
+What year does Excel assumes for each of these dates?
+>
+> > ## Solution
+> > Excel is using the years 29/30 as the cutoff for the century - dates before an including the year “29” will be treated as in the 2000s and year “30” and above in 1900s.
+> {: .solution}
+{: .challenge}
+
+## Issues when exporting data containing dates
 
 > ## Exercise
 > What happens to the dates in the `dates` tab of the messy spreadsheet if we export this sheet to `.csv`
