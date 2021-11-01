@@ -184,8 +184,8 @@ For example, [Excel determines the century](https://docs.microsoft.com/en-us/off
 {: .challenge}
 
 > ## Note on missing bits of dates
-> Make sure you remove any ambiguity when working with dates (and data in general), so as to avoid situation where spreadsheet programmes are 
-> making guesses as to what your data should be. 
+> Make sure you remove any ambiguity when working with dates (and data in general), so as to avoid situations where spreadsheet programmes are 
+> making guesses on what your data should be. 
 {: .callout}
 
 ## Issues when exporting data containing dates
