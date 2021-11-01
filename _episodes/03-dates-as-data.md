@@ -124,8 +124,8 @@ as the 7th of December 1988. A researcher in the US will interpret the same entr
 
 ## Issues with missing bits of dates
 
-If you miss out some of the infrmation from dates - spreadsheet programmes such as Excel will do their best to guess and form a 
-valid date from your partial information. This will happen automatically and often without you even noticing, 
+If you miss out some part of a date - spreadsheet programmes such as Excel will do their best to guess and form a 
+valid date (so they can store it properly internally) from your partial information. This will happen automatically and often without you even noticing, 
 but can cause you some headache down the line.  
 
 ### Dates with no year
