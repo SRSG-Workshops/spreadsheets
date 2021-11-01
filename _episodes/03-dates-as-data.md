@@ -321,6 +321,7 @@ For example the date `March 24, 2015 17:25:35` would become `20150324172535`, wh
 Such strings will be correctly sorted in ascending or descending order and can be correctly parsed by the receiving data
 analysis software. Make sure your column containing such data is formatted as 'text'.
 
+{% comment %}
 ### <a name="doy"></a> Storing dates as YEAR, DAY-OF-YEAR
 
 Storing dates as year and day-of-year (DOY) is an alternative method of storing dates with little ambiguity. Statistical
@@ -330,4 +331,5 @@ to account for year-to-year variation, and DOY can be used to measure the passag
 To convert all your dates into DOY format, here is a useful guide:
 
 ![Converting dates to DOY format](../fig/7_excel_dates_3.jpg)
+{% endcomment %}
 
