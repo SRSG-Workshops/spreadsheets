@@ -169,10 +169,17 @@ For example, [Excel determines the century](https://docs.microsoft.com/en-us/off
 > - 1/1/30 
 > - 1/1/31
 > - 1/1/99 
+
 What year does Excel assumes for each of these dates?
 >
 > > ## Solution
-> > Excel is using the years 29/30 as the cutoff for the century - dates before an including the year “29” will be treated as in the 2000s and year “30” and above in 1900s.
+> > [Excel is using the years 29/30 as the cutoff for the century by default](https://docs.microsoft.com/en-us/office/troubleshoot/excel/two-digit-year-numbers) - dates before and including the year “29” will be treated as in the 2000s and year “30” and above in 1900s:
+> > - 1/1/00 = 2000-Jan-1
+> > - 1/1/01 = 2001-Jan-1
+> > - 1/1/29 = 2029-Jan-1
+> > - 1/1/30 = 1930-Jan-1
+> > - 1/1/31 = 1931-Jan-1
+> > - 1/1/99 = 1999-Jan-1
 > {: .solution}
 {: .challenge}
 
