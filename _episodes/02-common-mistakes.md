@@ -1,5 +1,6 @@
 ---
 title: "Common spreadsheet errors"
+slug: spreadsheets-common-spreadsheet-errors
 teaching: 10
 exercises: 15
 questions:

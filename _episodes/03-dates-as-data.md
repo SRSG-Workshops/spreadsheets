@@ -1,5 +1,6 @@
 ---
 title: "Dates as data"
+slug: spreadsheets-dates-as-data
 teaching: 10
 exercises: 15
 questions:
