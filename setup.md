@@ -72,4 +72,11 @@ as it can open Excel spreadsheets, which is the format of the data we will work 
 
 ## Now what?
 
-Once you have downloaded the files and have a spreadsheet programme, you can [start the lesson](spreadsheets-introduction).
+{% if site.carpentry == "rsg" %}
+    {% assign lessonlink = "spreadsheets-introduction" %}
+{% else %}
+    {% assign lessonlink = "https://southampton-rsg.github.io/spreadsheets-data-organisation-and-management/00-intro/index.html" %}
+{% endif %}
+
+
+Once you have downloaded the files and have a spreadsheet programme, you can [start the lesson]({{ lessonlink }}).
