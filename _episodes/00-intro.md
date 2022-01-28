@@ -1,5 +1,6 @@
 ---
 title: "Introduction"
+slug: spreadsheets-introduction
 teaching: 10
 exercises: 0
 questions:

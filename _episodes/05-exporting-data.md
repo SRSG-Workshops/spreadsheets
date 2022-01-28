@@ -1,5 +1,6 @@
 ---
 title: "Exporting data"
+slug: spreadsheets-exporting-data
 teaching: 10
 exercises: 0
 questions:
