@@ -1,4 +1,4 @@
-# Setup for Spreadsheets Lesson
+# Setup for Lesson
 ## Introduction to the Data for this Lesson ##
 The data used in this lesson comes from a project observing a small mammal community in southern
 Arizona, US. This is part of a project studying the effects of rodents and ants on the plant
