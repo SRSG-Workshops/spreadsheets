@@ -29,7 +29,7 @@ Microsoft Excel from misreading them as dates](https://www.theverge.com/2020/8/6
 
 The image below demonstrates some of the many date formatting options available in Excel.
 
-![Many formats, many ambiguities](../fig/5_excel_dates_1.jpg)
+![Many formats, many ambiguities](fig/5_excel_dates_1.jpg)
 
 
 With such a bewildering array of date formats, combined with the fact that many real-world data sets are built up over time by
@@ -95,7 +95,7 @@ poses a huge problem for storing historical data!
 > different serial number to dates than the
 > [1900 date system](https://support.microsoft.com/en-us/help/214330/differences-between-the-1900-and-the-1904-date-system-in-excel) (i.e. it starts counting time from 1 January 1904).
 > Because of this,
-> [there were accuracy issues with dates when exporting data from Excel](https://uc3.cdlib.org/2014/04/09/abandon-all-hope-ye-who-enter-dates-in-excel/) 
+> [there were accuracy issues with dates when exporting data from Excel](https://uc3.cdlib.org/2014/04/09/abandon-all-hope-ye-who-enter-dates-in-excel/)
 > between Macs and PCs (dates were off by 4 years and 1 day). Luckily, Excel for Macs now defaults to the 1900 date system and supports dates as early as January 1, 1900.
 {: .callout}
 
@@ -120,14 +120,16 @@ as the 7th of December 1988. A researcher in the US will interpret the same entr
 > > The date format is 'MM/DD/YYYY' because we have entries like '2/19' and '5/18', which means that the person who
 > > entered these dates most probably used the US version of Excel where month comes before day. If we did not have such
 > > entries, we would not be able to tell what date was entered! For example, is '7/11' '7th November' or '11th July'?
-> {: .solution}
+> 
+{: .solution}
+
 {: .challenge}
 
 ## Issues with missing bits of dates
 
-If you miss out some part of a date - spreadsheet programmes such as Excel will do their best to guess and form a 
-valid date (so they can store it properly internally) from your partial information. This will happen automatically and often without you even noticing, 
-but can cause you some headache down the line.  
+If you miss out some part of a date - spreadsheet programmes such as Excel will do their best to guess and form a
+valid date (so they can store it properly internally) from your partial information. This will happen automatically and often without you even noticing,
+but can cause you some headache down the line.
 
 ### Dates with no year
 
@@ -146,7 +148,7 @@ variable.
 > > ## Solution
 > > Select any cell in "Date collected" column. In the field for the cell formula at the top,
 > > Excel will display the value that is stored > > internally for this cell.
-> >     ![drag_dates](../fig/dates_missing_year.png)
+> >     ![drag_dates](fig/dates_missing_year.png)
 > > From the cell that is selected in the figure above, we can see that Excel has stored the date "08/01/2015"
 > > (i.e. 8 January 2015 using the DD/MM/YYYY format).
 > > This data was meant to relate to 2014 but Excel has added the year 2015 instead.
@@ -155,22 +157,24 @@ variable.
 > > data for 'plot 3' in the dataset. They came back in 2015 to add the missing data into the dataset and entered the
 > > dates for 'plot 3' as they had been recorded - without the year. Excel automatically interpreted the year as 2015
 > >  the year in which the data was entered into the spreadsheet. This exemplifies how easy it is to introduce errors in dates.
-> {: .solution}
+> 
+{: .solution}
+
 {: .challenge}
 
 ### Dates with 2-digit year
-When you type a date using a 2-digit year number (e.g. "88"), spreadsheet programmes use specific rules to determine which century to use for the date. 
+When you type a date using a 2-digit year number (e.g. "88"), spreadsheet programmes use specific rules to determine which century to use for the date.
 For example, [Excel determines the century](https://docs.microsoft.com/en-us/office/troubleshoot/excel/two-digit-year-numbers) by using a cutoff year of "29", which means that 2-digit years 00-29 will be treated to be in the 21st century (i.e. after 2000), and 2-digit year 30-99 will be treated to be in the 20st century (i.e. after 1900).
 
 > ## Exercise
 > Type the follwing dates in an Excel spreadsheet:
-> - 1/1/00 
+> - 1/1/00
 > - 1/1/01
-> - 1/1/29 
-> - 1/1/30 
+> - 1/1/29
+> - 1/1/30
 > - 1/1/31
-> - 1/1/99 
-> 
+> - 1/1/99
+>
 > What year does Excel assumes for each of these dates?
 >
 > > ## Solution
@@ -181,12 +185,14 @@ For example, [Excel determines the century](https://docs.microsoft.com/en-us/off
 > > - 1/1/30 = 1930-Jan-1
 > > - 1/1/31 = 1931-Jan-1
 > > - 1/1/99 = 1999-Jan-1
-> {: .solution}
+> 
+{: .solution}
+
 {: .challenge}
 
 > ## Note on missing bits of dates
-> Make sure you remove any ambiguity when working with dates (and data in general), so as to avoid situations where spreadsheet programmes are 
-> making guesses on what your data should be. 
+> Make sure you remove any ambiguity when working with dates (and data in general), so as to avoid situations where spreadsheet programmes are
+> making guesses on what your data should be.
 {: .callout}
 
 ## Issues when exporting data containing dates
@@ -212,7 +218,9 @@ For example, [Excel determines the century](https://docs.microsoft.com/en-us/off
 > > with the current year, not 2015 as previously assumed by Excel. In LibreOffice, no year is added, but the date is no
 > > longer treated as a date.
 > > As you can see, exporting data from a spreadsheet program and then importing it back again can fundamentally change the data!
-> {: .solution}
+> 
+{: .solution}
+
 {: .challenge}
 
 > ## Note on exporting
@@ -240,7 +248,7 @@ and reduces the risk of ambiguity.
 
 For instance, the following is a spreadsheet that represents insect counts that were taken every few days over the summer:
 
-![So, so ambiguous, it is even confusing Excel](../fig/6_excel_dates_2.jpg)
+![So, so ambiguous, it is even confusing Excel](fig/6_excel_dates_2.jpg)
 
 According to Excel, this person had been collecting bugs over a number of years, including some dates in the future!
 
@@ -267,19 +275,21 @@ According to Excel, this person had been collecting bugs over a number of years,
 > > of the first observation.
 > > 2. Drag this formula to the last row of the table -
 > > you will see the formulas and calculations for the month appearing in the cells below.
-> >   ![drag_dates](../fig/dates_day_formula.png)
+> >   ![drag_dates](fig/dates_day_formula.png)
 > > 3. To format the
 > > column 'day' as a whole number, right click on the column 'E' (for 'day') and select `Format cells...` option.
-> >   ![format_dates](../fig/format_dates.png)
+> >   ![format_dates](fig/format_dates.png)
 > > Select 'Number' and set decimal places to 0.
-> >   ![dates_as_number](../fig/dates_as_number.png)
+> >   ![dates_as_number](fig/dates_as_number.png)
 > > Repeat the process for month and year. You should end up with a table like the one below.
-> >   ![dates, exersize 1](../fig/dates_plot3.png)
+> >   ![dates, exersize 1](fig/dates_plot3.png)
 > > Again, as in the previous exercise but this time using the `YEAR()` function,
 > > we can see that Excel saved the year for data as 2015 (the year the data is entered) instead of 2014 (the
 > > year the data was collected). This was entirely the mistake of the field assistant but by being helpful
 > > Excel managed to "mask" this error.
-> {: .solution}
+> 
+{: .solution}
+
 {: .challenge}
 
 As for dates, times are handled in a similar way and there are functions to extract hours, minutes and seconds.
@@ -304,7 +314,9 @@ As for dates, times are handled in a similar way and there are functions to extr
 > > You will need to use the strategies in the third part of this challenge to convert this decimal value to
 > > readable time.
 > > 3. To extract the hour, type `=HOUR(NOW()-TODAY())` and similarly for minute and second.
-> {: .solution}
+> 
+{: .solution}
+
 {: .challenge}
 
 ### <a name="str"></a> Storing dates as a single string
@@ -331,6 +343,6 @@ to account for year-to-year variation, and DOY can be used to measure the passag
 
 To convert all your dates into DOY format, here is a useful guide:
 
-![Converting dates to DOY format](../fig/7_excel_dates_3.jpg)
+![Converting dates to DOY format](fig/7_excel_dates_3.jpg)
 {% endcomment %}
 
