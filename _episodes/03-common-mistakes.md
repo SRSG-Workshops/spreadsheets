@@ -274,7 +274,7 @@ This is just to reiterate that metadata should not be contained within the data 
 explain comments, units, information about how null values are encoded and all other information relevant to your data in
 a separate file in the same folder as your data or a separate tab within your data spreadsheet.
 
-## Fixing mistakes in data organisation
+## Cleaning the data
 
 Let's put this theory into practice! If you have not already done so, download the [messy survey data](data/messy_survey_data.xls)
 (as outlined in [Setup section](setup.html#data)). We will now clean this data and apply the best practices of data organsation in the process.
