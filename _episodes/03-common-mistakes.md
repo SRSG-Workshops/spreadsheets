@@ -308,7 +308,8 @@ the tabs '2013' and '2014', respectively.
 > > which is the example cleaned data file you downloaded during [setup](setup).
 > > For example, you could chose to record your data using the following columns:
 > > - date_collected
-> > - plot_id	species_id
+> > - plot_id	
+> > - species_id
 > > - sex
 > > - hindfoot_length_cm
 > > - weight_grams
