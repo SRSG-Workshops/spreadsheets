@@ -277,16 +277,7 @@ a separate file in the same folder as your data or a separate tab within your da
 ## Fixing mistakes in data organisation
 
 Let's put this theory into practice! If you have not already done so, download the [messy survey data](data/messy_survey_data.xls)
-(as outlined in [Setup section](setup.html#data)). We will now clean this data and learn
-some best practices in the process.
-
-Take the messy version of the survey data and open it in a spreadsheet program. There are four tabs:
- * Two field assistants conducted the surveys, one in 2013 and one in 2014, and they both kept track of the data in their own way in
-the tabs '2013' and '2014', respectively.
- * Ignore the 'dates' tab for now, we will come back to it later in the lesson.
- * The 'semi-cleaned-combined' tab contains combined data from tabs '2013' and '2014'. Reproducing this tab is what
-  the exercise is all about. However, we will revisit this tab in
-  [episode on quality assurance and control](spreadsheets-quality-assurance-and-control) and you will see why it is 'semi-clean'.
+(as outlined in [Setup section](setup.html#data)). We will now clean this data and apply the best practices of data organsation in the process.
 
 > ## Exercise
 >  The goal of this exercise is to create a cleaned data set in a new tab by combining the data from tabs '2013' and
