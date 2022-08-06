@@ -285,7 +285,7 @@ There are four tabs in our messy data spreadsheet:
 the tabs '2013' and '2014', respectively.
  * Ignore the 'dates' tab for now, we will come back to it later in the lesson.
  * The 'semi-cleaned-combined' tab contains the combined data from tabs '2013' and '2014'. Reproducing this tab is what
-  the next episode is all about. We will revisit this tab in
+  the next episode is all about. We will revisit this tab in the
   [episode on quality assurance and control](spreadsheets-quality-assurance-and-control) and you will see why it is 'semi-clean'.
   
 > ## Exercise
