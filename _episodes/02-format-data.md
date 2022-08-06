@@ -85,7 +85,7 @@ Rather, metadata should be stored as a separate file in the same directory as yo
 format (i.e. `.txt`) with a name that clearly associates it with your data file. Because metadata files are free text format,
 they allow you to encode comments, units, information about how null values are encoded and related information.
 
-Additionally, file or database level metadata describes how files that make up the dataset relate to each other; what format are they are
+Additionally, file or database level metadata describes how files that make up the dataset relate to each other; what format they are
 in; and whether they supersede or are superseded by previous files. A folder-level `README.txt` file is the classic way of accounting for
 all the files and folders in a project.
 
