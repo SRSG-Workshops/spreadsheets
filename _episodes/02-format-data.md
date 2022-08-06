@@ -121,13 +121,4 @@ taken.
 
 ## Fixing mistakes in data organisation
 
-Let's put this theory into practice! If you have not already done so, download the [messy survey data](data/messy_survey_data.xls)
-(as outlined in [Setup section](setup.html#introduction-to-the-data-for-this-lesson)). Take the messy version of the survey data and open it in a spreadsheet program. There are four tabs:
- * Two field assistants conducted the surveys, one in 2013 and one in 2014, and they both kept track of the data in their own way in
-the tabs '2013' and '2014', respectively.
- * Ignore the 'dates' tab for now, we will come back to it later in the lesson.
- * The 'semi-cleaned-combined' tab contains the combined data from tabs '2013' and '2014'. Reproducing this tab is what
-  the next episode is all about. We will revisit this tab in
-  [episode on quality assurance and control](spreadsheets-quality-assurance-and-control) and you will see why it is 'semi-clean'.
-  
-  We will now look at some common mistakes and learn some best practices in data organisation that will help us clean this data.
+We will now look at some common mistakes and learn some best practices in data organisation that will help us clean this data.
