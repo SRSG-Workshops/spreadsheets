@@ -107,7 +107,7 @@ will be easy to start the analysis again!
 these steps as you would any step in an experiment. We recommend that you
 do this in a plain text file stored in the same folder as the data file.
 
-The the following example, the spreadsheet has 'raw' tabs in which to store the original, untouched data and 'clean'
+In the following example, the spreadsheet has 'raw' tabs in which to store the original, untouched data and 'clean'
 tabs in which the processed data is stored. It is accompanied with a text file that describes the steps that have been
 taken.
 
