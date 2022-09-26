@@ -194,9 +194,9 @@ For example, [Excel determines the century](https://docs.microsoft.com/en-us/off
 > > - 1/1/31 = 1931-Jan-1
 > > - 1/1/99 = 1999-Jan-1
 > > 
-> >
-{: .solution}
-
+> > 
+> {: .solution}
+> 
 > 
 > 
 {: .challenge}
@@ -231,9 +231,9 @@ For example, [Excel determines the century](https://docs.microsoft.com/en-us/off
 > > longer treated as a date.
 > > As you can see, exporting data from a spreadsheet program and then importing it back again can fundamentally change the data!
 > > 
-> >
-{: .solution}
-
+> > 
+> {: .solution}
+> 
 > 
 > 
 {: .challenge}
