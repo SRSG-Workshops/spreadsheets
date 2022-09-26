@@ -301,9 +301,9 @@ the tabs '2013' and '2014', respectively.
 > > Do not forget to create a new file or a new tab for the cleaned data; never
 > > modify your original (raw) data.
 > > 
+> > 
+> {: .callout}
 > 
-{: .callout}
-
 >
 >
 > > ## Solution
@@ -324,11 +324,14 @@ the tabs '2013' and '2014', respectively.
 > > to either of the above, but it should have a similar overall structure. We will address the reasoning behind separating date
 > > components in 3 separate columns in [surveys.csv](https://ndownloader.figshare.com/files/2292172) in the [next episode on formatting dates in spreadsheets](spreadsheets-dates-as-data).
 > > 
+> > 
+> {: .solution}
 > 
-{: .solution}
-
+>
+>
 > 
 {: .challenge}
+
 
 
 > ## Full & clean dataset
