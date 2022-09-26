@@ -18,7 +18,7 @@ logo_site: "https://rsgsoton.net/"
 
 # For static delivery this section can all be ignored ==================================================================
 # Specify the location of the workshop
-venue: "Online"           # name of location use "online" if online
+venue: "online"           # name of location use "online" if online
 address: "https://teams.microsoft.com/l/team/19%3aKxhuAIa7d2dEknOfYGl6x94p4fbX8sIIJeqUwMaseyM1%40thread.tacv2/conversations?groupId=4249f6f3-891a-489e-8049-1ec0698c0a71&tenantId=4a5378f9-29f4-4d3e-be89-669d03ada9d8"         # address of location or url of platform
 platform-name: "Teams"   # name of online platform e.g. Teams, Zoom e.t.c
 country: "gb"         # e.g. gb
@@ -34,6 +34,16 @@ enddate: "2022-10-03"          # e.g. YYYY-MM-DD
 
 # Start time in minutes (0 to be clock-independent, 3:30 pm or 15:30 both okay).
 start-time: "09:30"
+
+# Specify the details of the instructors and helpers
+# Can be list, or single string
+instructor:
+  - "Edward Parkinson"
+  - "Philip Grylls"
+instructor-email:
+  - "ejp1v21@soton.ac.uk"
+  - "P.J.Grylls@southampton.ac.uk"
+
 # ======================================================================================================================
 
 ###
