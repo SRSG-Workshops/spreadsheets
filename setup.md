@@ -33,6 +33,13 @@ data organisation.
 files combined into one clean file (a good example of what a clean data file should look like)
 Fields: `record_id`, `month`, `day`, `year`, `plot_id`, `species_id`, `sex`, `hindfoot_length`, `weight`, `genus`,
 `species`, `taxa`, `plot_type`
+## Install Excel ##
+
+Excel is commonly provided by most institutions via the Microsoft Office suite via an instututional licence. 
+On Windows and Mac Excel can be downloaded using Microsoft Store or the App Store. 
+On Linux systems you can use Excel in a browser (not reccomended) or use an alterntive such as LibreOffice.
+If you do not have acess to a Microsoft offive licence then please see the LibreOffice installation instructions.
+
 ## Install LibreOffice ##
 
 To interact with spreadsheets, you can use various software - for example Microsoft Excel,
