@@ -100,10 +100,14 @@ option on the `Error Alert` tab (or the `Action` field in LibreOffice).
 > > You have now provided a restriction that will be validated each time you try and
 > > enter data into the selected cells. If you type a value which is not on the list you will get an error message.
 > > This not only prevents data input errors, but also makes it easier and faster to enter data.
+> > 
+> > 
+> {: .solution}
 > 
-{: .solution}
-
+> 
+> 
 {: .challenge}
+
 
 ### Restricting data to entries from a list
 
@@ -137,10 +141,14 @@ values, you can select the right option from the list every time. Let’s apply 
 > > You have now provided a restriction that will be validated each time you try and
 > > enter data into the selected cells. If you type a value which is not on the list you will get an error message.
 > > This not only prevents data input errors, but also makes it easier and faster to enter data.
+> > 
+> > 
+> {: .solution}
 > 
-{: .solution}
-
+> 
+> 
 {: .challenge}
+
 
 Typing a list of values where only a few possible values exist might be convenient, but if the list is longer (e.g.
 all allowed species) it
@@ -156,20 +164,18 @@ You can also have different cells refer to the same table of acceptable inputs.
 ## Quality control - identifying outliers
 
 > ## Tip: keep your raw data - raw
-> Before doing any quality control operations, save your original file with the formulas and a name indicating it is the original
-data. Create a separate file with a new name, and ensure your data is stored as values and not as formulas.
-Because formulas refer to other cells, and you may be moving cells around, you may compromise the integrity of your data if you do not
-take this step!
+> Before doing any quality control operations, save your original file with the formulas and a name indicating it is the original data. Create a separate file with a new name, and ensure your data is stored as values and not as formulas.
+> Because formulas refer to other cells, and you may be moving cells around, you may compromise the integrity of your data if you do not take this step!
 {: .callout}
 
 > ## Tip: keep track of your modifications
 > As you start manipulating your data files, create a `README.txt` text file to keep track of your files and
-document your manipulations so that they may be easily understood and replicated, either by your future self or by an independent
-researcher. Your `README.txt` file should document all of the files in your data set (including documentation), describe their content and
-format, and lay out the organising principles of folders and subfolders. For each of the separate files listed, it is a good idea to
-document the manipulations or analyses that were carried out on those data.
-[Cornell University's Research Data Management Service Group](https://data.research.cornell.edu/content/readme) provides detailed
-guidelines for how to write a good README file, along with an adaptable template.
+> document your manipulations so that they may be easily understood and replicated, either by your future self or by an independent
+> researcher. Your `README.txt` file should document all of the files in your data set (including documentation), describe their content and
+> format, and lay out the organising principles of folders and subfolders. For each of the separate files listed, it is a good idea to
+> document the manipulations or analyses that were carried out on those data.
+> [Cornell University's Research Data Management Service Group](https://data.research.cornell.edu/content/readme) provides detailed
+> guidelines for how to write a good README file, along with an adaptable template.
 {: .callout}
 
 ### Sorting data
@@ -195,24 +201,27 @@ If your dataset is well-structured and does not contain formulas, sorting should
 >
 > > ## Solution
 > >
-1. Select `weight_grams` column.
-2. Click the `Sort` button on the Data tab from the top level menu in Excel (in LibreOffice select the `Data` menu and
- then select `Sort`.
-    ![Image of sort button](fig/sort-button.png)
-    Note that in older versions of Excel you may get just the `Sort` button without the drop-down menu, followed
-    by a pop up window to specify the column you want to sort and the sort order (shown in figure below).
-    ![Image of sort pop up](fig/sort-settings.png)
-3. In the pop-up that appears make sure you select `Expand the selection` to make sure data in other columns is
-    moved together with the data in the column you are sorting.
-    ![Image of expanding sort pop up](fig/sort-expand.png)
-4. Note how the odd values sort to the top and bottom of the data.
-    The cells containing no data values sort to the bottom of the tabular data, while the cells where the letter
-    "g" was included can be found towards the top or bottom. This is a powerful way to check your data for outliers and odd values.
-    ![Image of outliers sorted at the top](fig/sort-result.png)
+> > 1. Select `weight_grams` column.
+> > 2. Click the `Sort` button on the Data tab from the top level menu in Excel (in LibreOffice select the `Data` menu and
+> > then select `Sort`.
+> >    ![Image of sort button](fig/sort-button.png)
+> >    Note that in older versions of Excel you may get just the `Sort` button without the drop-down menu, followed
+> >    by a pop up window to specify the column you want to sort and the sort order (shown in figure below).
+> >    ![Image of sort pop up](fig/sort-settings.png)
+> > 3. In the pop-up that appears make sure you select `Expand the selection` to make sure data in other columns is
+> >    moved together with the data in the column you are sorting.
+> >    ![Image of expanding sort pop up](fig/sort-expand.png)
+> > 4. Note how the odd values sort to the top and bottom of the data.
+> >    The cells containing no data values sort to the bottom of the tabular data, while the cells where the letter
+> >    "g" was included can be found towards the top or bottom. This is a powerful way to check your data for outliers and odd values.
+> >    ![Image of outliers sorted at the top](fig/sort-result.png)
+> > 
+> {: .solution}
 > 
-{: .solution}
-
+> 
+> 
 {: .challenge}
+
 
 ### Conditional formatting
 Conditional formatting allows you to format data based on some criteria, e.g. you can colour code your values by some
@@ -226,23 +235,27 @@ entering data. Let's apply some to our data.
 > any `2-Color Scale` formatting rule to column `weight_grams`.
 >
 > > ## Solution
-1. Select `weight_grams` column.
-2. In the main Excel menu bar, click `Home` > `Conditional Formatting...` choose `New rule` (in LibreOffice from the
- `Format` menu, select `Conditional` and then `Color scale`).
-    ![Image of Conditional Formatting - adding new rule](fig/conditional-formatting-new-rule.png)
-3. In the `New Formatting Rule` window, apply any `2-Color Scale` formatting rule. (In LibreOffice select `Color scale
- (2 entries)` from the top-middle drop-down list and click `OK`.
-    ![Image of Conditional Formatting - 2-colour scale](fig/conditional-formatting-2-colour-scale.png)
-4. Now we can scan through the column and different colours will stand out. Do you notice any strange values?
-5. Cells that contain non-numerical values are not coloured making them easier to spot.
-   This includes both the cells where the letter "g" was
-   included and the empty cells. They show up at either at the top or at the bottom of the data but may not be as easy to
-   spot if you have a very large dataset and have to scroll a lot.
-       ![Image of Conditional Formatting - result](fig/conditional-formatting-result.png)
+> > 1. Select `weight_grams` column.
+> > 2. In the main Excel menu bar, click `Home` > `Conditional Formatting...` choose `New rule` (in LibreOffice from the
+> > `Format` menu, select `Conditional` and then `Color scale`).
+> >    ![Image of Conditional Formatting - adding new rule](fig/conditional-formatting-new-rule.png)
+> > 3. In the `New Formatting Rule` window, apply any `2-Color Scale` formatting rule. (In LibreOffice select `Color scale
+> > (2 entries)` from the top-middle drop-down list and click `OK`.
+> >    ![Image of Conditional Formatting - 2-colour scale](fig/conditional-formatting-2-colour-scale.png)
+> > 4. Now we can scan through the column and different colours will stand out. Do you notice any strange values?
+> > 5. Cells that contain non-numerical values are not coloured making them easier to spot.
+> >   This includes both the cells where the letter "g" was
+> >   included and the empty cells. They show up at either at the top or at the bottom of the data but may not be as easy to
+> >   spot if you have a very large dataset and have to scroll a lot.
+> >       ![Image of Conditional Formatting - result](fig/conditional-formatting-result.png)
+> > 
+> > 
+> {: .solution}
 > 
-{: .solution}
-
+> 
+> 
 {: .challenge}
+
 
 > ## Scanning for outliers
 > It is nice to be able to do these scans for outliers in spreadsheets (such as using sorting or conditional formatting),
