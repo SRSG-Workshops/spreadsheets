@@ -289,7 +289,7 @@ the tabs '2013' and '2014', respectively.
   [episode on quality assurance and control](spreadsheets-quality-assurance-and-control) and you will see why it is 'semi-clean'.
   
 > ## Exercise
->  The goal of this exercise is to create a cleaned data set in a new tab by combining the data from tabs '2013' and
+> The goal of this exercise is to create a cleaned data set in a new tab by combining the data from tabs '2013' and
 > '2014'. You will need to identify what is wrong with the way the data is arranged in these two tabs, and then make
 > steps to clean the data before combining it.
 >
@@ -300,9 +300,11 @@ the tabs '2013' and '2014', respectively.
 > > ## Keep your raw data - raw
 > > Do not forget to create a new file or a new tab for the cleaned data; never
 > > modify your original (raw) data.
+> > 
 > 
 {: .callout}
 
+>
 >
 > > ## Solution
 > > When you finish, compare your clean spreadsheet with the structure suggested below or with
@@ -321,10 +323,13 @@ the tabs '2013' and '2014', respectively.
 > > Your cleaned spreadsheet might not be identical
 > > to either of the above, but it should have a similar overall structure. We will address the reasoning behind separating date
 > > components in 3 separate columns in [surveys.csv](https://ndownloader.figshare.com/files/2292172) in the [next episode on formatting dates in spreadsheets](spreadsheets-dates-as-data).
+> > 
 > 
 {: .solution}
 
+> 
 {: .challenge}
+
 
 > ## Full & clean dataset
 > If you want to have a look at the full, clean dataset - have a look at some of the other files you downloaded.
