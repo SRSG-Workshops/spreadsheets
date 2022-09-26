@@ -28,7 +28,7 @@ longitude: "-1.404351"   # longitude of location (Soton: -1.404351)
 
 # Specify the start and end date of the lesson
 humandate: "3rd October"      # e.g. "6th August"
-humantime: "09:15-1:-00"      # e.g. "09:00-17:00"
+humantime: "09:15-13:00"      # e.g. "09:00-17:00"
 startdate: "2022-10-03"        # e.g. YYYY-MM-DD # e.g. YYYY-MM-DD # This is required for the surveys NOTE: 1990-1-1 will not work
 enddate: "2022-10-03"          # e.g. YYYY-MM-DD
 
