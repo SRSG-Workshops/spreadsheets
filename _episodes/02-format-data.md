@@ -114,11 +114,49 @@ taken.
 ![spreadsheet setup](fig/spreadsheet-setup-updated.png)
 
 > ## Version controlling your data
-> Although out of scope for this lesson, you can learn about version control in a [separate course](https://southampton-rsg.github.io/Southampton-RSG-Training/git-novice/),
-> which can be used to
-> record the transformation of your data over time, and provides tools to roll back to any previous version of the data.
+> Although out of scope for this lesson, you can learn about version control in a separate course,
+> which can be used to record the transformation of your data over time, and provides tools to roll back to any
+> previous version of the data.
 {: .callout}
 
-## Fixing mistakes in data organisation
+## A messy dataset
 
-We will now look at some common mistakes and learn some best practices in data organisation that will help us clean this data.
+To put theory into practise, throughout this lesson we will be working with some [messy survey
+data](data/messy_survey_data.xls), and applying what we learn in this lesson to that data. The dataset is a spreadsheet
+and contains data which has been collected as part of survey of animals at different locations. The spreadsheet contains
+four tabs,
+
+- The first two tabs, named '2013' and '2014', contain data taken by two field assistants in 2013 and 2014 respectively.
+  This is the main data we will be working with.
+- The ‘semi-cleaned-combined’ tab contains the combined data from tabs ‘2013’ and ‘2014’, in a 'semi-cleaned' state. We
+  will revisit this tab in the episode on quality assurance and control and you will see why it is ‘semi-clean’.
+- Ignore the 'dates' tab for now, as we will come back to this in a later episode.
+
+> ## Exercise
+> If you haven't done so already, you'll first need to download the [messy survey data](data/messy_survey_data.xls).
+> Once you have it downloaded, open it up and have a look around the spreadsheet to see what's there. You will only need
+> to worry about the '2013' and '2014' tabs; the other two tabs will be used in later episodes.
+>
+> When you feel ready, create a metadata file (e.g. `README.txt`) to document the key parts of the data. Try to think
+> about what you would like to know about the data, if it was up to you to analyse. For example, you may want to know more
+> about the study, or when data collection began, and you will probably want to know what the data actually represents.
+>
+> Since this is not our study or data, we naturally won't know all of this information. Try to fill it in as much as you
+> can and feel free to leave some parts empty, or make something reasonable up to fill in any blanks.
+>
+> > ## Solution
+> > You should create a metadata file in the same directory as the spread sheet named something like `README.txt` or
+> `METADATA.txt`. It should contain information such as:
+> >
+> > - The name of the study
+> > - The author(s) of the study and data
+> > - Contact information for the author(s)
+> > - The date the data collection began
+> > - A brief description of the study and data
+> > - A description on the data collection methodology
+> > - A list of publications using the data
+> > - The date the data was last modified
+> > - A list of changes which been made to the data, and analysis done on the data
+> >
+> {: .solution}
+{: .challenge}
