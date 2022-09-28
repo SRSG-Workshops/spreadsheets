@@ -208,7 +208,8 @@ If your dataset is well-structured and does not contain formulas, sorting should
 > {: .solution}
 {: .challenge}
 
-### Conditional formatting
+<!-- TODO: EP removed this section, to be replaced by a section on creating plots -->
+<!-- ### Conditional formatting
 Conditional formatting allows you to format data based on some criteria, e.g. you can colour code your values by some
 criteria from lowest to highest. This can also make it easier to scan your data for outliers.
 Conditional formatting should be used with caution, but it can be a great way to flag inconsistent values or errors when
@@ -234,7 +235,7 @@ entering data. Let's apply some to our data.
    spot if you have a very large dataset and have to scroll a lot.
        ![Image of Conditional Formatting - result](fig/conditional-formatting-result.png)
 > {: .solution}
-{: .challenge}
+{: .challenge} -->
 
 > ## Scanning for outliers
 > It is nice to be able to do these scans for outliers in spreadsheets (such as using sorting or conditional formatting),
