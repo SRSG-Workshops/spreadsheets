@@ -31,7 +31,6 @@ The image below demonstrates some of the many date formatting options available 
 
 ![Many formats, many ambiguities](fig/5_excel_dates_1.jpg)
 
-
 With such a bewildering array of date formats, combined with the fact that many real-world data sets are built up over time by
 different people, using different programs, all of whom may be making different assumptions, it becomes difficult
 to believe that the dates in any sizeable dataset can be accurate! Fortunately, there is a solution. The best route to unambiguously storing dates is to use separate columns for the day,
@@ -111,7 +110,7 @@ as the 7th of December 1988. A researcher in the US will interpret the same entr
 
 > ## Exercise
 >
-> Look at the tab 'dates' in the [messy data spreadsheet](data/messy_survey_data.xls) you used in previous exercises.
+> Look at the tab 'dates' in the [messy data spreadsheet](data/messy_survey_data_ex3.xls) you used in previous exercises.
 > It contains a copy of the 'plot 3' table from the '2014' tab (this is the table that contains the problematic dates).
 > You will notice that there are years missing from the "Date collected" column. Just by looking at the entered dates,
 > can you figure out the date format that was used?
@@ -138,7 +137,7 @@ variable.
 
 > ## Exercise
 >
-> Look at the tab 'dates' in the [messy data spreadsheet](data/messy_survey_data.xls).
+> Look at the tab 'dates' in the [messy data spreadsheet](data/messy_survey_data_ex3.xls).
 > It contains a copy of the 'plot 3' table from the '2014' tab (this is the table that contains the problematic dates).
 > Select one of the cells in "Date collected" column, for example cell 'A3'. What is the date Excel thinks is
 > entered? What is the year of the date?
