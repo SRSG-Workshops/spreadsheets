@@ -322,7 +322,7 @@ excluded.
 > > If you didn't manage to finish in time, or if you just want to look at the solution instead, you can download
 > > the updated [messy survey data](data/messy_survey_data_ex3.xls).
 > >
-> {: .solution}
+> > {: .solution}
 >
 > {: .challenge}
 
