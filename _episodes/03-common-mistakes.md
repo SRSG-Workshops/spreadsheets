@@ -332,5 +332,3 @@ excluded.
 > [surveys.csv](https://ndownloader.figshare.com/files/2292172) combines data from all the surveys
 > and [combined.csv](https://ndownloader.figshare.com/files/10717186) includes the cleaned data from [surveys.csv](https://ndownloader.figshare.com/files/2292172), [plots.csv](https://ndownloader.figshare.com/files/3299474) and [species.csv](https://ndownloader.figshare.com/files/3299483) combined into one clean file.
 > {: .testimonial}
-
-

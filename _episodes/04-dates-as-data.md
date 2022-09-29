@@ -343,4 +343,3 @@ To convert all your dates into DOY format, here is a useful guide:
 
 ![Converting dates to DOY format](fig/7_excel_dates_3.jpg)
 {% endcomment %}
-
