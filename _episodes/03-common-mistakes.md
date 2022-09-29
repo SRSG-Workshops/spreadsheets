@@ -1,8 +1,8 @@
 ---
 title: "Common spreadsheet errors"
 slug: spreadsheets-common-spreadsheet-errors
-teaching: 10
-exercises: 15
+teaching: 15
+exercises: 20
 questions:
 - "What are some common challenges with formatting data in spreadsheets and how can we avoid them?"
 objectives:

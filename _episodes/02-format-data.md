@@ -2,7 +2,7 @@
 title: "Organising data in spreadsheets"
 slug: spreadsheets-organising-data-in-spreadsheets
 teaching: 10
-exercises: 15
+exercises: 10
 questions:
 - "How do we organise and format data in spreadsheets for effective data use?"
 objectives:
