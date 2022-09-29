@@ -93,26 +93,26 @@ Rather than entering data into multiple tabs, try adding another column to your 
 > do this, see the [documentation on how to freeze column headers in Excel](https://support.office.com/en-ca/article/Freeze-column-headings-for-easy-scrolling-57ccce0c-cf85-4725-9579-c5d13106ca6a).
 {: .callout}
 
-> ## Keep your raw data raw
-> Don't forget to create a new file or a new tab for the cleaned data; never modify your original (raw) data.
-{: .callout}
-
 > ## Exercise
-> At the moment the data in [messy survey data](data/messy_survey_data.xls) is split across multiple tables spread
-> across two tabs; one tab for each year. Following from what we've just learnt, reformat the data into a format which
-> makes it easier for both a person and a computer to understand by, for example, bringing the data from both years into
-> one tab and creating new columns. Some cells may contain data for multiple variables. Think carefully about how you
-> should deal with these.
+> At the moment the data in [messy survey data](data/messy_survey_data.xls) is in multiple tables
+> across two tabs. Following from what we've just learnt, reformat the data into a format which
+> makes it easier for both a person and a computer to understand by, for example, bringing the data from both tabs into
+> one and creating new columns. Note that some cells contain data for multiple variables. Think carefully about how you
+> should deal with those.
+>
+> > ## Keep your raw data raw
+> > Don't forget to create a new file or a new tab for the cleaned data; never modify your original (raw) data.
+> {: .callout}
 >
 > > ## Solution
-> > To make the data easier to read, we have combined all the tables across the two tabs into one table as shown
-> > below and placed each variable in its own column.
+> > Combine the data from both tables into one table by adding both a date and plot column. Be careful when copying the
+> > data across, as the format and order of the columns are not the same in all of the tables. An example of what you
+> > may end up with is shown below:
 > >
 > > ![solution ex 1](fig/episode3_ex1_sol.png)
 > >
-> > We had to take particular care when combining tables, since the order of columns was not the same in each table.
-> > By bringing all the data together we have made it a easier for data analysis software to read our data. We also no
-> > longer have to flick between tabs, or scroll our view, to look at all of the data.
+> > This format is much easier for data analysis programs to read. Humans will have an easier time as well, since there
+> > is no need to scroll to the right or switch between tabs to find all of the data.
 > >
 > > If you didn't manage to finish in time, or if you just want to look at the solution instead, you can download
 > > the updated [messy survey data](data/messy_survey_data_ex1.xls).
@@ -133,20 +133,20 @@ these can cause problems when conducting later analysis. Spaces can be misinterp
 used by some programs to show where a column begins and ends), some programs do not like field names that are text
 strings that start with numbers, and some characters (e.g. "/") can be misinterpreted by data analysis programs.
 
-Instead of spaces, the best advice is to use underscores (`_`) to separate words. Some people use CamelCase (where
-uppercase letters are used to delimit words, e.g. ExampleFileName) but they are more difficult to read and, if you ever
-want to return the whitespaces later in your analysis, it is easier to do this with underscore-separated words than
-CamelCase.
-
-Where all the observations share the same unit, it can be useful to include the unit in the field name to avoid later
-confusion. Alternatively, as described above, include the unit in a separate column.
+Instead of spaces, the best advice is to use underscores (`_`) to separate words. Some people use PascalCase (where
+uppercase letters are used to delimit words, e.g. ExampleFileName) but if you ever
+want to return the whitespaces later in your analysis, it is easier to do this with underscore-separated words.
 
 Do not use your spreadsheet as a word processor! If you copy text directly from a Microsoft Word (or similar
 applications), you are likely to include lots of formatting information (e.g. tabs, line breaks, etc.)
 and fancy non-standard characters (left- and right-aligned quotation marks, em-dashes, etc.) that will confuse data
-analysis software. Best practice is to avoid adding anything other than text and spaces into a cell.
+analysis software. Avoid adding anything other than text and spaces into a cell.
+
+Where all the observations share the same unit, it can be useful to include the unit in the field name to avoid later
+confusion. Alternatively, as described above, include the unit in a separate column.
 
 The table below gives some examples of best practice in naming:
+
 <table>
 <tr>
 	<td> <b>Good Name</b></td> <br />
@@ -202,16 +202,15 @@ The table below gives some examples of best practice in naming:
 
 Sometimes the thing you are measuring throws out the odd zero - sometimes the observations are almost all zeros. Is it
 really necessary to keep typing in zeros? Wouldn't it be more efficient to leave the column blank unless there's a
-non-zero?
-
-To a computer, there is a big difference between a zero and a blank cell. A zero is data. A blank cell means that there
-was no measurement, and the computer will interpret it as an unknown value (otherwise known as a *null* value).
+non-zero? To a computer, there is a big difference between a zero and a blank cell. A zero is data. A blank cell means
+that there was no measurement, and the computer will likely interpret it as an unknown value (otherwise known as a
+*null* value).
 
 Spreadsheets are likely to misinterpret blank cells that you intend to be zeros, and statistical analysis programs
-are very likely to interpret blank cells. By not entering the value of your observation, you are telling your computer
-to represent that data as unknown or missing (null). This can cause problems with later analysis. To take a simple
-example: the average of a set of numbers which includes a single null value is always null (because the computer cannot
-guess the value of the missing observations).
+are very likely to interpret them as blank cells. By not entering the value of your observation, you are telling your
+computer to represent that data as unknown or missing (null). This can cause problems with later analysis. To take a
+simple example: the average of a set of numbers which includes a single null value is always null (because the computer
+cannot guess the value of the missing observations).
 
 It is very important to record zeros as zeros and truly missing data as nulls.
 
@@ -223,15 +222,14 @@ but not all approaches are useful.
 ![White et al.](fig/3_white_table_1.jpg)
 
 Sometimes different null values are used to describe the different reasons why the observation could not be made.
-"NULL", "missing data" and "malfunction", all convey important information, but you are in effect using a single column
+"NULL", "missing data" and "malfunction", all convey important information but you are in effect using a single column
 to capture three different types of information. This is messy, as described on the previous page, and the solution is
 to include new columns - one for each type of information you need to capture.
 
 Sometimes unacceptable null values are automatically recorded by the device you use to measure the observation (older
 devices are especially guilty of not following best practice). If the erroneous null values stem from the measuring
 device, you're left with little choice but to clean the data and replace them with a better null value. A tool like
-[OpenRefine](https://southampton-rsg-training.github.io/openrefine-data-cleaning/), which will be introduced
-in a later lesson, is perfect for this kind of cleaning.
+[OpenRefine](https://openrefine.org/), which is introduced in another lesson, is perfect for this kind of cleaning.
 
 Whatever the reason, it is a problem if unknown or missing data is recorded as -999, 999, or 0.
 Statistical programs do not know that these are intended to represent missing (null) values and, because they are
@@ -256,19 +254,19 @@ associated value. Ideally, all the measurements you place in one column should b
 reason they are not, create a new column to specify the units.
 
 > ## Exercise
-> Our [messy survey data](data/messy_survey_data.xls) is full of problems which makes the data difficult for a computer
-> to interpret. With your new knowledge on best practices for field names, cell values and null values, clean up the
-> data by updating column variable names and by editing the contents of cells. Don't worry about formatting the dates
-> just yet, we will cover those in the next episode.
+> Our [messy survey data](data/messy_survey_data.xls) is still full of formatting choices which make the data difficult
+> for a computer to interpret. With your new knowledge on best practices for field names, cell values and null values,
+> clean up the data by updating column variable names and by editing the contents of cells. Don't worry about formatting
+> the dates just yet, we will cover those in the next episode.
 >
 > If you want, you can use the [solution from the previous example]((data/messy_survey_data_ex1.xls)) as your starting
 > point.
 >
 > > ## Solution
-> > We have renamed the columns to replace spaces with underscores (`_`) (e.g. 'Date_Collected') and included the units
-> > within the column names (e.g. 'Weight_g'), removing the units within cells. We have also added a notes column, so
-> > there is no reason to have text in the weight column. Finally we have left cells blank where there is no measurement
-> > available. Another option would have been to use NULL instead.
+> > Rename the columns to replace spaces with underscores (`_`), e.g. 'Date_collected', and include the units in the
+> > column names rather than in the cell. Additionally, add a notes column to indicate where there have been problems
+> > during the data capture. Finally, choose a null value to use. In the example below, blank cells are used but NULL
+> > would also be a good choice.
 > >
 > > ![solution](fig/episode3_ex2.png)
 > >
@@ -281,7 +279,7 @@ reason they are not, create a new column to specify the units.
 
 It's very difficult not to tweak your tables to make them look prettier, e.g. merging cells (especially in
 headers) or using borders to separate different data. If you are not careful, formatting a worksheet to be more
-aesthetically pleasing can compromise your computer’s ability to see associations in the data. For example, merged cells
+aesthetically pleasing can compromise a computer’s ability to see associations in the data. For example, merged cells
 will confuse statistics software, which will read the merged cell as a single data value and cause misalignment with
 data in the following rows.
 
@@ -291,8 +289,8 @@ should be completely separate from the tables you use to record the data.
 
 ## <a name="formatting"></a> Using formatting to convey information
 
-A common examples of using formatting to convey information is to highlight cells in a sepcific colour that you want
-dealt with differently to others. For example, highlighting cells  that should be excluded from the analysis (see
+A common example of using formatting to convey information is to highlight cells in a specific colour that you want
+dealt with differently to others. For example, highlighting cells that should be excluded from the analysis (see
 below). Another example is to leave a blank row to indicate a separation in the data. Both of these highlighting
  approaches will cause problems with later analysis because they are undetectable to computers.
 
@@ -304,7 +302,7 @@ excluded.
 ![good formatting](fig/good_formatting.png)
 
 > ## Exercise
-> Some of the data has been highlighted to indicate that something was wrong with a measurement. As mentioned earlier,
+> Some data has been highlighted to indicate that something was wrong with a measurement. As mentioned earlier,
 > the computer is unable to see this formatting when you come to analyse your data. Remove this formatting, whilst
 > keeping the information conveyed by the formatting.
 >
@@ -312,10 +310,10 @@ excluded.
 > point.
 >
 > > ## Solution
-> > We filled in empty highlighted cells from 2013 with out choice of null character, e.g. we left these cell blank.
-> > We also added another column, named 'Weight_calibrated', to track whether the measuring equipment was calibrated
-> > or not. Another option, although possibly not as good, would be to indicate that the measuring equipment was not
-> > calibrated in the notes column.
+> > Replace the highlighted cells in the 2013 data with your choice of null character. For the 2014 data, highlighted
+> > cells refer to weight measurements which were taken when the measuring device was not calibrated correctly. You
+> > should create a new column to track which measurements were with a calibrated measuring device, or probably not as
+> > good, you could instead create a note in the note column mentioning the calibration was not correct.
 > >
 > > ![weight calibrated](fig/weight_calibrated_column.png)
 > >
@@ -323,14 +321,6 @@ excluded.
 > > the updated [messy survey data](data/messy_survey_data_ex3.xls).
 > {: .solution}
 {: .challenge}
-
-<!-- DEVLOPMENT EP: removed this paragraph as it already is in the previous episode
-## <a name="metadata"></a> Inclusion of metadata within data
-
-We have already learned that metadata is the data you record about your data - how the data was collected and organised.
-This is just to reiterate that metadata should not be contained within the data itself. So, you should
-explain comments, units, information about how null values are encoded and all other information relevant to your data in
-a separate file in the same folder as your data or a separate tab within your data spreadsheet. -->
 
 
 > ## Full & clean dataset
