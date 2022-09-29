@@ -100,8 +100,10 @@ option on the `Error Alert` tab (or the `Action` field in LibreOffice).
 > > You have now provided a restriction that will be validated each time you try and
 > > enter data into the selected cells. If you type a value which is not on the list you will get an error message.
 > > This not only prevents data input errors, but also makes it easier and faster to enter data.
-> {: .solution}
-{: .challenge}
+> > 
+> > {: .solution}
+>
+> {: .challenge}
 
 ### Restricting data to entries from a list
 
@@ -135,8 +137,10 @@ values, you can select the right option from the list every time. Let’s apply 
 > > You have now provided a restriction that will be validated each time you try and
 > > enter data into the selected cells. If you type a value which is not on the list you will get an error message.
 > > This not only prevents data input errors, but also makes it easier and faster to enter data.
-> {: .solution}
-{: .challenge}
+> > 
+> > {: .solution}
+>
+> {: .challenge}
 
 Typing a list of values where only a few possible values exist might be convenient, but if the list is longer (e.g.
 all allowed species) it
@@ -156,7 +160,7 @@ You can also have different cells refer to the same table of acceptable inputs.
 data. Create a separate file with a new name, and ensure your data is stored as values and not as formulas.
 Because formulas refer to other cells, and you may be moving cells around, you may compromise the integrity of your data if you do not
 take this step!
-{: .callout}
+> {: .callout}
 
 > ## Tip: keep track of your modifications
 > As you start manipulating your data files, create a `README.txt` text file to keep track of your files and
@@ -166,7 +170,7 @@ format, and lay out the organising principles of folders and subfolders. For eac
 document the manipulations or analyses that were carried out on those data.
 [Cornell University's Research Data Management Service Group](https://data.research.cornell.edu/content/readme) provides detailed
 guidelines for how to write a good README file, along with an adaptable template.
-{: .callout}
+> {: .callout}
 
 ### Sorting data
 Bad values often sort to the bottom or top of the column. For example, if your data should be numeric, then alphabetical and null data
@@ -178,7 +182,7 @@ If your dataset is well-structured and does not contain formulas, sorting should
 > Remember to expand your sort in order to prevent data corruption. Expanding your sort ensures that the all the data
 > in one row move together instead of only sorting a single column in isolation. Sorting by only a single column will
 > scramble your data - a single row will no longer represent an individual observation.
-{: .callout}
+> {: .callout}
 
 > ## Exercise
 >
@@ -191,22 +195,24 @@ If your dataset is well-structured and does not contain formulas, sorting should
 >
 > > ## Solution
 > >
-1. Select `weight_grams` column.
-2. Click the `Sort` button on the Data tab from the top level menu in Excel (in LibreOffice select the `Data` menu and
- then select `Sort`.
-    ![Image of sort button](fig/sort-button.png)
-    Note that in older versions of Excel you may get just the `Sort` button without the drop-down menu, followed
-    by a pop up window to specify the column you want to sort and the sort order (shown in figure below).
-    ![Image of sort pop up](fig/sort-settings.png)
-3. In the pop-up that appears make sure you select `Expand the selection` to make sure data in other columns is
-    moved together with the data in the column you are sorting.
-    ![Image of expanding sort pop up](fig/sort-expand.png)
-4. Note how the odd values sort to the top and bottom of the data.
-    The cells containing no data values sort to the bottom of the tabular data, while the cells where the letter
-    "g" was included can be found towards the top or bottom. This is a powerful way to check your data for outliers and odd values.
-    ![Image of outliers sorted at the top](fig/sort-result.png)
-> {: .solution}
-{: .challenge}
+> > 1. Select `weight_grams` column.
+> > 2. Click the `Sort` button on the Data tab from the top level menu in Excel (in LibreOffice select the `Data` menu and
+> >    then select `Sort`.
+> >    ![Image of sort button](fig/sort-button.png)
+> >    Note that in older versions of Excel you may get just the `Sort` button without the drop-down menu, followed
+> >    by a pop up window to specify the column you want to sort and the sort order (shown in figure below).
+> >    ![Image of sort pop up](fig/sort-settings.png)
+> > 3. In the pop-up that appears make sure you select `Expand the selection` to make sure data in other columns is
+> >    moved together with the data in the column you are sorting.
+> >    ![Image of expanding sort pop up](fig/sort-expand.png)
+> > 4. Note how the odd values sort to the top and bottom of the data.
+> >    The cells containing no data values sort to the bottom of the tabular data, while the cells where the letter
+> >    "g" was included can be found towards the top or bottom. This is a powerful way to check your data for outliers and odd values.
+> >    ![Image of outliers sorted at the top](fig/sort-result.png)
+> > 
+> > {: .solution}
+>
+> {: .challenge}
 
 <!-- TODO: EP removed this section, to be replaced by a section on creating plots -->
 <!-- ### Conditional formatting
@@ -239,7 +245,7 @@ entering data. Let's apply some to our data.
 
 > ## Scanning for outliers
 > It is nice to be able to do these scans for outliers in spreadsheets (such as using sorting or conditional formatting),
-but we can also do these
-checks in a programming languages like R, Python and SQL, or using OpenRefine - which may be even more suitable if you have
-larger datasets with, e.g., with 10K+ or 100K+ rows which are difficult to scroll down to the bottom of to spot outliers.
-{: .testimonial}
+> but we can also do these
+> checks in a programming languages like R, Python and SQL, or using OpenRefine - which may be even more suitable if you have
+> larger datasets with, e.g., with 10K+ or 100K+ rows which are difficult to scroll down to the bottom of to spot outliers.
+> {: .testimonial}

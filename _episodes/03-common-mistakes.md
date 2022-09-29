@@ -91,7 +91,7 @@ Rather than entering data into multiple tabs, try adding another column to your 
 > data - these headers will get mixed into the data leading to problems down the road. Instead, you can freeze the
 > column headers so that they remain visible even when you have a spreadsheet with many rows. If you are not sure how to
 > do this, see the [documentation on how to freeze column headers in Excel](https://support.office.com/en-ca/article/Freeze-column-headings-for-easy-scrolling-57ccce0c-cf85-4725-9579-c5d13106ca6a).
-{: .callout}
+> {: .callout}
 
 > ## Exercise
 > At the moment the data in [messy survey data](data/messy_survey_data.xls) is in multiple tables
@@ -102,7 +102,7 @@ Rather than entering data into multiple tabs, try adding another column to your 
 >
 > > ## Keep your raw data raw
 > > Don't forget to create a new file or a new tab for the cleaned data; never modify your original (raw) data.
-> {: .callout}
+> > {: .callout}
 >
 > > ## Solution
 > > Combine the data from both tables into one table by adding both a date and plot column. Be careful when copying the
@@ -116,8 +116,9 @@ Rather than entering data into multiple tabs, try adding another column to your 
 > >
 > > If you didn't manage to finish in time, or if you just want to look at the solution instead, you can download
 > > the updated [messy survey data](data/messy_survey_data_ex1.xls).
-> {: .solution}
-{: .challenge}
+> > {: .solution}
+> 
+> {: .challenge}
 
 ## <a name="field_name"></a> Using problematic field names
 
@@ -272,8 +273,9 @@ reason they are not, create a new column to specify the units.
 > >
 > > If you didn't manage to finish in time, or if you just want to look at the solution instead, you can download
 > > the updated [messy survey data](data/messy_survey_data_ex2.xls).
-> {: .solution}
-{: .challenge}
+> > {: .solution}
+>
+> {: .challenge}
 
 ## <a name="formatting_pretty"></a> Using formatting to make the spreadsheet look pretty
 
@@ -319,14 +321,16 @@ excluded.
 > >
 > > If you didn't manage to finish in time, or if you just want to look at the solution instead, you can download
 > > the updated [messy survey data](data/messy_survey_data_ex3.xls).
+> >
 > {: .solution}
-{: .challenge}
+>
+> {: .challenge}
 
 
 > ## Full & clean dataset
 > If you want to have a look at other full, clean datasets - have a look at some of the other files you downloaded.
 > [surveys.csv](https://ndownloader.figshare.com/files/2292172) combines data from all the surveys
 > and [combined.csv](https://ndownloader.figshare.com/files/10717186) includes the cleaned data from [surveys.csv](https://ndownloader.figshare.com/files/2292172), [plots.csv](https://ndownloader.figshare.com/files/3299474) and [species.csv](https://ndownloader.figshare.com/files/3299483) combined into one clean file.
-{: .testimonial}
+> {: .testimonial}
 
 

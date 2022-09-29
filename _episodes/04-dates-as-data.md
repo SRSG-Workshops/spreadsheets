@@ -86,7 +86,7 @@ poses a huge problem for storing historical data!
 > added, but to add hours and minutes we need to make sure that we are adding
 > the quantities to the correct entities. Extracting seconds, minutes and hours from a time is explained
 > in one of the exercises below.
-{: .callout}
+> {: .callout}
 
 > ## Excel's date systems on Macs
 > In the past, Excel used to entertain a second date system, the 1904 date system, as the default in Excel for Macs.
@@ -96,7 +96,7 @@ poses a huge problem for storing historical data!
 > Because of this,
 > [there were accuracy issues with dates when exporting data from Excel](https://uc3.cdlib.org/2014/04/09/abandon-all-hope-ye-who-enter-dates-in-excel/)
 > between Macs and PCs (dates were off by 4 years and 1 day). Luckily, Excel for Macs now defaults to the 1900 date system and supports dates as early as January 1, 1900.
-{: .callout}
+> {: .callout}
 
 ## Regional date formatting issues
 
@@ -119,8 +119,9 @@ as the 7th of December 1988. A researcher in the US will interpret the same entr
 > > The date format is 'MM/DD/YYYY' because we have entries like '2/19' and '5/18', which means that the person who
 > > entered these dates most probably used the US version of Excel where month comes before day. If we did not have such
 > > entries, we would not be able to tell what date was entered! For example, is '7/11' '7th November' or '11th July'?
-> {: .solution}
-{: .challenge}
+> > {: .solution}
+>
+> {: .challenge}
 
 ## Issues with missing bits of dates
 
@@ -154,8 +155,9 @@ variable.
 > > data for 'plot 3' in the dataset. They came back in 2015 to add the missing data into the dataset and entered the
 > > dates for 'plot 3' as they had been recorded - without the year. Excel automatically interpreted the year as 2015
 > >  the year in which the data was entered into the spreadsheet. This exemplifies how easy it is to introduce errors in dates.
-> {: .solution}
-{: .challenge}
+> > {: .solution}
+>
+> {: .challenge}
 
 ### Dates with 2-digit year
 When you type a date using a 2-digit year number (e.g. "88"), spreadsheet programmes use specific rules to determine which century to use for the date.
@@ -180,13 +182,15 @@ For example, [Excel determines the century](https://docs.microsoft.com/en-us/off
 > > - 1/1/30 = 1930-Jan-1
 > > - 1/1/31 = 1931-Jan-1
 > > - 1/1/99 = 1999-Jan-1
-> {: .solution}
-{: .challenge}
+> > 
+> > {: .solution}
+>
+> {: .challenge}
 
 > ## Note on missing bits of dates
 > Make sure you remove any ambiguity when working with dates (and data in general), so as to avoid situations where spreadsheet programmes are
 > making guesses on what your data should be.
-{: .callout}
+> {: .callout}
 
 ## Issues when exporting data containing dates
 
@@ -194,6 +198,7 @@ For example, [Excel determines the century](https://docs.microsoft.com/en-us/off
 > What happens to the dates in the `dates` tab of the messy spreadsheet if we export this sheet to `.csv`
 >(Comma--Separated Value format) and then open the file in a plain text editor (like TextEdit or Notepad)?
 > What happens to the dates if we then open the `.csv` file back in Excel?
+> 
 > > ## Solution
 > > 1. Click to the `dates` tab of the [messy data spreadsheet](data/messy_survey_data.xls).
 > > 2. Select `File -> Save As` in Excel and in the drop down menu for file format select `CSV UTF-8 (Comma delimited) (.csv)`
@@ -211,8 +216,10 @@ For example, [Excel determines the century](https://docs.microsoft.com/en-us/off
 > > with the current year, not 2015 as previously assumed by Excel. In LibreOffice, no year is added, but the date is no
 > > longer treated as a date.
 > > As you can see, exporting data from a spreadsheet program and then importing it back again can fundamentally change the data!
-> {: .solution}
-{: .challenge}
+> >
+> > {: .solution}
+>
+> {: .challenge}
 
 > ## Note on exporting
 Some versions of Excel, when exporting into a text-based format (such as CSV), will export its internal date integer
@@ -278,8 +285,10 @@ According to Excel, this person had been collecting bugs over a number of years,
 > > we can see that Excel saved the year for data as 2015 (the year the data is entered) instead of 2014 (the
 > > year the data was collected). This was entirely the mistake of the field assistant but by being helpful
 > > Excel managed to "mask" this error.
-> {: .solution}
-{: .challenge}
+> > 
+> > {: .solution}
+>
+> {: .challenge}
 
 As for dates, times are handled in a similar way and there are functions to extract hours, minutes and seconds.
 
@@ -303,8 +312,10 @@ As for dates, times are handled in a similar way and there are functions to extr
 > > You will need to use the strategies in the third part of this challenge to convert this decimal value to
 > > readable time.
 > > 3. To extract the hour, type `=HOUR(NOW()-TODAY())` and similarly for minute and second.
-> {: .solution}
-{: .challenge}
+> > 
+> > {: .solution}
+>
+> {: .challenge}
 
 ### <a name="str"></a> Storing dates as a single string
 

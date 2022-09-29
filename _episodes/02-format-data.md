@@ -30,7 +30,7 @@ choices you make now will limit your ability to work with the data in the future
 > The best layout for data entry might change dependent on the specific use case. Do not stick to a format just because
 > you have used it previously. Choose the best format on a case-by-case basis. (And if you need to convert between formats,
 > ideally you would automate the conversion with a script in, say, Python or R.
-{: .callout}
+> {: .callout}
 
 ## Structuring data in spreadsheets
 
@@ -62,7 +62,7 @@ The data could be better organised as:
 
 > ## Columns for variables and rows for observations
 > The rule of thumb, when setting up data in a table is: columns = variables, rows = observations, cells = data values.
-{: .callout}
+> {: .callout}
 
 ## <a name="metadata"></a> Including metadata in the spreadsheet
 
@@ -89,7 +89,7 @@ all the files and folders in a project.
 
 > ## Credit: MANTRA
 > The above text on metadata was adapted from the online course Research Data [MANTRA](http://datalib.edina.ac.uk/mantra) by EDINA and Data Library, University of Edinburgh. MANTRA is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
-{: .testimonial}
+> {: .testimonial}
 
 ## Keeping track of your analyses
 
@@ -115,7 +115,7 @@ taken.
 > Although out of scope for this lesson, you can learn about version control in a separate course,
 > which can be used to record the transformation of your data over time, and provides tools to roll back to any
 > previous version of the data.
-{: .callout}
+> {: .callout}
 
 ## A messy dataset
 
@@ -158,5 +158,6 @@ four tabs,
 > > - The date the data was last modified
 > > - A list of changes which been made to the data, and analysis done on the data
 > >
-> {: .solution}
-{: .challenge}
+> > {: .solution}
+> 
+> {: .challenge}
