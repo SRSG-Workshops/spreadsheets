@@ -118,7 +118,7 @@ values, you can select the right option from the list every time. Let’s apply 
 > to allow only values from the following list: “DM, NL, DS, PP, PE, PF”.
 >
 > > ## Solution
-> > 1. Open the tab 'semi-cleaned-combined' of `messy_survey_data.xls` and select the 'species_id' column.
+> > 1. Open the tab 'semi-cleaned-combined' of `messy_survey_data.xlsx` and select the 'species_id' column.
 > > 2. On the `Data` tab the top level menu select `Data Validation`, or `Data Tools` and then `Data Validation`
 > > or `Validation Tools` (depending on your version of Excel) or `Validity` in LibreOffice.
 > > 3. In the `Allow` box of the `Settings` tab select `List`.
@@ -223,7 +223,7 @@ entering data. Let's apply some to our data.
 
 > ## Exercise
 >  Look at the 'semi-cleaned-combined' tab of the
-> [messy data spreadsheet](data/messy_survey_data.xls) and apply
+> [messy data spreadsheet](data/messy_survey_data.xlsx) and apply
 > any `2-Color Scale` formatting rule to column `weight_grams`.
 >
 > > ## Solution
