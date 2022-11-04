@@ -218,7 +218,7 @@ For example, [Excel determines the century](https://docs.microsoft.com/en-us/off
 > What happens to the dates if we then open the `.csv` file back in Excel?
 > 
 > > ## Solution
-> > 1. Click to the `dates` tab of the [messy data spreadsheet](data/messy_survey_data.xls).
+> > 1. Click to the `dates` tab of the [messy data spreadsheet](data/messy_survey_data.xlsx).
 > > 2. Select `File -> Save As` in Excel and in the drop down menu for file format select `CSV UTF-8 (Comma delimited) (.csv)`
 > > (or `Text CSV (.csv)` in LibreOffice).
 > > Enter a file name, e.g. `dates-export.csv` and click `Save`.

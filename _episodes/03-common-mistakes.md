@@ -2,7 +2,7 @@
 title: "Common spreadsheet errors"
 slug: spreadsheets-common-spreadsheet-errors
 teaching: 15
-exercises: 20
+exercises: 30
 questions:
 - "What are some common challenges with formatting data in spreadsheets and how can we avoid them?"
 objectives:
@@ -95,12 +95,15 @@ Rather than entering data into multiple tabs, try adding another column to your 
 {: .callout}
 
 
-> ## Exercise
-> At the moment the data in [messy survey data](data/messy_survey_data.xls) is in multiple tables
+> ## Exercise - 15 minutes
+> At the moment the data in [messy survey data](data/messy_survey_data.xlsx) is in multiple, inconsistent, tables
 > across two tabs. Following from what we've just learnt, reformat the data into a format which
 > makes it easier for both a person and a computer to understand by, for example, bringing the data from both tabs into
 > one and creating new columns. Note that some cells contain data for multiple variables. Think carefully about how you
 > should deal with those.
+>
+> At this stage, you don't need to worry about formatting your spreadsheet or fixing any suspicious looking dates and
+> messy cells. We'll deal with these in later exercises.
 >
 > > ## Keep your raw data raw
 > > Don't forget to create a new file or a new tab for the cleaned data; never modify your original (raw) data.
@@ -118,14 +121,14 @@ Rather than entering data into multiple tabs, try adding another column to your 
 > > This format is much easier for data analysis programs to read. Humans will have an easier time as well, since there
 > > is no need to scroll to the right or switch between tabs to find all of the data.
 > >
-> > If you didn't manage to finish in time, or if you just want to look at the solution instead, you can download
-> > the updated [messy survey data](data/messy_survey_data_ex1.xls).
+> > If you didn't manage to finish on time, or if you just want to look at the solution, you can download the updated
+> > [messy survey data](data/messy_survey_data_ep3_ex1.xlsx).
 > > 
 > {: .solution}
 > 
 > 
-> 
 {: .challenge}
+
 
 
 ## <a name="field_name"></a> Using problematic field names
@@ -262,31 +265,33 @@ Do not include units in cells! They cause a headache in later analysis when you 
 associated value. Ideally, all the measurements you place in one column should be in the same unit, but if for some
 reason they are not, create a new column to specify the units.
 
-> ## Exercise
-> Our [messy survey data](data/messy_survey_data.xls) is still full of formatting choices which make the data difficult
+> ## Exercise - 10 minutes
+> Our [messy survey data](data/messy_survey_data.xlsx) is still full of formatting choices which makes the data difficult
 > for a computer to interpret. With your new knowledge on best practices for field names, cell values and null values,
-> clean up the data by updating column variable names and by editing the contents of cells. Don't worry about formatting
-> the dates just yet, we will cover those in the next episode.
+> clean up the data by updating column variable names and by editing the contents of cells.
 >
-> If you want, you can use the [solution from the previous example]((data/messy_survey_data_ex1.xls)) as your starting
-> point.
+> Don't worry about formatting the dates or cleaning up any formatting just yet, we will cover those soon.
+>
+> If you want, you can use the [solution from the previous example]((data/messy_survey_data_ep3_ex1.xlsx)) as your
+> starting point.
 >
 > > ## Solution
 > > Rename the columns to replace spaces with underscores (`_`), e.g. 'Date_collected', and include the units in the
 > > column names rather than in the cell. Additionally, add a notes column to indicate where there have been problems
-> > during the data capture. Finally, choose a null value to use. In the example below, blank cells are used but NULL
-> > would also be a good choice.
+> > during the data capture. Finally, choose a null value to use -- there are a new observations which have the value
+> > -999. In the example below, blank cells are used, but either NULL, NA or None would have be a reasonable choice
+> > as well.
 > >
-> > ![solution](fig/episode3_ex2.png)
+> > ![solution](fig/episode3_ex3.png)
 > >
-> > If you didn't manage to finish in time, or if you just want to look at the solution instead, you can download
-> > the updated [messy survey data](data/messy_survey_data_ex2.xls).
+> > If you didn't manage to finish on time, or if you just want to look at the solution, you can download
+> > the updated [messy survey data](data/messy_survey_data_ep3_ex2.xlsx).
 > > 
 > {: .solution}
 > 
->
 > 
 {: .challenge}
+
 
 
 ## <a name="formatting_pretty"></a> Using formatting to make the spreadsheet look pretty
@@ -315,12 +320,19 @@ excluded.
 
 ![good formatting](fig/good_formatting.png)
 
-> ## Exercise
-> Some data has been highlighted to indicate that something was wrong with a measurement. As mentioned earlier,
+<!-- TODO: include text about formatting cell data types
+	 TODO: add reference to formatting data types into the exercise
+ -->
+<!-- ## <a name="formatting_cell_types"></a> Setting the data format for cells
+
+It is often occurrence to input data into Excel, and to then watch it come out in a format you are not expecting. -->
+
+> ## Exercise - 5 minutes
+> Some data has been highlighted to indicate that something was wrong. As mentioned earlier,
 > the computer is unable to see this formatting when you come to analyse your data. Remove this formatting, whilst
 > keeping the information conveyed by the formatting.
 >
-> If you want, you can use the [solution from the previous example]((data/messy_survey_data_ex2.xls)) as your starting
+> If you want, you can use the [solution from the previous example]((data/messy_survey_data_ep3_ex2.xlsx)) as your starting
 > point.
 >
 > > ## Solution
@@ -329,15 +341,13 @@ excluded.
 > > should create a new column to track which measurements were with a calibrated measuring device, or probably not as
 > > good, you could instead create a note in the note column mentioning the calibration was not correct.
 > >
-> > ![weight calibrated](fig/weight_calibrated_column.png)
+> > ![weight calibrated](fig/episode3_ex3.png)
 > >
 > > If you didn't manage to finish in time, or if you just want to look at the solution instead, you can download
-> > the updated [messy survey data](data/messy_survey_data_ex3.xls).
-> >
+> > the updated [messy survey data](data/messy_survey_data_ep3_ex3.xlsx).
 > > 
 > {: .solution}
 > 
->
 > 
 {: .challenge}
 
@@ -349,3 +359,4 @@ excluded.
 > and [combined.csv](https://ndownloader.figshare.com/files/10717186) includes the cleaned data from [surveys.csv](https://ndownloader.figshare.com/files/2292172), [plots.csv](https://ndownloader.figshare.com/files/3299474) and [species.csv](https://ndownloader.figshare.com/files/3299483) combined into one clean file.
 > 
 {: .testimonial}
+

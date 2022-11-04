@@ -128,7 +128,7 @@ taken.
 ## A messy dataset
 
 To put theory into practise, throughout this lesson we will be working with some [messy survey
-data](data/messy_survey_data.xls) and applying what we learn to that data. The data is a simple
+data](data/messy_survey_data.xlsx) and applying what we learn to that data. The data is a simple
 survey of small mammals in a desert ecosystem. Different people have gone to the field and entered data into a
 spreadsheet. They kept track of variables like species, plot, weight, sex and date collected. The spreadsheet contains
 four tabs,
@@ -140,7 +140,7 @@ four tabs,
 - Ignore the 'dates' tab for now, as we will come back to this in a later episode.
 
 > ## Exercise
-> If you haven't done so already, first download the [messy survey data](data/messy_survey_data.xls).
+> If you haven't done so already, first download the [messy survey data](data/messy_survey_data.xlsx).
 > Once you have it downloaded, open it up and have a look around the spreadsheet to see what's there. You will only need
 > to worry about the '2013' and '2014' tabs; the other two tabs will be used later.
 >

@@ -1,6 +1,6 @@
 ---
 title: "Survey"
-slug: spreadsheets-o-survey
+slug: spreadsheets-survey
 layout: page
 ---
 
